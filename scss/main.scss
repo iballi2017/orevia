@@ -15,6 +15,7 @@ html {
 }
 body {
     font-family: $font-family;
+    color: $black-option-clr;
 }
 
 a {
@@ -104,9 +105,6 @@ button {
         transition: background-color 250ms ease-in-out;
         transition: color 250ms ease-in-out;
     }
-
-    &:focus {
-    }
 }
 
 .top-bar {
@@ -135,6 +133,23 @@ button {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 0.5em;
+}
+
+.page-title {
+    background-color: #db427848;
+    background-image: url("../assets/images/page-title-background-img.png");
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: right;
+}
+
+.carousel-indicators {
+    li {
+        background-color: $primary-clr;
+        height: 7px;
+        width: 50px;
+    }
 }
 
 .main-nav {
@@ -210,10 +225,22 @@ main {
         }
     }
 
-    #about-us article {
-        text-align: center;
-        margin-top: 1em;
-        font-size: 1.3rem;
+    #about-us {
+        .section-title::before {
+            content: "";
+            height: 50px;
+            background-image: url("../assets/images/favicon.png");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            display: block;
+            margin-top: 2em;
+        }
+
+        article {
+            text-align: center;
+            margin-top: 1em;
+            font-size: 1.3rem;
+        }
     }
 
     #reviews {

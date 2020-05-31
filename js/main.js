@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // alert("hello");
     // Review slider (Owl carousel)
-    $(".owl-carousel").owlCarousel({
+    $(".hero-slider").owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
@@ -23,6 +23,36 @@ $(document).ready(function () {
         }
     });
 
+    $(".product-views-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        autoplayTimeout: 10000,
+        smartSpeed: 1000,
+        fluidSpeed: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    $("#prev-img").click(function () {
+        // alert("hello")
+        $(".product-views-slider").trigger('prev.owl.carousel');
+    })
+    $("#next-img").click(function () {
+        // alert("hello")
+        $(".product-views-slider").trigger('next.owl.carousel');
+    })
 
 
     // ###### custom bootstrap carousel events
@@ -32,9 +62,6 @@ $(document).ready(function () {
     $("#next").on("click", function () {
         $('.carousel').carousel("next")
     })
-    // $('.carousel').carousel({
-    //     interval: 2000
-    // })
 
 })
 
