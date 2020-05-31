@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // alert("hello");
-    // Review slider
+    // Review slider (Owl carousel)
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -22,4 +22,32 @@ $(document).ready(function () {
             }
         }
     });
+
+
+
+    // ###### custom bootstrap carousel events
+    $("#prev").on("click", function () {
+        $('.carousel').carousel("prev")
+    })
+    $("#next").on("click", function () {
+        $('.carousel').carousel("next")
+    })
+    // $('.carousel').carousel({
+    //     interval: 2000
+    // })
+
 })
+
+
+// main navigation bar sticky effect
+window.onscroll = function () { myFunction() };
+var navbar = document.getElementById("main-header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky-top")
+    } else {
+        navbar.classList.remove("sticky-top");
+    }
+}

@@ -39,15 +39,40 @@
   </head>
 
   <body>
-    <header>
-      <div class="top-bar">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="contact-info">
+          <span class="email">oreviaskincare@gmail.com</span>
+          <span class="phone ml-sm-4">07019920332</span>
+        </div>
+        <div class="brand-container d-none d-md-block">
+          <!-- <h2>Brand logo</h2> -->
+          <h2><img src="./assets/images/Orevia-Logo.png" alt="" /></h2>
+        </div>
+        <div class="access-container">
+          <ul class="access-nav">
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li class="mx-4">
+              <a href="#">Sign up</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header id="main-header">
+      <!-- <div class="top-bar">
         <div class="container top-bar-inner">
           <div class="contact-info">
             <span class="email">oreviaskincare@gmail.com</span>
             <span class="phone ml-sm-4">07019920332</span>
           </div>
           <div class="brand-container d-none d-md-block">
-            <!-- <h2>Brand logo</h2> -->
             <h2><img src="./assets/images/Orevia-Logo.png" alt="" /></h2>
           </div>
           <div class="access-container">
@@ -64,11 +89,11 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <nav class="navbar navbar-expand-lg navbar-light main-nav">
         <!-- <a class="navbar-brand d-md-none" href="#">Navbar</a> -->
-        <a class="navbar-brand d-md-none" href="#">
+        <a class="navbar-brand d-lg-none" href="#">
           <img src="./assets/images/Orevia-logo-alt.png" alt="" />
         </a>
         <button
@@ -91,10 +116,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="#about-us">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="#our-products">Products</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Key Features</a>
@@ -103,10 +128,10 @@
               <a class="nav-link" href="#">how to use</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" href="#reviews">Reviews</a>
             </li>
           </ul>
         </div>
@@ -130,7 +155,18 @@
               <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
               <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
+
+            <div class="carousel-inner" style="position: relative;">
+              <div class="custom-slider-nav text-center py-2">
+                <button
+                  class="bg-primary-clr btn-sm hero-slide-nav"
+                  id="prev"
+                ></button>
+                <button
+                  class="bg-primary-clr btn-sm hero-slide-nav"
+                  id="next"
+                ></button>
+              </div>
               <div class="carousel-item active">
                 <img
                   src="https://source.unsplash.com/user/erondu/1600x659"
@@ -138,10 +174,12 @@
                   alt="slider-1"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>First slide label</h1>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
+                  <div class="carousel-caption-inner">
+                    <h1>First slide label</h1>
+                    <p>
+                      Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -151,10 +189,12 @@
                   alt="slider-2"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>Second slide label</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                  <div class="carousel-caption-inner">
+                    <h1>Second slide label</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item">
@@ -164,11 +204,13 @@
                   alt="slider-3"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h1>Third slide label</h1>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
+                  <div class="carousel-caption-inner">
+                    <h1>Third slide label</h1>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -199,6 +241,22 @@
           </div>
         </div>
       </div>
+      <!-- <section id="test">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <button
+                class="btn btn-secondary btn-sm hero-slide-nav"
+                id="prev"
+              ></button>
+              <button
+                class="btn btn-secondary btn-sm hero-slide-nav"
+                id="next"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
       <section id="about-us">
         <div class="container">
@@ -561,7 +619,7 @@
     </main>
 
     <footer class="mt-5 pt-3">
-      <div class="container py-3">
+      <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 border-right pr-5 my-3">
             <img src="./assets/images/Orevia-Logo.png" alt="" />

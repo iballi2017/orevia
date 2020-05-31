@@ -10,10 +10,10 @@ $font-family: "Roboto", sans-serif;
 
 // global
 
+html {
+    scroll-behavior: smooth;
+}
 body {
-    // background-color: red;
-    // margin: 0;
-    // padding: 0;
     font-family: $font-family;
 }
 
@@ -46,6 +46,49 @@ button {
         transition: border 250ms ease;
     }
 }
+
+.bg-primary-clr {
+    background-color: $primary-clr;
+    color: $white;
+    &:hover {
+        background-color: $secondary-clr;
+        color: $white;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.custom-slider-nav {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+
+    #prev::before,
+    #next::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.3rem;
+    }
+
+    #prev::before {
+        content: "\f104";
+    }
+    #next::before {
+        content: "\f105";
+    }
+}
+
+.hero-slide-nav {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .shop-card-btn {
     background-color: $white;
     text-transform: uppercase;
@@ -102,6 +145,22 @@ button {
             text-transform: capitalize;
             font-weight: 600;
             color: $white !important;
+            margin-right: 2em;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                background-color: $main-nav-active-link-color;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 250ms ease-in-out;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: transform 250ms ease-in-out;
+            }
         }
         &.active {
             .nav-link {
@@ -121,6 +180,11 @@ main {
         // background-color: #202020;
         text-align: left;
         top: 0;
+    }
+    .carousel-caption-inner {
+        // background-color: #a00;
+        height: 100%;
+        width: 100%;
         display: flex !important;
         flex-direction: column;
         align-items: flex-start;
