@@ -42,7 +42,7 @@
                                 <div><small>February 27, 2019</small></div>
                                 <div class="blog-link">
                                     <strong>
-                                        <a href="#">
+                                        <a href="#" class="customLink">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing
                                             elit...
                                         </a>
@@ -60,7 +60,7 @@
                                 <div><small>February 27, 2019</small></div>
                                 <div class="blog-link">
                                     <strong>
-                                        <a href="#">
+                                        <a href="#" class="customLink">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing
                                             elit...
                                         </a>
@@ -81,10 +81,10 @@
                 2020 &copy; Orevia. All Rights Reserved.
             </div>
             <div class="col-12 col-md-3 text-md-center">
-                <a href="#">Terms and conditions</a>
+                <a href="#" class="customLink">Terms and conditions</a>
             </div>
             <div class="col-12 col-md-3 text-md-center">
-                <a href="#">Privacy Policy</a>
+                <a href="#" class="customLink">Privacy Policy</a>
             </div>
             <div class="col-12 col-md-3">
                 <!-- <span>
@@ -99,13 +99,13 @@
 
                 <ul class="footer-social-icons">
                     <li>
-                        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-twitter-square fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-facebook-square fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-instagram-square fa-2x"></i></a>
                     </li>
                 </ul>
             </div>

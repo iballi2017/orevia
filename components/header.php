@@ -15,10 +15,15 @@
     <!-- bootstrap 4.3.1 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
+    <!-- jquery form validation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
     <!-- owl carousel -->
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/owl.carousel.min.css" />
     <link rel="stylesheet" href="../OwlCarousel2-2.3.4/owl.theme.default.min.css" />
@@ -40,13 +45,13 @@
             <div class="access-container">
                 <ul class="access-nav">
                     <li>
-                        <a href="#">Login</a>
+                        <a href="../views/login.php" class="customLink">Login</a>
                     </li>
                     <li class="mx-4">
-                        <a href="#">Sign up</a>
+                        <a href="../views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="customLink">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="badge badge-light bg-primary-clr">4</span>
                         </a>
@@ -57,31 +62,6 @@
     </div>
 
     <header id="main-header">
-        <!-- <div class="top-bar">
-        <div class="container top-bar-inner">
-          <div class="contact-info">
-            <span class="email">oreviaskincare@gmail.com</span>
-            <span class="phone ml-sm-4">07019920332</span>
-          </div>
-          <div class="brand-container d-none d-md-block">
-            <h2><img src="./assets/images/Orevia-Logo.png" alt="" /></h2>
-          </div>
-          <div class="access-container">
-            <ul class="access-nav">
-              <li>
-                <a href="#">Login</a>
-              </li>
-              <li class="mx-4">
-                <a href="#">Sign up</a>
-              </li>
-              <li>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
             <!-- <a class="navbar-brand d-md-none" href="#">Navbar</a> -->
             <a class="navbar-brand d-lg-none" href="#">

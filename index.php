@@ -40,13 +40,13 @@
             <div class="access-container">
                 <ul class="access-nav">
                     <li>
-                        <a href="#">Login</a>
+                        <a href="./views/login.php" class="customLink">Login</a>
                     </li>
                     <li class="mx-4">
-                        <a href="#">Sign up</a>
+                        <a href="./views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="customLink">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="badge badge-light bg-primary-clr">4</span>
                         </a>
@@ -94,28 +94,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link customLink" href="#">
                             Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About us</a>
+                        <a class="nav-link customLink" href="#about-us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-products">Products</a>
+                        <a class="nav-link customLink" href="#our-products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Key Features</a>
+                        <a class="nav-link customLink" href="#">Key Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">how to use</a>
+                        <a class="nav-link customLink" href="#">how to use</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link customLink" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
+                        <a class="nav-link customLink" href="#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -318,7 +318,7 @@
                 <div class="row">
                     <div class="col">
                         <!-- Set up your HTML -->
-                        <div class="owl-carousel owl-theme">
+                        <div class="owl-carousel hero-slider owl-theme">
                             <div>
                                 <div class="card-body">
                                     <div class="card-body bg-0">
@@ -574,7 +574,7 @@
                                     <div><small>February 27, 2019</small></div>
                                     <div class="blog-link">
                                         <strong>
-                                            <a href="#">
+                                            <a href="#" class="customLink">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing
                                                 elit...
                                             </a>
@@ -592,7 +592,7 @@
                                     <div><small>February 27, 2019</small></div>
                                     <div class="blog-link">
                                         <strong>
-                                            <a href="#">
+                                            <a href="#" class="customLink">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing
                                                 elit...
                                             </a>
@@ -613,10 +613,10 @@
                     2020 &copy; Orevia. All Rights Reserved.
                 </div>
                 <div class="col-12 col-md-3 text-md-center">
-                    <a href="#">Terms and conditions</a>
+                    <a href="#" class="customLink">Terms and conditions</a>
                 </div>
                 <div class="col-12 col-md-3 text-md-center">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#" class="customLink">Privacy Policy</a>
                 </div>
                 <div class="col-12 col-md-3">
                     <!-- <span>
@@ -631,13 +631,13 @@
 
                     <ul class="footer-social-icons">
                         <li>
-                            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-twitter-square fa-2x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-facebook-square fa-2x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-instagram-square fa-2x"></i></a>
                         </li>
                     </ul>
                 </div>
