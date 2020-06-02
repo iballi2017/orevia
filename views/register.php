@@ -1,7 +1,7 @@
 <!-- header -->
 <?php include_once '../components/header.php'; ?>
 
-<main>
+<main id="register-page">
 
     <div class="container">
         <div class="register form-wrapper p-5 my-5">

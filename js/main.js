@@ -144,11 +144,30 @@ stateSelect.forEach((option) => {
 
 
 //toggle login form reveal password
-var password_addon = document.addEventListener("click", function () {
-    let x = document.getElementById("login_password")
+function loginPassword_click() {
+    var x = document.getElementById("login_password");
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
     }
-})
+}
+
+//toggle reset password form reveal password
+function newPassword_click() {
+    var x = document.getElementById("new_password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+
+function confirmPassword_click() {
+    var x = document.getElementById("confirm_password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}

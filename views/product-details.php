@@ -1,7 +1,7 @@
 <!-- header -->
 <?php include_once '../components/header.php'; ?>
 
-<main>
+<main id="product-details-page">
     <div class="container">
         <div class="row border my-5 pb-3">
             <div class="col-12 col-md-4 offset-md-1">

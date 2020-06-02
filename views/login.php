@@ -1,7 +1,7 @@
 <!-- header -->
 <?php include_once '../components/header.php'; ?>
 
-<main>
+<main id="login-page">
 
     <div class="container">
         <div class="login form-wrapper p-5 my-5">
@@ -18,14 +18,15 @@
                     <div class="input-group mb-3">
                         <input type="password" class="form-control border-right" id="login_password" required>
                         <div class="input-group-append">
-                            <button class="border-left password-eye" type="button" id="password_addon">
+                            <button class="border-left password-eye" type="button" id="password_addon"
+                                onclick="loginPassword_click()">
                                 <i class="fas fa-eye"></i></button>
                         </div>
                     </div>
                     <small class="password_error_msg text-danger" id="password_error_msg"></small>
                 </div>
                 <div class="form-group text-right">
-                    <a href="#">Forgot password</a>
+                    <a href="#" class="customLink">Forgot password</a>
                 </div>
 
 

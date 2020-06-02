@@ -18,6 +18,9 @@ body {
     color: $black-option-clr;
 }
 
+a {
+}
+
 a.customLink {
     color: $primary-clr;
     font-weight: bolder;
@@ -218,8 +221,10 @@ button {
 .access-nav {
     list-style: none;
     display: flex;
-    align-self: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0;
+    height: 100%;
 }
 
 .email:before {
@@ -375,12 +380,6 @@ main {
             color: $primary-clr;
         }
     }
-
-    //##### account page
-    .account-sidebar {
-        // transform: scaleX(0);
-        // height: 0;
-    }
 }
 
 //#####  product detail page
@@ -396,10 +395,8 @@ main {
     }
 }
 
-//#### register page
-.form-wrapper {
-    margin: 0 auto;
-    background-color: $tinted-clr;
+// FORM
+form {
     .form-control {
         border: 1px solid $secondary-clr;
         display: block;
@@ -500,6 +497,25 @@ main {
         line-height: 3;
         &:hover {
             background-color: $main-nav-active-link-color !important;
+        }
+    }
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    background-color: $tinted-clr;
+}
+
+//#### forgot password page
+#forgot-password-page {
+    .inner-wrapper {
+        height: 70vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+
+        input[type="text"] {
+            width: 70%;
         }
     }
 }
@@ -640,10 +656,12 @@ footer {
 
         .access-container {
             grid-area: access;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            align-self: flex-end;
+
+            .access-nav {
+                height: 100%;
+                align-items: center;
+                justify-content: flex-end;
+            }
         }
     }
 

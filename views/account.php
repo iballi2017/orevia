@@ -1,7 +1,7 @@
 <!-- header -->
 <?php include_once '../components/header.php'; ?>
 
-<main>
+<main id="account-page">
 
     <div class="container">
         <div class="row">
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-3 bg-light px-0 my-3 py-5 account-sidebar">
+            <div class="col-12 col-sm-12 col-md-3 bg-light px-0 my-3 py-5 account-sidebar">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="account-tab-link active rounded-0 mb-3" id="v-pills-my-profile-tab" data-toggle="pill"
                         href="#v-pills-my-profile" role="tab" aria-controls="v-pills-my-profile" aria-selected="true">My
@@ -23,7 +23,7 @@
                         aria-selected="false">Wish Lists</a>
                 </div>
             </div>
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-sm-12 col-md-9">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-my-profile" role="tabpanel"
                         aria-labelledby="v-pills-my-profile-tab">
@@ -61,14 +61,16 @@
                                     <div class="form-group row">
                                         <label for="oldPassword" class="col-sm-3 col-form-label">Old Password</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="oldPassword">
+                                            <input type="text" class="form-control" id="oldPassword"
+                                                placeholder="Edit Password">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="newPassword" class="col-sm-3 col-form-label">New Password</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="newPassword">
+                                            <input type="text" class="form-control" id="newPassword"
+                                                placeholder="Edit Password">
                                         </div>
                                     </div>
 
@@ -76,7 +78,8 @@
                                         <label for="confirmPassword" class="col-sm-3 col-form-label">Confirm Password
                                         </label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="confirmPassword">
+                                            <input type="text" class="form-control" id="confirmPassword"
+                                                placeholder="Edit Password">
                                         </div>
                                     </div>
 
