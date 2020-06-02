@@ -78,10 +78,27 @@ button:focus {
 .bg-primary-clr {
   background-color: #740774;
   color: #ffffff; }
-  .bg-primary-clr:hover {
+
+a.bg-primary-clr {
+  background-color: #740774;
+  color: #ffffff; }
+  a.bg-primary-clr:hover {
     background-color: #4d063d;
     color: #ffffff; }
-  .bg-primary-clr:focus {
+  a.bg-primary-clr:focus {
+    outline: 0; }
+
+.bg-secondary-clr {
+  background-color: #4d063d;
+  color: #ffffff; }
+
+a.bg-secondary-clr {
+  background-color: #4d063d;
+  color: #ffffff; }
+  a.bg-secondary-clr:hover {
+    background-color: #4d063d;
+    color: #ffffff; }
+  a.bg-secondary-clr:focus {
     outline: 0; }
 
 .form-title {
@@ -403,6 +420,26 @@ form .selectOptionStyle {
   place-content: center; }
   #forgot-password-page .inner-wrapper input[type="text"] {
     width: 70%; }
+
+[type="radio"] {
+  opacity: 0;
+  position: absolute; }
+
+.custom-radio {
+  --size: 1.7em;
+  display: inline-block;
+  background-color: #e5e5e5;
+  width: var(--size);
+  height: var(--size);
+  margin-right: var(--size);
+  cursor: pointer;
+  border: 5px solid #d4cfcf;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out; }
+
+[type="radio"]:checked + label .custom-radio {
+  background: #4d063d; }
 
 footer {
   background-color: #f6f6f6; }

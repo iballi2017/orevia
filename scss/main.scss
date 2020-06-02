@@ -105,6 +105,25 @@ button {
 .bg-primary-clr {
     background-color: $primary-clr;
     color: $white;
+}
+a.bg-primary-clr {
+    background-color: $primary-clr;
+    color: $white;
+    &:hover {
+        background-color: $secondary-clr;
+        color: $white;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+.bg-secondary-clr {
+    background-color: $secondary-clr;
+    color: $white;
+}
+a.bg-secondary-clr {
+    background-color: $secondary-clr;
+    color: $white;
     &:hover {
         background-color: $secondary-clr;
         color: $white;
@@ -518,6 +537,34 @@ form {
             width: 70%;
         }
     }
+}
+
+//##### Checkout page
+[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+.custom-radio {
+    --size: 1.7em;
+    display: inline-block;
+    background-color: #e5e5e5;
+    width: var(--size);
+    height: var(--size);
+    margin-right: var(--size);
+    cursor: pointer;
+    border: 5px solid #d4cfcf;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+[type="radio"]:checked + label .custom-radio {
+    background: $secondary-clr;
+    // box-shadow: inset 0 0 0 3px white;
+}
+
+[type="radio"]:checked + label {
+    // opacity: 0.5;
 }
 
 footer {
