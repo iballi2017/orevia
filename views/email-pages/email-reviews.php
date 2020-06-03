@@ -15,17 +15,27 @@
     }
 
     .wrapper {
-        width: 70%;
+        max-width: 500px;
         margin: 0 auto;
     }
 
     table {
         width: 100%;
-        background-color: yellow;
     }
 
     .table-head {
-        /* background-color: #4d063d; */
+        background-color: #4d063d;
+        color: #fff;
+    }
+
+    .mt-5 {
+        margin-top: 5em;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 10px;
     }
     </style>
 </head>
@@ -38,22 +48,32 @@
                 <tr>
 
                     <th class="table-head" colspan="4">
-                        <h1>Orevia</h1>
+                        <h1 class="company-name">Orevia</h1>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Hello</td>
-                    <td>Hello</td>
-                    <td>Hello</td>
-                    <td>Hello</td>
+                    <td>
+                        <div class="mt-5">
+
+                            Dear AKIN ADE,
+
+                            <p>Thank you for stopping by Orevia.</p>
+                            <p>
+                                Please help us improve our service and give all Orevia customers a better understanding
+                                about the product(s) you ordered!</p>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Hello</td>
-                    <td>Hello</td>
-                    <td>Hello</td>
-                    <td>Hello</td>
+
+                    <td>
+                        <div class="product-grid">
+                            <div>1</div>
+                            <div>2</div>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
