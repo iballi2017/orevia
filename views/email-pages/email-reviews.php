@@ -37,6 +37,14 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 10px;
     }
+
+    .product-column {
+        display: flex;
+    }
+
+    img {
+        width: 100%;
+    }
     </style>
 </head>
 
@@ -70,7 +78,12 @@
 
                     <td>
                         <div class="product-grid">
-                            <div>1</div>
+                            <div class="product-column">
+                                <img src="../../assets/images/orevia-cup-thumbnail.png" alt="">
+                                <div>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, praesentium?
+                                </div>
+                            </div>
                             <div>2</div>
                         </div>
                     </td>
