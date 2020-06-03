@@ -71,36 +71,148 @@
             </div>
             <div class="inner-wrapper form-wrapper mt-5">
 
-                <fieldset class="container">
+                <!-- <fieldset class="container">
                     <legend>2. PAYMENT METHOD</legend>
 
                     <div class="form-row form-group">
-                        <div class="col">
-                            <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer">
-                            <label for="bank_transfer">
-                                <span class="custom-radio"></span>
-                                Bank Transfer</label>
+                        <div class="col-12 col-md-6">
+                            <div style=" display:flex; align-items: center">
+
+                                <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer">
+                                <label for="bank_transfer">
+                                    <span class="custom-radio"></span>
+                                    Bank Transfer</label>
+                            </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-6">
 
                             <input type="radio" id="third_party" name="payment_method" value="Third_party payment">
                             <label for="third_party">
                                 <span class="custom-radio"></span>
-                                Third-party payment</label>
+                                Third-party Payment Interface</label>
+                        </div>
+                    </div>
+                    <div class="row" id="seller-bank-details">
+                        <div class="col-12 col-sm-7">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Bank Account Name:</th>
+                                        <th scope="col">{{Seller's Account Name}}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bank Account Number:</th>
+                                        <th scope="col">{{Seller's Account Number}}</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </fieldset> -->
+
+
+                <fieldset class="accordion container" id="accordionExample">
+                    <div class="py-4" id="headingOne" style="display: flex; align-items: center">
+
+                        <legend>2. PAYMENT METHOD</legend>
+                        <div type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            <i class="fas fa-sort-down fa-2x p-0" style="color: #740774"></i>
+                        </div>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+
+
+                            <div class="form-row form-group">
+                                <div class="col-12 col-md-6">
+                                    <div style=" display:flex; align-items: center">
+
+                                        <input type="radio" id="bank_transfer" name="payment_method"
+                                            value="Bank Transfer">
+                                        <label for="bank_transfer">
+                                            <span class="custom-radio"></span>
+                                            Bank Transfer</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-md-6">
+
+                                    <input type="radio" id="third_party" name="payment_method"
+                                        value="Third_party payment">
+                                    <label for="third_party">
+                                        <span class="custom-radio"></span>
+                                        Third-party Payment Interface</label>
+                                </div>
+                            </div>
+                            <div class="row" id="seller-bank-details">
+                                <div class="col-12 col-sm-7">
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Bank Account Name:</th>
+                                                <th scope="col">{{Seller's Account Name}}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Bank Account Number:</th>
+                                                <th scope="col">{{Seller's Account Number}}</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
+
             </div>
             <div class="inner-wrapper form-wrapper mt-5">
 
-                <div class="section-head bg-secondary my-5">
-                    <h4>CHECK OUT</h4>
+                <div class="section-head bg-secondary-clr my-5">
+                    <div class="container py-2">
+                        <h2>ORDER SUMMARY</h2>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt repellendus nulla incidunt harum aut
-                    officiis est, maiores reprehenderit, enim voluptatem aspernatur! Reiciendis perspiciatis cupiditate
-                    quam
-                    veritatis sequi voluptas nam totam?</p>
+                <div class="container">
+                    <h5>YOUR ORDER ( 1 ITEM )</h5>
+                    <hr style="border-top: 2px solid #4d063d" />
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">1 Item</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" colspan="3">Sub Total</th>
+                                <td>#2,000.00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">Shipping</th>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">VAT</th>
+                                <td>--</td>
+                            </tr>
+                            <tr class="border-top">
+                                <th scope="row" colspan="3">Total to pay</th>
+                                <td>#2,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="form-group text-center">
+                <button class="modify-cart-btn px-5 form-btn btn-lg">Modify Cart</button>
+                <button class="modify-cart-btn px-5 form-btn-2 btn-lg bg-primary-clr">Confirm Order</button>
             </div>
         </form>
     </div>

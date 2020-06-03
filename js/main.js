@@ -117,6 +117,14 @@ $(document).ready(function () {
         }
 
     }
+
+    // Seller's Bank details
+    $('#bank_transfer').on("click", function () {
+        $("#seller-bank-details").show(2000)
+    })
+    $('#third_party').on("click", function () {
+        $("#seller-bank-details").hide(2000)
+    })
 })
 
 
