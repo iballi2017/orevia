@@ -15,7 +15,7 @@
                 <div class="form-group">
                     <label for="login_password">Enter Password</label>
 
-                    <div class="input-group mb-3">
+                    <div class="input-group">
                         <input type="password" class="form-control border-right" id="login_password" required>
                         <div class="input-group-append">
                             <button class="border-left password-eye" type="button" id="password_addon"

@@ -39,10 +39,16 @@
             </div>
             <div class="access-container">
                 <ul class="access-nav">
-                    <li>
+                    <li class="mr-2">
+                        <a href="./views/account.php" class="customLink">Akinola</a>
+                    </li>
+                    <li class="mr-2">
+                        <a href="#" class="customLink">Logout</a>
+                    </li>
+                    <li class="mr-2">
                         <a href="./views/login.php" class="customLink">Login</a>
                     </li>
-                    <li class="mx-4">
+                    <li class="mr-2">
                         <a href="./views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>

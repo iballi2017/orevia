@@ -409,8 +409,9 @@ form select {
   -o-appearance: none;
   appearance: none; }
   form select option {
-    padding: 5em;
-    line-height: 2; }
+    margin: 5em;
+    line-height: 2;
+    font: inherit; }
 
 form select::-ms-expand {
   /* remove default style from explorer */
@@ -549,7 +550,8 @@ footer {
 @media (min-width: 900px) {
   .top-bar-inner {
     display: grid;
-    grid-template-areas: "contact logo access"; }
+    grid-template-areas: "contact contact logo access access";
+    grid-gap: 20px; }
     .top-bar-inner .contact-info {
       grid-area: contact;
       display: flex;

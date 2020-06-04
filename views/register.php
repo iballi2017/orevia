@@ -9,8 +9,10 @@
             <form action="post" id="registerForm">
                 <div class="form-row">
                     <div class="form-group col-md-8">
-                        <label for="inputEmail4">Full Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="name" required>
+                        <label for="register_inputName">Full Name</label>
+                        <input type="text" class="form-control" id="register_inputName" required>
+                        <small class="registration_name_error_msg text-danger" id="registration_name_error_msg">This
+                            field is required</small>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="gender">Gender</label>
@@ -24,17 +26,29 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="register_inputEmail">Email Address</label>
+                        <input type="email" class="form-control" id="register_inputEmail" required>
+                        <div><small class="registration_email_error_msg text-danger"
+                                id="registration_email_error_msg">This
+                                field is required
+
+                            </small></div>
+                        <div>
+                            <small class="registration_email_error_msg text-danger"
+                                id="registration_email_pattern_error"></small></div>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="number">Phone Number</label>
-                        <input type="text" class="form-control" id="number" required>
+                        <label for="register_inputPhone">Phone Number</label>
+                        <input type="text" class="form-control" id="register_inputPhone" required>
+                        <small class="registration_phone_error_msg text-danger" id="registration_phone_error_msg">This
+                            field is required</small>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" required>
+                    <label for="register_inputAddress">Address</label>
+                    <input type="text" class="form-control" id="register_inputAddress" required>
+                    <small class="registration_address_error_msg text-danger" id="registration_address_error_msg">This
+                        field is required</small>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -60,18 +74,31 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="password">Enter Password</label>
-                        <input type="password" class="form-control" id="password" required>
+                        <label for="register_inputPassword">Enter Password</label>
+                        <input type="password" class="form-control" id="register_inputPassword" required>
+                        <div><small class="registration_password_error_msg text-danger"
+                                id="registration_password_error_msg">This
+                                field is required</small></div>
+                        <div><small class="registration_password_length_error_msg text-danger"
+                                id="registration_password_length_error_msg">Your password must be atleast 8
+                                characters</small></div>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="password2">Confirm Password</label>
-                        <input type="password" class="form-control" id="password2" required>
+                        <label for="register_confirm_inputPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="register_confirm_inputPassword" required>
+                        <div><small class="registration_confirm_password_error_msg text-danger"
+                                id="registration_confirm_password_error_msg">This
+                                field is required</small></div>
+                        <div><small class="registration_confirm_password_match_error_msg text-danger"
+                                id="registration_confirm_password_match_error_msg">Your password does not match</small>
+                        </div>
                     </div>
                 </div>
 
-
                 <div class="form-group text-center">
-                    <button type="submit" class="form-btn btn-md py-2 px-5 rounded">Register</button>
+                    <!-- <button type="submit" class="form-btn btn-md py-2 px-5 rounded" disabled>Register</button> -->
+                    <button type="submit" class="btn-md py-2 px-5 rounded" id="registration_form_btn"
+                        disabled>Register</button>
                 </div>
             </form>
         </div>

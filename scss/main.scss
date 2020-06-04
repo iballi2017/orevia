@@ -516,8 +516,11 @@ form {
         appearance: none;
 
         option {
-            padding: 5em;
+            margin: 5em;
             line-height: 2;
+            // background-color: $secondary-clr !important;
+            // color: $white;
+            font: inherit;
         }
     }
     select::-ms-expand {
@@ -707,7 +710,8 @@ footer {
 @media (min-width: 900px) {
     .top-bar-inner {
         display: grid;
-        grid-template-areas: "contact logo access";
+        grid-template-areas: "contact contact logo access access";
+        grid-gap: 20px;
 
         .contact-info {
             grid-area: contact;

@@ -80,17 +80,19 @@ $(document).ready(function () {
     // })
 
 
-
-    //login form error messages
+    /*###
+        Validations
+        ###*/
+    /* 1. Login */
     $("#email_error_msg").hide()
     $("#password_error_msg").hide()
     var error_email = false
     var error_password = false
 
-    $("#login_email").focusout(function () {
+    $("#login_email").keyup(function () {
         check_email()
     })
-    $("#login_password").focusout(function () {
+    $("#login_password").keyup(function () {
         check_password()
     })
 
@@ -118,12 +120,174 @@ $(document).ready(function () {
 
     }
 
+
+    /* 1. Registration page error handling */
+    //..............Name
+    var register_error_name = false
+    var register_error_email = false
+    var register_error_phone = false
+    var register_error_address = false
+    var register_error_password = false
+    var register_error_confirm_password = false
+    $("#registration_name_error_msg").hide()
+    $("#register_inputName").keyup(function () {
+        check_register_name()
+    })
+    function check_register_name() {
+        let name = $("#register_inputName").val().length
+        if (name > 0) {
+            $("#registration_name_error_msg").hide()
+            register_error_name = true
+            enable_registration_button()
+        } else {
+            $("#registration_name_error_msg").show()
+            register_error_name = false
+        }
+    }
+    //..............Email
+    $("#registration_email_error_msg").hide()
+    $("#register_inputEmail").keyup(function () {
+        check_register_email()
+    })
+    function check_register_email() {
+        let email = $("#register_inputEmail").val().length
+        if (email != 0) {
+            $("#registration_email_error_msg").hide()
+            let pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
+            if (pattern.test($("#register_inputEmail").val())) {
+                $("#registration_email_pattern_error").hide()
+                register_error_email = true
+                enable_registration_button()
+            } else {
+                $("#registration_email_pattern_error").html("Invalid email address")
+                $("#registration_email_pattern_error").show()
+                register_error_email = false
+            }
+        } else {
+            $("#registration_email_error_msg").show()
+            register_error_email = false
+        }
+    }
+    //..............Phone
+    $("#registration_phone_error_msg").hide()
+    $("#register_inputPhone").keyup(function () {
+        check_register_phone()
+    })
+    function check_register_phone() {
+        let phone = $("#register_inputPhone").val().length
+        if (phone != 0) {
+            $("#registration_phone_error_msg").hide()
+            register_error_phone = true
+            enable_registration_button()
+        } else {
+            $("#registration_phone_error_msg").show()
+            register_error_phone = false
+        }
+    }
+    //..............Address
+    $("#registration_address_error_msg").hide()
+    $("#register_inputAddress").keyup(function () {
+        check_register_address()
+    })
+    function check_register_address() {
+        let address = $("#register_inputAddress").val().length
+        if (address != 0) {
+            $("#registration_address_error_msg").hide()
+            register_error_address = true
+            enable_registration_button()
+        } else {
+            $("#registration_address_error_msg").show()
+            register_error_address = false
+        }
+    }
+    //..............Password
+    $("#registration_password_error_msg").hide()
+    $("#registration_password_length_error_msg").hide()
+    $("#register_inputPassword").keyup(function () {
+        check_register_password()
+    })
+
+    var password_1;
+    function check_register_password() {
+        let password = $("#register_inputPassword").val().length
+        if (password != 0) {
+            $("#registration_password_error_msg").hide()
+            if (password < 8) {
+                $("#registration_password_length_error_msg").show()
+                register_error_password = false
+            } else {
+                $("#registration_password_length_error_msg").hide()
+                password_1 = $("#register_inputPassword").val()
+                register_error_password = true
+                enable_registration_button()
+            }
+
+        } else {
+            $("#registration_password_error_msg").show()
+            register_error_password = false
+        }
+    }
+    //..............Confirm Password
+    $("#registration_confirm_password_error_msg").hide()
+    $("#registration_confirm_password_match_error_msg").hide()
+    $("#register_confirm_inputPassword").keyup(function () {
+        check_register_confirm_password()
+    })
+    function check_register_confirm_password() {
+        let confirm_password = $("#register_confirm_inputPassword").val()
+        let confirm_password_count = $("#register_confirm_inputPassword").val().length
+        if (confirm_password_count != 0) {
+            $("#registration_confirm_password_error_msg").hide()
+            register_error_confirm_password = true
+            enable_registration_button()
+            if (confirm_password != password_1) {
+                $("#registration_confirm_password_match_error_msg").show()
+                register_error_confirm_password = false
+            } else {
+                $("#registration_confirm_password_match_error_msg").hide()
+                register_error_confirm_password = true
+                enable_registration_button()
+            }
+        } else {
+            $("#registration_confirm_password_error_msg").show()
+            register_error_confirm_password = false
+        }
+        // console.log(`first password ${password_1}`)
+        // console.log(`second password ${confirm_password}`)
+    }
+
+
+
+    // (function ($) {
+    //     if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true) {
+    //         $("#registration_form_btn").addClass("form-btn")
+    //         console.log("done!")
+
+    //     }
+    //     console.log("done!")
+    //     console.log(register_error_name)
+    // })(jQuery);
+    function enable_registration_button() {
+        if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true) {
+            $("#registration_form_btn").addClass("form-btn")
+            console.log("done!")
+
+        } else {
+            $("#registration_form_btn").removeClass("form-btn")
+            $("#registration_form_btn").removeAttr("disabled")
+            console.log("failed!")
+        }
+    }
+
+
+
+
     // Seller's Bank details
     $('#bank_transfer').on("click", function () {
-        $("#seller-bank-details").show(2000)
+        $("#seller-bank-details").show()
     })
     $('#third_party').on("click", function () {
-        $("#seller-bank-details").hide(2000)
+        $("#seller-bank-details").hide()
     })
 })
 
@@ -144,9 +308,7 @@ function myFunction() {
 
 var stateSelect = document.querySelectorAll("option")
 stateSelect.forEach((option) => {
-    console.log(option)
     option.classList.add("selectOptionStyle")
-    console.log(option)
 })
 
 
