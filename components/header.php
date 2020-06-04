@@ -51,7 +51,7 @@
                         <a href="../views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
-                        <a href="#" class="customLink">
+                        <a href="../views/checkout.php" class="customLink">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="badge badge-light bg-primary-clr">4</span>
                         </a>
@@ -64,7 +64,7 @@
     <header id="main-header">
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
             <!-- <a class="navbar-brand d-md-none" href="#">Navbar</a> -->
-            <a class="navbar-brand d-lg-none" href="#">
+            <a class="navbar-brand d-lg-none" href="../index.php">
                 <img src="../assets/images/Orevia-logo-alt.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -74,16 +74,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../index.php">
                             Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About us</a>
+                        <a class="nav-link" href="../index.php#about-us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-products">Products</a>
+                        <a class="nav-link" href="../views/product-page.php">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Key Features</a>
@@ -92,10 +92,10 @@
                         <a class="nav-link" href="#">how to use</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link" href="../index.php#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
+                        <a class="nav-link" href="../index.php#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>

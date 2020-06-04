@@ -46,7 +46,7 @@
                         <a href="./views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
-                        <a href="#" class="customLink">
+                        <a href="./checkout.php" class="customLink">
                             <i class="fas fa-shopping-cart"></i>
                             <span class="badge badge-light bg-primary-clr">4</span>
                         </a>
@@ -103,7 +103,7 @@
                         <a class="nav-link customLink" href="#about-us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link customLink" href="#our-products">Products</a>
+                        <a class="nav-link customLink" href="./views/product-page.php">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link customLink" href="#">Key Features</a>
