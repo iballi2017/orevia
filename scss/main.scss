@@ -19,11 +19,11 @@ body {
 }
 
 a {
+    color: $primary-clr;
 }
 
 a.customLink {
-    color: $primary-clr;
-    font-weight: bolder;
+    // font-weight: bolder;
     transition: font-weight 250ms ease-in-out;
     -moz-transition: font-weight 250ms ease-in-out;
     -o-transition: font-weight 250ms ease-in-out;
@@ -48,7 +48,6 @@ a.customLink {
     &:focus {
         text-decoration: none;
         color: $secondary-clr;
-        font-weight: bolder;
         transition: color 250ms ease-in-out;
         transition: font-weight 250ms ease-in-out;
         -moz-transition: color 250ms ease-in-out;

@@ -24,16 +24,16 @@ include_once '../components/header.php'; ?>
                                     <span class="product-content-qty">(150ml)</span>
                                     <h4 class="price">#2000</h4>
                                     <span class="star-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
                                         <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-
-                                        <button class="btn-block py-2 mt-2 shop-card-btn">
-                                            SHOP NOW
-                                        </button>
                                     </span>
+
+                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                        SHOP NOW
+                                    </button>
                                 </figcaption>
                             </figure>
                         </div>
@@ -49,16 +49,16 @@ include_once '../components/header.php'; ?>
                                     <span class="product-content-qty">(150ml)</span>
                                     <h4 class="price">#2000</h4>
                                     <span class="star-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
                                         <i class="far fa-star text-warning"></i>
                                         <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-
-                                        <button class="btn-block py-2 mt-2 shop-card-btn">
-                                            SHOP NOW
-                                        </button>
                                     </span>
+
+                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                        SHOP NOW
+                                    </button>
                                 </figcaption>
                             </figure>
                         </div>
@@ -74,16 +74,16 @@ include_once '../components/header.php'; ?>
                                     <span class="product-content-qty">(150ml)</span>
                                     <h4 class="price">#2000</h4>
                                     <span class="star-rating">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
                                         <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-
-                                        <button class="btn-block py-2 mt-2 shop-card-btn">
-                                            SHOP NOW
-                                        </button>
                                     </span>
+
+                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                        SHOP NOW
+                                    </button>
                                 </figcaption>
                             </figure>
                         </div>
