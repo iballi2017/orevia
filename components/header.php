@@ -44,16 +44,16 @@
             </div>
             <div class="access-container">
                 <ul class="access-nav">
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="../views/account.php" class="customLink">Akinola</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="#" class="customLink">Logout</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="../views/login.php" class="customLink">Login</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="../views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
@@ -69,13 +69,13 @@
 
     <header id="main-header">
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
-            <!-- <a class="navbar-brand d-md-none" href="#">Navbar</a> -->
             <a class="navbar-brand d-lg-none" href="../index.php">
                 <img src="../assets/images/Orevia-logo-alt.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+                <i class="fas fa-ellipsis-v mobile-menu-toggler"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">

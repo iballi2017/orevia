@@ -71,6 +71,15 @@ a.customLink {
     }
 }
 
+.navbar-toggler {
+    &:focus {
+        box-shadow: none;
+    }
+}
+.mobile-menu-toggler {
+    color: $tinted-clr;
+}
+
 .product-card {
     span {
         display: block;
@@ -707,7 +716,7 @@ footer {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 990px) {
     .top-bar-inner {
         display: grid;
         grid-template-areas: "contact contact logo access access";

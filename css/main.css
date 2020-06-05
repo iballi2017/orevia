@@ -51,6 +51,12 @@ a.customLink {
       -webkit-transition: transform 250ms ease-in;
       -ms-transition: transform 250ms ease-in-out; }
 
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+.mobile-menu-toggler {
+  color: #fbf4fb; }
+
 .product-card span {
   display: block; }
 
@@ -547,7 +553,7 @@ footer {
     footer .blog-container a:visited {
       color: #4d063d; }
 
-@media (min-width: 900px) {
+@media (min-width: 990px) {
   .top-bar-inner {
     display: grid;
     grid-template-areas: "contact contact logo access access";

@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-header" data-offset="0">
     <div class="top-bar">
         <div class="container top-bar-inner">
             <div class="contact-info">
@@ -39,16 +39,16 @@
             </div>
             <div class="access-container">
                 <ul class="access-nav">
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="./views/account.php" class="customLink">Akinola</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="#" class="customLink">Logout</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="./views/login.php" class="customLink">Login</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="./views/register.php" class="customLink">Sign up</a>
                     </li>
                     <li>
@@ -63,39 +63,15 @@
     </div>
 
     <header id="main-header">
-        <!-- <div class="top-bar">
-        <div class="container top-bar-inner">
-          <div class="contact-info">
-            <span class="email">oreviaskincare@gmail.com</span>
-            <span class="phone ml-sm-4">07019920332</span>
-          </div>
-          <div class="brand-container d-none d-md-block">
-            <h2><img src="./assets/images/Orevia-Logo.png" alt="" /></h2>
-          </div>
-          <div class="access-container">
-            <ul class="access-nav">
-              <li>
-                <a href="#">Login</a>
-              </li>
-              <li class="mx-4">
-                <a href="#">Sign up</a>
-              </li>
-              <li>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
 
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
-            <!-- <a class="navbar-brand d-md-none" href="#">Navbar</a> -->
-            <a class="navbar-brand d-lg-none" href="#">
+            <a class="navbar-brand d-lg-none" href="./">
                 <img src="./assets/images/Orevia-logo-alt.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+                <i class="fas fa-ellipsis-v mobile-menu-toggler"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
@@ -144,7 +120,9 @@
                             <button class="bg-primary-clr btn-sm hero-slide-nav" id="next"></button>
                         </div>
                         <div class="carousel-item active">
-                            <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                                alt="slider-1" /> -->
+                            <img src="./assets/images/the-honest-company-P9ayWrBn63c-unsplash.png" class="d-block w-100"
                                 alt="slider-1" />
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="carousel-caption-inner">
@@ -156,8 +134,10 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
-                                alt="slider-2" />
+                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                                alt="slider-2" /> -->
+                            <img src="./assets/images/deanna-alys-6LBBOwkPzyQ-unsplash.png" class="d-block w-100"
+                                alt="slider-1" />
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="carousel-caption-inner">
                                     <h1>Second slide label</h1>
@@ -168,8 +148,10 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
-                                alt="slider-3" />
+                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                                alt="slider-3" /> -->
+                            <img src="./assets/images/the-honest-company-P9ayWrBn63c-unsplash.png" class="d-block w-100"
+                                alt="slider-1" />
                             <div class="carousel-caption d-none d-md-block">
                                 <div class="carousel-caption-inner">
                                     <h1>Third slide label</h1>
@@ -470,8 +452,7 @@
                                 <div class="card-header" id="headingOne">
                                     <div class="float-left">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Hic nisi obcaecati ea eum maiores dolorum asperiores
-                                        tenetur nulla quam sit?
+                                        Hic nisi ob sit?
                                     </div>
                                     <h6 class="mb-0">
                                         <button class="float-right faq-btn" type="button" data-toggle="collapse"
@@ -502,8 +483,7 @@
                                 <div class="card-header" id="headingTwo">
                                     <div class="float-left">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Hic nisi obcaecati ea eum maiores dolorum asperiores
-                                        tenetur nulla quam sit?
+                                        Hic nisi obcaecati ea eum maiores?
                                     </div>
                                     <h6 class="mb-0">
                                         <button class="float-right faq-btn" type="button" data-toggle="collapse"

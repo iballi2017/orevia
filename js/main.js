@@ -1,5 +1,19 @@
 $(document).ready(function () {
-    // alert("hello");
+
+    // navbar-toggler rotation
+    $(".navbar-toggler").on("click", () => {
+        if ($(".navbar-collapse").hasClass("show")) {
+            $(".navbar-toggler").css({ "color": "red", "transform": "rotate(0deg)", "transition": "transform 20ms ease-in-out", "-webkit-transition": "transform 20ms ease-in-out", "-moz-transition": "transform 20ms ease-in-out", "-o-transition": "transform 20ms ease-in-out" });
+        } else {
+            $(".navbar-toggler").css({ "color": "red", "transform": "rotate(90deg)", "transition": "transform 20ms ease-in-out", "-webkit-transition": "transform 20ms ease-in-out", "-moz-transition": "transform 20ms ease-in-out", "-o-transition": "transform 20ms ease-in-out" }
+            )
+        }
+    })
+
+
+
+
+
     // Review slider (Owl carousel)
     $(".hero-slider").owlCarousel({
         loop: true,
@@ -122,17 +136,21 @@ $(document).ready(function () {
 
 
     /* 1. Registration page error handling */
-    //..............Name
     var register_error_name = false
     var register_error_email = false
     var register_error_phone = false
     var register_error_address = false
     var register_error_password = false
     var register_error_confirm_password = false
+    //..............Name
     $("#registration_name_error_msg").hide()
-    $("#register_inputName").keyup(function () {
+    $("#register_inputName").on("keyup", function () {
         check_register_name()
     })
+    $("#register_inputName").on("click", function () {
+        check_register_name()
+    })
+
     function check_register_name() {
         let name = $("#register_inputName").val().length
         if (name > 0) {
@@ -153,6 +171,7 @@ $(document).ready(function () {
         let email = $("#register_inputEmail").val().length
         if (email != 0) {
             $("#registration_email_error_msg").hide()
+            register_error_email = true
             let pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
             if (pattern.test($("#register_inputEmail").val())) {
                 $("#registration_email_pattern_error").hide()
@@ -212,6 +231,7 @@ $(document).ready(function () {
         let password = $("#register_inputPassword").val().length
         if (password != 0) {
             $("#registration_password_error_msg").hide()
+            register_error_password = true
             if (password < 8) {
                 $("#registration_password_length_error_msg").show()
                 register_error_password = false
@@ -252,8 +272,6 @@ $(document).ready(function () {
             $("#registration_confirm_password_error_msg").show()
             register_error_confirm_password = false
         }
-        // console.log(`first password ${password_1}`)
-        // console.log(`second password ${confirm_password}`)
     }
 
 
@@ -267,25 +285,31 @@ $(document).ready(function () {
     //     console.log("done!")
     //     console.log(register_error_name)
     // })(jQuery);
+
     function enable_registration_button() {
-        if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true) {
+        if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true && register_error_password === register_error_confirm_password) {
             $("#registration_form_btn").addClass("form-btn")
+            $("#registration_form_btn").removeAttr("disabled")
             console.log("done!")
 
         } else {
             $("#registration_form_btn").removeClass("form-btn")
-            $("#registration_form_btn").removeAttr("disabled")
+            $("#registration_form_btn").attr("disable")
+            // $("#registration_form_btn").attr("disable", "disabled")
             console.log("failed!")
         }
     }
 
 
 
+    if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true)
 
-    // Seller's Bank details
-    $('#bank_transfer').on("click", function () {
-        $("#seller-bank-details").show()
-    })
+
+
+        // Seller's Bank details
+        $('#bank_transfer').on("click", function () {
+            $("#seller-bank-details").show()
+        })
     $('#third_party').on("click", function () {
         $("#seller-bank-details").hide()
     })
