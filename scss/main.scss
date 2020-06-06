@@ -1,4 +1,4 @@
-// scss variables
+/* scss variables*/
 $primary-clr: #740774;
 $secondary-clr: #4d063d;
 $black-option-clr: #141414;
@@ -9,8 +9,13 @@ $main-nav-active-link-color: #db4277;
 $font-family: "Roboto", sans-serif;
 $danger-clr: #dc3545;
 
-// global
-
+/* 
+############################ 
+ 
+............GLOBAL
+ 
+############################
+*/
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +29,6 @@ a {
 }
 
 a.customLink {
-    // font-weight: bolder;
     transition: font-weight 250ms ease-in-out;
     -moz-transition: font-weight 250ms ease-in-out;
     -o-transition: font-weight 250ms ease-in-out;
@@ -75,6 +79,68 @@ a.customLink {
 li {
     list-style: none;
 }
+.bg-secondary-clr {
+    background-color: $secondary-clr;
+    color: $white;
+}
+a.bg-secondary-clr {
+    background-color: $secondary-clr;
+    color: $white;
+    &:hover {
+        background-color: $secondary-clr;
+        color: $white;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.bg-primary-clr {
+    background-color: $primary-clr;
+    color: $white;
+}
+a.bg-primary-clr {
+    background-color: $primary-clr;
+    color: $white;
+    &:hover {
+        background-color: $secondary-clr;
+        color: $white;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+.bg-shade-clr {
+    background-color: $tinted-clr;
+    color: $primary-clr;
+    &:hover {
+        background-color: $secondary-clr;
+        color: $white;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.clr-primary {
+    color: $primary-clr;
+}
+.page-title {
+    background-color: #db427848;
+    background-image: url("../assets/images/page-title-background-img.png");
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: right;
+}
+
+/* 
+############################
+ 
+............COMPONENTS
+
+############################
+*/
 
 .navbar-toggler {
     &:focus {
@@ -115,39 +181,142 @@ button {
     }
 }
 
-.bg-primary-clr {
-    background-color: $primary-clr;
-    color: $white;
-}
-a.bg-primary-clr {
-    background-color: $primary-clr;
-    color: $white;
+.white_btn,
+.primary_btn {
+    text-transform: uppercase;
+    border: 2px solid $primary-clr;
+    font-weight: 600;
+    transition: background-color 250ms ease-in-out;
+    transition: color 250ms ease-in-out;
+    -moz-transition: background-color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -o-transition: background-color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
+    -webkit-transition: background-color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    -ms-transition: background-color 250ms ease-in-out;
+    -ms-transition: color 250ms ease-in-out;
     &:hover {
         background-color: $secondary-clr;
         color: $white;
-    }
-    &:focus {
-        outline: 0;
+        transition: background-color 250ms ease-in-out;
+        transition: color 250ms ease-in-out;
+        -moz-transition: background-color 250ms ease-in-out;
+        -moz-transition: color 250ms ease-in-out;
+        -o-transition: background-color 250ms ease-in-out;
+        -o-transition: color 250ms ease-in-out;
+        -webkit-transition: background-color 250ms ease-in-out;
+        -webkit-transition: color 250ms ease-in-out;
+        -ms-transition: background-color 250ms ease-in-out;
+        -ms-transition: color 250ms ease-in-out;
     }
 }
-.bg-secondary-clr {
-    background-color: $secondary-clr;
-    color: $white;
+
+.white_btn {
+    background-color: $white;
+    color: $primary-clr;
 }
-a.bg-secondary-clr {
-    background-color: $secondary-clr;
+.primary_btn {
+    background-color: $primary-clr;
     color: $white;
-    &:hover {
-        background-color: $secondary-clr;
-        color: $white;
-    }
-    &:focus {
-        outline: 0;
-    }
 }
 
 .form-title {
     text-transform: uppercase;
+}
+
+//...... FORM
+form {
+    .form-control {
+        border: 1px solid $secondary-clr;
+        display: block;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $secondary-clr;
+        background-color: #fff;
+        background-clip: padding-box;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: border-bottom 250ms ease-in-out;
+        -moz-transition: border-bottom 250ms ease-in-out;
+        -webkit-transition: border-bottom 250ms ease-in-out;
+        -o-transition: border-bottom 250ms ease-in-out;
+        -ms-transition: border-bottom 250ms ease-in-out;
+    }
+
+    textarea.form-control {
+        height: auto !important;
+    }
+
+    .form-control[type="text"],
+    .form-control[type="password"],
+    input[type="email"],
+    select {
+        box-shadow: unset !important;
+        border-radius: 0;
+
+        &:focus {
+            border-bottom: 3px solid $primary-clr;
+            transition: border-bottom 250ms ease-in-out;
+            -moz-transition: border-bottom 250ms ease-in-out;
+            -o-transition: border-bottom 250ms ease-in-out;
+            -webkit-transition: border-bottom 250ms ease-in-out;
+            -ms-transition: border-bottom 250ms ease-in-out;
+        }
+    }
+
+    .password-eye {
+        background-color: $white;
+        border: 1px solid $primary-clr;
+        i {
+            color: $shade;
+        }
+    }
+
+    // custom select
+    .select-wrapper {
+        position: relative;
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f0dd";
+            font-weight: 900;
+            font-size: 28px;
+            position: absolute;
+            right: 20px;
+            color: $primary-clr;
+            pointer-events: none;
+            bottom: 5px;
+        }
+    }
+    select {
+        /* remove default style from browsers */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+
+        option {
+            margin: 5em;
+            line-height: 2;
+            font: inherit;
+        }
+    }
+    select::-ms-expand {
+        /* remove default style from explorer */
+        display: none;
+    }
+
+    .selectOptionStyle {
+        background-color: $tinted-clr;
+        padding: 2em;
+        line-height: 3;
+        &:hover {
+            background-color: $main-nav-active-link-color !important;
+        }
+    }
 }
 
 .account-tab-link {
@@ -163,22 +332,6 @@ a.bg-secondary-clr {
         background-color: $primary-clr;
         color: $white;
     }
-}
-
-.bg-shade-clr {
-    background-color: $tinted-clr;
-    color: $primary-clr;
-    &:hover {
-        background-color: $secondary-clr;
-        color: $white;
-    }
-    &:focus {
-        outline: 0;
-    }
-}
-
-.clr-primary {
-    color: $primary-clr;
 }
 
 .custom-slider-nav {
@@ -210,40 +363,6 @@ a.bg-secondary-clr {
     height: 40px;
     border-radius: 50%;
 }
-
-.shop-card-btn {
-    background-color: $white;
-    text-transform: uppercase;
-    border: 2px solid $primary-clr;
-    color: $shade;
-    font-weight: bold;
-    transition: background-color 250ms ease-in-out;
-    transition: color 250ms ease-in-out;
-    -moz-transition: background-color 250ms ease-in-out;
-    -moz-transition: color 250ms ease-in-out;
-    -o-transition: background-color 250ms ease-in-out;
-    -o-transition: color 250ms ease-in-out;
-    -webkit-transition: background-color 250ms ease-in-out;
-    -webkit-transition: color 250ms ease-in-out;
-    -ms-transition: background-color 250ms ease-in-out;
-    -ms-transition: color 250ms ease-in-out;
-
-    &:hover {
-        background-color: $main-nav-active-link-color;
-        color: $white;
-        transition: background-color 250ms ease-in-out;
-        transition: color 250ms ease-in-out;
-        -moz-transition: background-color 250ms ease-in-out;
-        -moz-transition: color 250ms ease-in-out;
-        -o-transition: background-color 250ms ease-in-out;
-        -o-transition: color 250ms ease-in-out;
-        -webkit-transition: background-color 250ms ease-in-out;
-        -webkit-transition: color 250ms ease-in-out;
-        -ms-transition: background-color 250ms ease-in-out;
-        -ms-transition: color 250ms ease-in-out;
-    }
-}
-
 .top-bar {
     background-color: $white;
     color: $tinted-clr;
@@ -272,15 +391,6 @@ a.bg-secondary-clr {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 0.5em;
-}
-
-.page-title {
-    background-color: #db427848;
-    background-image: url("../assets/images/page-title-background-img.png");
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-position: right;
 }
 
 .carousel-indicators {
@@ -414,6 +524,12 @@ main {
     }
 }
 
+/* 
+############################
+............PAGES 
+############################
+*/
+
 //#####  product detail page
 .product-information-section {
     background-color: $tinted-clr;
@@ -424,131 +540,6 @@ main {
 
     .nav-link.active {
         background-color: $primary-clr;
-    }
-}
-
-// FORM
-form {
-    .form-control {
-        border: 1px solid $secondary-clr;
-        display: block;
-        height: calc(1.5em + 0.75rem + 2px);
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: $secondary-clr;
-        background-color: #fff;
-        background-clip: padding-box;
-        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        transition: border-bottom 250ms ease-in-out;
-        -moz-transition: border-bottom 250ms ease-in-out;
-        -webkit-transition: border-bottom 250ms ease-in-out;
-        -o-transition: border-bottom 250ms ease-in-out;
-        -ms-transition: border-bottom 250ms ease-in-out;
-    }
-
-    textarea.form-control {
-        height: auto !important;
-    }
-
-    .form-control[type="text"],
-    .form-control[type="password"],
-    input[type="email"],
-    select {
-        box-shadow: unset !important;
-        border-radius: 0;
-
-        &:focus {
-            border-bottom: 3px solid $primary-clr;
-            transition: border-bottom 250ms ease-in-out;
-            -moz-transition: border-bottom 250ms ease-in-out;
-            -o-transition: border-bottom 250ms ease-in-out;
-            -webkit-transition: border-bottom 250ms ease-in-out;
-            -ms-transition: border-bottom 250ms ease-in-out;
-        }
-    }
-
-    .password-eye {
-        background-color: $white;
-        border: 1px solid $primary-clr;
-        i {
-            color: $shade;
-        }
-    }
-
-    .form-btn {
-        border: 2px solid $primary-clr;
-        background-color: unset;
-        color: $primary-clr;
-        font-weight: bold;
-        &:hover {
-            background-color: $primary-clr;
-            color: $white;
-        }
-        &:focus {
-            box-shadow: inset 0 0 0 3px $white;
-            background-color: $primary-clr;
-            color: $white;
-        }
-    }
-    .form-btn-2 {
-        border: 2px solid $primary-clr;
-        background-color: $primary-clr;
-        &:hover {
-            background-color: unset;
-            color: $primary-clr;
-        }
-        &:focus {
-            box-shadow: inset 0 0 0 3px $white;
-            background-color: $primary-clr;
-            color: $white;
-        }
-    }
-
-    // custom select
-    .select-wrapper {
-        position: relative;
-        &::after {
-            font-family: "Font Awesome 5 Free";
-            content: "\f0dd";
-            font-weight: 900;
-            font-size: 28px;
-            position: absolute;
-            right: 20px;
-            color: $primary-clr;
-            pointer-events: none;
-            bottom: 5px;
-        }
-    }
-    select {
-        /* remove default style from browsers */
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        -o-appearance: none;
-        appearance: none;
-
-        option {
-            margin: 5em;
-            line-height: 2;
-            // background-color: $secondary-clr !important;
-            // color: $white;
-            font: inherit;
-        }
-    }
-    select::-ms-expand {
-        /* remove default style from explorer */
-        display: none;
-    }
-
-    .selectOptionStyle {
-        background-color: $tinted-clr;
-        padding: 2em;
-        line-height: 3;
-        &:hover {
-            background-color: $main-nav-active-link-color !important;
-        }
     }
 }
 
@@ -624,9 +615,30 @@ form {
 }
 // ### user cart page
 #cart_page {
-    #cart > .container {
+    #cart > .top-content {
         background-color: $tinted-clr;
     }
+
+    .empty_cart_message_container {
+        .cart_icon_wrapper {
+            position: relative;
+            display: inline-block;
+            color: $shade;
+            .plus_icon_wrapper {
+                width: 30px;
+                height: 30px;
+                padding: 0.5em;
+                position: absolute;
+                transform: rotate(45deg);
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+            }
+        }
+    }
+
     .cart_item_btn {
         border: none;
         background-color: unset;
@@ -658,7 +670,6 @@ form {
         width: 10%;
     }
 }
-
 footer {
     background-color: #f6f6f6;
 
@@ -688,21 +699,16 @@ footer {
         }
 
         button {
-            // border: 3px solid red !important;
-            // border-right: 3px solid #e3e1e1;
             height: 100%;
             width: 40px;
             border: none;
             position: absolute;
             right: 0;
-            // border-radius: 50%;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             border-top-left-radius: 50px;
             border-bottom-left-radius: 50px;
             background-color: $primary-clr;
-            // display: grid;
-            // place-content: center;
             transition: background-color 250ms ease-in-out;
             -moz-transition: background-color 250ms ease-in-out;
             -o-transition: background-color 250ms ease-in-out;

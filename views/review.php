@@ -74,7 +74,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <button class="modify-cart-btn px-5 form-btn-2 btn-lg bg-primary-clr">Submit</button>
+                                <button class="modify-cart-btn px-5 primary_btn btn-lg">Submit</button>
                             </div>
                         </div>
                     </div>

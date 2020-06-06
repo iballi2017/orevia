@@ -50,7 +50,7 @@
                                 <td>Akinola Oluwaobi</td>
                                 <td>#4,000.00</td>
                                 <td class="text-primary">Processing</td>
-                                <td><button class="btn-sm shop-card-btn">View</button></td>
+                                <td><button class="btn-sm white_btn">View</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -58,7 +58,7 @@
                                 <td>Olayemi Joshua</td>
                                 <td>#5300.99</td>
                                 <td class="text-success">Delivered</td>
-                                <td><button class="btn-sm shop-card-btn">View</button></td>
+                                <td><button class="btn-sm white_btn">View</button></td>
                             </tr>
                         </tbody>
                     </table>

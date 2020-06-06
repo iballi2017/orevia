@@ -276,24 +276,14 @@ $(document).ready(function () {
 
 
 
-    // (function ($) {
-    //     if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true) {
-    //         $("#registration_form_btn").addClass("form-btn")
-    //         console.log("done!")
-
-    //     }
-    //     console.log("done!")
-    //     console.log(register_error_name)
-    // })(jQuery);
-
     function enable_registration_button() {
         if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true && register_error_password === register_error_confirm_password) {
-            $("#registration_form_btn").addClass("form-btn")
+            $("#registration_form_btn").addClass("white_btn")
             $("#registration_form_btn").removeAttr("disabled")
             console.log("done!")
 
         } else {
-            $("#registration_form_btn").removeClass("form-btn")
+            $("#registration_form_btn").removeClass("white_btn")
             $("#registration_form_btn").attr("disable")
             // $("#registration_form_btn").attr("disable", "disabled")
             console.log("failed!")

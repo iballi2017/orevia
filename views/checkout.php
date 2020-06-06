@@ -211,8 +211,8 @@
             </div>
 
             <div class="form-group text-center">
-                <button class="modify-cart-btn px-5 form-btn btn-lg">Modify Cart</button>
-                <button class="modify-cart-btn px-5 form-btn-2 btn-lg bg-primary-clr">Confirm Order</button>
+                <button class="modify-cart-btn px-5 white_btn btn-lg">Modify Cart</button>
+                <button class="modify-cart-btn px-5 primary_btn btn-lg">Confirm Order</button>
             </div>
         </form>
     </div>

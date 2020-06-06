@@ -32,7 +32,7 @@ include_once '../components/header.php'; ?>
                                         <i class="far fa-star text-warning"></i>
                                     </span>
 
-                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                    <button class="btn-block py-2 mt-2 white_btn">
                                         SHOP NOW
                                     </button>
                                 </figcaption>
@@ -58,7 +58,7 @@ include_once '../components/header.php'; ?>
                                         <i class="far fa-star text-warning"></i>
                                     </span>
 
-                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                    <button class="btn-block py-2 mt-2 white_btn">
                                         SHOP NOW
                                     </button>
                                 </figcaption>
@@ -84,7 +84,7 @@ include_once '../components/header.php'; ?>
                                         <i class="far fa-star text-warning"></i>
                                     </span>
 
-                                    <button class="btn-block py-2 mt-2 shop-card-btn">
+                                    <button class="btn-block py-2 mt-2 white_btn">
                                         SHOP NOW
                                     </button>
                                 </figcaption>
