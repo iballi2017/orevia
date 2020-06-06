@@ -29,10 +29,55 @@
 
 
 
-        <main class="col-12 col-md-9 mb-3" id="user-profile-page">
+        <main class="col-12 col-md-9 mb-3 mt-3 mt-sm-0" id="user-wishlist-page">
 
-            <div class="form-wrapper p-5">
-                <h2>Wish List</h2>
+            <div class="form-wrapper p-3">
+                <div class="table-responsive">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td width="20%">
+                                    <img src="../assets/images/orevia-fluid.png" class="img-fluid" alt="">
+                                </td>
+                                <td width="60%">
+                                    <ul class="p-0">
+                                        <li><b>Orevia Body butter</b></li>
+                                        <li>150g</li>
+                                        <li><i>Almond</i></li>
+                                        <li><b>#1000.00</b></li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <button class="btn-sm border-0 cart-btn"><i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </td>
+                                <td width="10%">
+                                    <button class="btn-sm border-0 delete-btn"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td width="20%">
+                                    <img src="../assets/images/orevia-fluid.png" class="img-fluid" alt="">
+                                </td>
+                                <td width="60%">
+                                    <ul class="p-0">
+                                        <li><b>Orevia Body butter</b></li>
+                                        <li>150g</li>
+                                        <li><i>Almond</i></li>
+                                        <li><b>#1000.00</b></li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <button class="btn-sm border-0 cart-btn"><i
+                                            class="fas fa-shopping-cart"></i></button>
+                                </td>
+                                <td width="10%">
+                                    <button class="btn-sm border-0 delete-btn"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
         </main>

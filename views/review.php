@@ -21,7 +21,7 @@
                     <div class="card mb-3 border-0" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="../assets/images/orevia-cup.png" class="card-img" alt="...">
+                                <img src="../assets/images/orevia-cup.png" class="card-img img-fluid" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

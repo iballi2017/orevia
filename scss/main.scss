@@ -7,6 +7,7 @@ $shade: #61585b;
 $white: #ffffff;
 $main-nav-active-link-color: #db4277;
 $font-family: "Roboto", sans-serif;
+$danger-clr: #dc3545;
 
 // global
 
@@ -69,6 +70,10 @@ a.customLink {
             -ms-transition: transform 250ms ease-in-out;
         }
     }
+}
+
+li {
+    list-style: none;
 }
 
 .navbar-toggler {
@@ -595,6 +600,63 @@ form {
 
 [type="radio"]:checked + label .custom-radio {
     background: $secondary-clr;
+}
+
+// ### user wishlist page
+
+#user-wishlist-page {
+    .cart-btn,
+    .delete-btn {
+        background-color: unset;
+    }
+    .cart-btn {
+        color: $primary-clr;
+        &:hover {
+            color: $main-nav-active-link-color;
+        }
+    }
+    .delete-btn {
+        color: $danger-clr;
+        &:hover {
+            color: $primary-clr;
+        }
+    }
+}
+// ### user cart page
+#cart_page {
+    #cart > .container {
+        background-color: $tinted-clr;
+    }
+    .cart_item_btn {
+        border: none;
+        background-color: unset;
+        font-weight: 600;
+        &:hover {
+            color: $black-option-clr;
+        }
+    }
+    .move_to_wishlish_btn {
+        color: $primary-clr;
+    }
+    .remove_btn {
+        color: $danger-clr;
+    }
+
+    .column-1 {
+        width: 55%;
+    }
+
+    .column-2 {
+        width: 25%;
+    }
+
+    .column-3 {
+        width: 10%;
+    }
+
+    .column-4 {
+        width: 10%;
+    }
 }
 
 footer {

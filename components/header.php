@@ -45,7 +45,7 @@
             <div class="access-container">
                 <ul class="access-nav">
                     <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
-                        <a href="../views/account.php" class="customLink">Akinola</a>
+                        <a href="../views/user-profile.php" class="customLink">Akinola</a>
                     </li>
                     <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
                         <a href="#" class="customLink">Logout</a>

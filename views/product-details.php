@@ -7,20 +7,22 @@
             <div class="col-12 col-md-4 offset-md-1">
                 <div class="owl-carousel owl-theme product-views-slider">
                     <div class="item">
-                        <img src="../assets/images/Orevia-cup.png" alt="" width="100%">
+                        <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="" width="100%">
 
                     </div>
                     <div class="item">
-                        <img src="../assets/images/Orevia-cup.png" alt="">
+                        <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="">
 
                     </div>
                 </div>
                 <div class="text-center">
                     <button id="prev-img" class="border-0">
-                        <img src="../assets/images/orevia-cup-thumbnail.png" alt="" style="width: 40px">
+                        <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
+                            style="width: 40px">
                     </button>
                     <button id="next-img" class="border-0">
-                        <img src="../assets/images/orevia-cup-thumbnail.png" alt="" style="width: 40px"></button></div>
+                        <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
+                            style="width: 40px"></button></div>
             </div>
             <div class="col-12 col-md-6 offset-md-1">
                 <table class="table mt-5">

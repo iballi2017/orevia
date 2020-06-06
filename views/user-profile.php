@@ -16,7 +16,7 @@
 
 
 
-        <main class="col-12 col-md-9 mb-3" id="user-profile-page">
+        <main class="col-12 col-md-9 mb-3 mt-3 mt-sm-0" id="user-profile-page">
 
             <div class="form-wrapper p-5">
                 <h1 class="mb-5">Hello Akinola, <small>Welcome to your profile</small></h1>
