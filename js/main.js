@@ -151,6 +151,7 @@ $(document).ready(function () {
         check_register_name()
     })
 
+
     function check_register_name() {
         let name = $("#register_inputName").val().length
         if (name > 0) {
