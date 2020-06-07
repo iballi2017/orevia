@@ -96,7 +96,6 @@
                 </div>
 
                 <div class="form-group text-center">
-                    <!-- <button type="submit" class="white_btn btn-md py-2 px-5 rounded" disabled>Register</button> -->
                     <button type="submit" class="btn-md py-2 px-5 rounded" id="registration_form_btn"
                         disabled>Register</button>
                 </div>

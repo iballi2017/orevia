@@ -159,7 +159,8 @@ $(document).ready(function () {
             enable_registration_button()
         } else {
             $("#registration_name_error_msg").show()
-            register_error_name = false
+            register_error_name = false;
+            enable_registration_button()
         }
     }
     //..............Email
@@ -171,7 +172,8 @@ $(document).ready(function () {
         let email = $("#register_inputEmail").val().length
         if (email != 0) {
             $("#registration_email_error_msg").hide()
-            register_error_email = true
+            register_error_email = true;
+            enable_registration_button()
             let pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
             if (pattern.test($("#register_inputEmail").val())) {
                 $("#registration_email_pattern_error").hide()
@@ -180,11 +182,13 @@ $(document).ready(function () {
             } else {
                 $("#registration_email_pattern_error").html("Invalid email address")
                 $("#registration_email_pattern_error").show()
-                register_error_email = false
+                register_error_email = false;
+                enable_registration_button()
             }
         } else {
             $("#registration_email_error_msg").show()
-            register_error_email = false
+            register_error_email = false;
+            enable_registration_button()
         }
     }
     //..............Phone
@@ -200,7 +204,8 @@ $(document).ready(function () {
             enable_registration_button()
         } else {
             $("#registration_phone_error_msg").show()
-            register_error_phone = false
+            register_error_phone = false;
+            enable_registration_button()
         }
     }
     //..............Address
@@ -216,7 +221,8 @@ $(document).ready(function () {
             enable_registration_button()
         } else {
             $("#registration_address_error_msg").show()
-            register_error_address = false
+            register_error_address = false;
+            enable_registration_button()
         }
     }
     //..............Password
@@ -234,7 +240,8 @@ $(document).ready(function () {
             register_error_password = true
             if (password < 8) {
                 $("#registration_password_length_error_msg").show()
-                register_error_password = false
+                register_error_password = false;
+                enable_registration_button()
             } else {
                 $("#registration_password_length_error_msg").hide()
                 password_1 = $("#register_inputPassword").val()
@@ -244,7 +251,8 @@ $(document).ready(function () {
 
         } else {
             $("#registration_password_error_msg").show()
-            register_error_password = false
+            register_error_password = false;
+            enable_registration_button()
         }
     }
     //..............Confirm Password
@@ -253,16 +261,20 @@ $(document).ready(function () {
     $("#register_confirm_inputPassword").keyup(function () {
         check_register_confirm_password()
     })
+    $("#register_confirm_inputPassword").focusout(function () {
+        check_register_confirm_password()
+    })
     function check_register_confirm_password() {
         let confirm_password = $("#register_confirm_inputPassword").val()
-        let confirm_password_count = $("#register_confirm_inputPassword").val().length
-        if (confirm_password_count != 0) {
+        let confirm_reset_password_length = $("#register_confirm_inputPassword").val().length
+        if (confirm_reset_password_length != 0) {
             $("#registration_confirm_password_error_msg").hide()
             register_error_confirm_password = true
             enable_registration_button()
             if (confirm_password != password_1) {
                 $("#registration_confirm_password_match_error_msg").show()
-                register_error_confirm_password = false
+                register_error_confirm_password = false;
+                enable_registration_button()
             } else {
                 $("#registration_confirm_password_match_error_msg").hide()
                 register_error_confirm_password = true
@@ -270,40 +282,100 @@ $(document).ready(function () {
             }
         } else {
             $("#registration_confirm_password_error_msg").show()
-            register_error_confirm_password = false
+            register_error_confirm_password = false;
+            enable_registration_button();
         }
     }
-
-
 
     function enable_registration_button() {
         if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true && register_error_password === register_error_confirm_password) {
             $("#registration_form_btn").addClass("white_btn")
-            $("#registration_form_btn").removeAttr("disabled")
-            console.log("done!")
+            $("#registration_form_btn").removeAttr("disabled", "disabled")
 
         } else {
             $("#registration_form_btn").removeClass("white_btn")
-            $("#registration_form_btn").attr("disable")
-            // $("#registration_form_btn").attr("disable", "disabled")
-            console.log("failed!")
+            $("#registration_form_btn").attr("disabled", "disabled")
         }
     }
 
 
 
-    if (register_error_name === true && register_error_email === true && register_error_phone === true && register_error_address === true && register_error_password === true && register_error_confirm_password === true)
+    // ##### RESET PASSWORD
 
-
-
-        // Seller's Bank details
-        $('#bank_transfer').on("click", function () {
-            $("#seller-bank-details").show()
-        })
-    $('#third_party').on("click", function () {
-        $("#seller-bank-details").hide()
+    //..............Password
+    var reset_password_error = false
+    $("#reset_password_error_msg").hide()
+    $("#reset_password_length_error_msg").hide()
+    $("#new_reset_password").keyup(function () {
+        check_reset_password()
     })
+
+    var reset_password_value;
+    function check_reset_password() {
+        let password_length = $("#new_reset_password").val().length
+        let new_password = $("#new_reset_password").val();
+        if (password_length != 0) {
+            $("#reset_password_error_msg").hide()
+            reset_password_error = true
+            if (password_length < 8) {
+                $("#reset_password_length_error_msg").show()
+                reset_password_error = false
+            } else {
+                $("#reset_password_length_error_msg").hide()
+                reset_password_value = new_password
+                reset_password_error = true
+            }
+            reset_password_value = new_password
+
+        } else {
+            $("#reset_password_error_msg").show()
+            reset_password_error = false
+        }
+    }
+    //..............Confirm Password
+    $("#confirm_reset_password_required_msg").hide()
+    $("#confirm_reset_password_match_error_msg").hide()
+    $("#confirm_reset_password_required_msg").hide()
+    $("#confirm_reset_password").keyup(function () {
+        check_confirm_reset_password()
+    })
+    function check_confirm_reset_password() {
+        let confirm_reset_password = $("#confirm_reset_password").val()
+        let confirm_reset_password_length = $("#confirm_reset_password").val().length
+
+
+        if (confirm_reset_password_length != 0) {
+            $("#confirm_reset_password_required_msg").hide()
+            if (confirm_reset_password != reset_password_value) {
+                $("#reset_password_error_msg").show()
+            } else {
+                $("#reset_password_error_msg").hide()
+                $("#confirm_reset_password_match_error_msg").hide()
+            }
+        } else {
+            $("#confirm_reset_password_required_msg").show()
+        }
+
+        if (confirm_reset_password_length === 0) {
+            $("#confirm_reset_password_match_error_msg").show()
+        }
+    }
+
 })
+
+
+
+
+// Seller's Bank details
+var bankTransferRadioButton = document.getElementById("bank_transfer")
+var seller_account_details = document.getElementById("seller_bank_details")
+function showAccountDetails() {
+    if (bankTransferRadioButton.checked != true) {
+        seller_account_details.style.display = "none"
+    } else {
+        seller_account_details.style.display = "block"
+    }
+}
 
 
 // main navigation bar sticky effect
@@ -339,7 +411,7 @@ function loginPassword_click() {
 
 //toggle reset password form reveal password
 function newPassword_click() {
-    var x = document.getElementById("new_password");
+    var x = document.getElementById("new_reset_password");
     if (x.type === "password") {
         x.type = "text";
     } else {
@@ -348,7 +420,7 @@ function newPassword_click() {
 }
 
 function confirmPassword_click() {
-    var x = document.getElementById("confirm_password");
+    var x = document.getElementById("confirm_reset_password");
     if (x.type === "password") {
         x.type = "text";
     } else {

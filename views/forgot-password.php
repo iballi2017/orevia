@@ -31,7 +31,7 @@
                     <input type="text" class="p-2 ml-auto" placeholder="Enter Email Address"
                         aria-label="Enter Email Address" aria-describedby="button-addon2" required>
                     <div class="input-group-append mr-auto">
-                        <button class="form-btn rounded-right" type="submit" id="button-addon2">Send Link</button>
+                        <button class="white_btn rounded-right" type="submit" id="button-addon2">Send Link</button>
                     </div>
                 </div>
             </form>

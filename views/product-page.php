@@ -4,8 +4,15 @@ include_once '../components/header.php'; ?>
 <main id="product-page">
 
     <div class="page-title py-5">
-
-        <h1 class="text-center">Orevia Body butter</h1>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">product-page</li>
+                </ol>
+            </nav>
+            <h1 class="text-center">Orevia Body butter</h1>
+        </div>
 
     </div>
 

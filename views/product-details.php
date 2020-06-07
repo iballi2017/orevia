@@ -3,6 +3,13 @@
 
 <main id="product-details-page">
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../">Home</a></li>
+                <li class="breadcrumb-item"><a href="./product-page.php">product-page</a></li>
+                <li class="breadcrumb-item active" aria-current="page">product-details</li>
+            </ol>
+        </nav>
         <div class="row border my-5 pb-3">
             <div class="col-12 col-md-4 offset-md-1">
                 <div class="owl-carousel owl-theme product-views-slider">
@@ -102,12 +109,6 @@
                             <li>Sweet Almond oil</li>
                             <li>Vitamin C & E!</li>
                         </ol>
-                        <!-- 1. Virgin Coconut oil
-
-
-                        2. Sweet Almond oil
-
-                        3. Vitamin C & E! -->
                     </div>
                     <div class="tab-pane fade" id="pills-keyFeatures" role="tabpanel"
                         aria-labelledby="pills-keyFeatures-tab">
@@ -120,19 +121,6 @@
                             <li>Great Value For Money</li>
                             <li>Beneficial for all skin type.</li>
                         </ol>
-                        <!-- 1. Deeply moisturises
-
-                        2. Rejuvenates & Refreshes
-
-                        3. Full of Natural goodness
-
-                        4. Rich in vitamin C & E
-
-                        5. Exquisite fragrance
-
-                        6. Great Value For Money
-
-                        7.Beneficial for all skin type. -->
                     </div>
                     <div class="tab-pane fade" id="pills-howToUse" role="tabpanel" aria-labelledby="pills-howToUse-tab">
                         Apply as part of your daily skincare routine to achieve maximum benefits of a well nourished
@@ -146,12 +134,6 @@
                                 fresh.</li>
                             <li>It is very effective for dry skin.</li>
                         </ol>
-                        <!-- 1) It has the natural goodness of Hibiscus, Aloe Vera and sweet Almond oil.
-
-                        2) It nourishes and rejuvenates the skin, removes all body impurities leaving it soft supple and
-                        fresh.
-
-                        3) It is very effective for dry skin. -->
                     </div>
                     <div class="tab-pane fade" id="pills-shipping" role="tabpanel" aria-labelledby="pills-shipping-tab">
                         Delivery

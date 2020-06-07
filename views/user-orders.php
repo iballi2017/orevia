@@ -51,6 +51,7 @@
                                 <td>#4,000.00</td>
                                 <td class="text-primary">Processing</td>
                                 <td><button class="btn-sm white_btn">View</button></td>
+                                <!-- <td><a class="btn-sm white_btn">View</a></td> -->
                             </tr>
                             <tr>
                                 <th scope="row">2</th>

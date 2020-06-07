@@ -70,50 +70,6 @@
                 </fieldset>
             </div>
             <div class="inner-wrapper form-wrapper mt-5">
-
-                <!-- <fieldset class="container">
-                    <legend>2. PAYMENT METHOD</legend>
-
-                    <div class="form-row form-group">
-                        <div class="col-12 col-md-6">
-                            <div style=" display:flex; align-items: center">
-
-                                <input type="radio" id="bank_transfer" name="payment_method" value="Bank Transfer">
-                                <label for="bank_transfer">
-                                    <span class="custom-radio"></span>
-                                    Bank Transfer</label>
-                            </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                            <input type="radio" id="third_party" name="payment_method" value="Third_party payment">
-                            <label for="third_party">
-                                <span class="custom-radio"></span>
-                                Third-party Payment Interface</label>
-                        </div>
-                    </div>
-                    <div class="row" id="seller-bank-details">
-                        <div class="col-12 col-sm-7">
-                            <table class="table table-borderless">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Bank Account Name:</th>
-                                        <th scope="col">{{Seller's Account Name}}</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Bank Account Number:</th>
-                                        <th scope="col">{{Seller's Account Number}}</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </fieldset> -->
-
-
                 <fieldset class="accordion container" id="accordionExample">
                     <div class="py-4" id="headingOne" style="display: flex; align-items: center">
 
@@ -130,7 +86,7 @@
 
                             <div class="form-row form-group">
                                 <div class="col-12 col-md-6">
-                                    <div style=" display:flex; align-items: center">
+                                    <div style=" display:flex; align-items: center" onclick="showAccountDetails()">
 
                                         <input type="radio" id="bank_transfer" name="payment_method"
                                             value="Bank Transfer">
@@ -140,7 +96,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-6" onclick="showAccountDetails()">
 
                                     <input type="radio" id="third_party" name="payment_method"
                                         value="Third_party payment">
@@ -149,7 +105,7 @@
                                         Third-party Payment Interface</label>
                                 </div>
                             </div>
-                            <div class="row" id="seller-bank-details">
+                            <div class="row" id="seller_bank_details">
                                 <div class="col-12 col-sm-7">
                                     <table class="table table-borderless">
                                         <thead>

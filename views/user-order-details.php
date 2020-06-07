@@ -24,7 +24,7 @@
         <main class="col-12 col-md-9 mb-3 mt-3 mt-sm-0" id="user-order-details-page">
 
             <div class="form-wrapper p-3">
-                <h3>Order Details</h3>
+                <h3> <span><a href="./user-orders.php"><i class="fas fa-arrow-left"></i></a></span> Order Details</h3>
                 <hr />
                 <table>
                     <tbody>
@@ -43,7 +43,7 @@
                 <hr />
 
                 <h3>ITEMS IN YOUR ORDER</h3>
-                <div class="border">
+                <div class="shadow">
                     <div class="p-3">
                         Status : DELIVERED
                     </div>
@@ -85,13 +85,15 @@
                     </div>
                 </div>
 
-                <div class="container-fluid border">
-                    <div class="row p-3">
-                        <div class="col border">
+                <div class="my-4">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 2em;">
+                        <div class="shadow" style="padding: 1em">
+
                             <h5>PAYMENT INFORMATION
                             </h5>
 
-                            <dl>
+                            <dl class="mt-3">
                                 <dt>Payment Method</dt>
                                 <dd>Bank Transfer / Third-party</dd>
                                 <dd>payment interface</dd>
@@ -102,22 +104,22 @@
                                 <dd>Items total: ₦ 4000</dd>
                                 <dd>payment interface</dd>
                                 <dd>Shipping Fees:</dd>
-                                <dd>Total: ₦ 4000</dd>
+                                <dd class="mt-5">Total: ₦ 4000</dd>
                             </dl>
                         </div>
-                        <div class="col border">
+                        <div class="shadow" style="padding: 1em">
                             <h5>DELIVERY INFORMATION
                             </h5>
 
-                            <dl>
+                            <dl class="mt-3">
                                 <dt>Delivery Method</dt>
                                 <dd>Standard Door Delivery</dd>
                             </dl>
 
-                            <dl>
+                            <dl class="mt-4">
                                 <dt>Shipping Address</dt>
                                 <dd>AKINOLA OLUWATOBI</dd>
-                                <dd>6a kolawole Shonibare Street, Ilupeju, Lagos Nigeria
+                                <dd class="mt-3">6a kolawole Shonibare Street, Ilupeju, Lagos Nigeria
                                 </dd>
                             </dl>
                         </div>

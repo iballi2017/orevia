@@ -4,8 +4,17 @@ include_once '../components/header.php'; ?>
 <main id="cart_page">
 
     <div class="page-title py-5">
+        <div class="container">
 
-        <h1 class="text-center">Cart (1 Item)</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">cart</li>
+                </ol>
+            </nav>
+            <h1 class="text-center">Cart (1 Item)</h1>
+        </div>
+
 
     </div>
 
