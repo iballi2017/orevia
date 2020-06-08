@@ -362,8 +362,32 @@ $(document).ready(function () {
         }
     }
 
-})
 
+
+    // footer newsletter email ui validation
+    $("#newsletter_email_error_mgs").hide()
+
+    $("#newsletter_email_input").keyup(function () {
+        check_newsletter_email_input_value()
+    })
+    $("#newsletter_email_input").focusout(function () {
+        check_newsletter_email_input_value()
+    })
+
+    function check_newsletter_email_input_value() {
+        var newsletter_email_input_value = $("#newsletter_email_input").val()
+
+        if (newsletter_email_input_value != 0) {
+            let pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/i);
+            if (pattern.test(newsletter_email_input_value)) {
+                $("#newsletter_email_error_mgs").hide()
+            } else {
+                $("#newsletter_email_error_mgs").show()
+            }
+
+        }
+    }
+})
 
 
 
@@ -392,9 +416,9 @@ function myFunction() {
     }
 }
 
-
-var stateSelect = document.querySelectorAll("option")
-stateSelect.forEach((option) => {
+// Adding a class to all "Select options" for styling. *Registration page; and *Checkout page
+var selectOption = document.querySelectorAll("option")
+selectOption.forEach((option) => {
     option.classList.add("selectOptionStyle")
 })
 
@@ -428,3 +452,71 @@ function confirmPassword_click() {
         x.type = "password";
     }
 }
+
+
+
+const homepageSections = document.querySelectorAll(".section")
+const option = {
+    rootMargin: "0px 0px -150px 0px"
+}
+
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        }
+
+        // if(entry.target.id)
+        if (entry.target.id === "hero") {
+            const main_nav_links = document.querySelectorAll(".nav-item")
+            main_nav_links.forEach(link => {
+                if (link.id === "hero_link") {
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+
+        if (entry.target.id === "about-us") {
+            const main_nav_links = document.querySelectorAll(".nav-item")
+            main_nav_links.forEach(link => {
+                if (link.id === "about_us_link") {
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "reviews") {
+            const main_nav_links = document.querySelectorAll(".nav-item")
+            main_nav_links.forEach(link => {
+                if (link.id === "reviews_link") {
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "faq") {
+            const main_nav_links = document.querySelectorAll(".nav-item")
+            main_nav_links.forEach(link => {
+                if (link.id === "faq_link") {
+                    for (let sibling of link.parentNode.children) {
+                        if (sibling !== this) sibling.classList.remove('active');
+                        link.classList.add("active")
+                    }
+                }
+            })
+        }
+
+    })
+}, option)
+
+homepageSections.forEach(section => {
+    observer.observe(section)
+})

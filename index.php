@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Delicately formulated skincare products suitable for all skin types full of natural ingredients to give you a glowing, supple, smooth skin and hair with exquisite sweet fresh fragrance suitable for all skin types">
+    <meta name="keywords" content="Skin care products in Lagos, Skin care products in Nigeria.">
+    <meta name="author" content="Orevia | Orevia">
+
+    <meta name="keywords"
+        content="Skin care products in Lagos, Skin care products in Nigeria, Skin care products in Abuja, International brand" />
+
+
+    <meta property="og:title" content="Orevia Skin Care Products | Orevia - Varieties" />
+    <meta property="og:description"
+        content="Delicately formulated skincare products suitable for all skin types full of natural ingredients to give you a glowing, supple, smooth skin and hair with exquisite sweet fresh fragrance suitable for all skin types" />
     <!-- favicon -->
     <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16" />
     <title>
@@ -26,7 +38,7 @@
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body data-spy="scroll" data-target="#main-header" data-offset="0">
+<body>
     <div class="top-bar">
         <div class="container top-bar-inner">
             <div class="contact-info">
@@ -75,13 +87,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link customLink" href="#">
+                    <li class="nav-item active" id="hero_link">
+                        <a class="nav-link customLink" href="#top">
                             Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="about_us_link">
                         <a class="nav-link customLink" href="#about-us">About us</a>
                     </li>
                     <li class="nav-item">
@@ -93,11 +105,11 @@
                     <li class="nav-item">
                         <a class="nav-link customLink" href="#">how to use</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link customLink" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="reviews_link">
                         <a class="nav-link customLink" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item" id="faq_link">
+                        <a class="nav-link customLink" href="#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -105,7 +117,7 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero section" id="hero">
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -174,24 +186,8 @@
                 </div>
             </div>
         </div>
-        <!-- <section id="test">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <button
-                class="btn btn-secondary btn-sm hero-slide-nav"
-                id="prev"
-              ></button>
-              <button
-                class="btn btn-secondary btn-sm hero-slide-nav"
-                id="next"
-              ></button>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
-        <section id="about-us">
+        <section id="about-us" class="section">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title display-5 mb-4">About us</h2>
@@ -298,7 +294,7 @@
             </div>
         </section>
 
-        <section id="reviews">
+        <section id="reviews" class="section">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title display-5 mb-4">Reviews</h2>
@@ -439,7 +435,7 @@
             </div>
         </section>
 
-        <section id="faq">
+        <section id="faq" class="section">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title display-5 mb-4">Faq</h2>
@@ -520,7 +516,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 border-right pr-5 my-3">
-                    <img src="../assets/images/Orevia-Logo.png" alt="" />
+                    <img src="./assets/images/Orevia-Logo.png" alt="" />
                     <form action="#">
                         <p class="mt-5">
                             Subscribe to our newsletter to get update our latest offers and
@@ -528,11 +524,14 @@
                         </p>
 
                         <div class="newsletter-form-grp">
-                            <input type="email" name="email" id="email" placeholder="Enter Your Email Address"
-                                aria-label="Enter Your Email Address" class="pl-3" />
+                            <input type="email" name="email" id="newsletter_email_input"
+                                placeholder="Enter Your Email Address" aria-label="Enter Your Email Address"
+                                class="pl-3" />
                             <button type="submit">
-                                <!-- <i class="fas fa-angle-right"></i> -->
                             </button>
+                        </div>
+                        <div id="newsletter_email_error_mgs">
+                            <small class="text-danger">Please enter a valid email address</small>
                         </div>
                     </form>
                 </div>
@@ -568,7 +567,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <img src="../assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
+                                    <img src="./assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
                                 </div>
                             </div>
                         </li>
@@ -586,7 +585,7 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <img src="../assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
+                                    <img src="./assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
                                 </div>
                             </div>
                         </li>
@@ -605,15 +604,6 @@
                     <a href="#" class="customLink">Privacy Policy</a>
                 </div>
                 <div class="col-12 col-md-3">
-                    <!-- <span>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </span> -->
 
                     <ul class="footer-social-icons">
                         <li>

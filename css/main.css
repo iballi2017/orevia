@@ -455,7 +455,7 @@ main #faq .faq-btn {
   .product-information-section .tab-content {
     line-height: 2; }
   .product-information-section .nav-link.active {
-    background-color: #740774; }
+    background-color: #740774 !important; }
 
 #seller_bank_details {
   display: none; }

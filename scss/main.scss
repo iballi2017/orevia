@@ -560,7 +560,7 @@ main {
     }
 
     .nav-link.active {
-        background-color: $primary-clr;
+        background-color: $primary-clr !important;
     }
 }
 
