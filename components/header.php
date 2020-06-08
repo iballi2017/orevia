@@ -39,7 +39,6 @@
                 <span class="phone ml-sm-4">07019920332</span>
             </div>
             <div class="brand-container d-none d-md-block">
-                <!-- <h2>Brand logo</h2> -->
                 <h2><img src="../assets/images/orevia-Logo.png" alt="" /></h2>
             </div>
             <div class="access-container">

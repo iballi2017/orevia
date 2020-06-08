@@ -13,7 +13,6 @@
                         <input type="email" name="email" id="email" placeholder="Enter Your Email Address"
                             aria-label="Enter Your Email Address" class="pl-3" />
                         <button type="submit">
-                            <!-- <i class="fas fa-angle-right"></i> -->
                         </button>
                     </div>
                 </form>
@@ -87,15 +86,6 @@
                 <a href="#" class="customLink">Privacy Policy</a>
             </div>
             <div class="col-12 col-md-3">
-                <!-- <span>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="fab fa-facebook-square"></i></a>
-            </span>
-            <span>
-              <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </span> -->
 
                 <ul class="footer-social-icons">
                     <li>
