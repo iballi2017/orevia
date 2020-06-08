@@ -80,28 +80,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../index.php">
+                        <a class="nav-link customLink" href="../index.php">
                             Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.php#about-us">About us</a>
+                        <a class="nav-link customLink" href="../index.php#about-us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../views/product-page.php">Products</a>
+                        <a class="nav-link customLink" href="../views/product-page.php">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Key Features</a>
+                        <a class="nav-link customLink" href="#">Key Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">how to use</a>
+                        <a class="nav-link customLink" href="#">how to use</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.php#faq">FAQ</a>
+                        <a class="nav-link customLink" href="../index.php#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.php#reviews">Reviews</a>
+                        <a class="nav-link customLink" href="../index.php#reviews">Reviews</a>
                     </li>
                 </ul>
             </div>

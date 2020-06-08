@@ -524,8 +524,6 @@ const observer = new IntersectionObserver(entries => {
         }
 
         intersection_array.forEach(_section => {
-            console.log(_section)
-
             if (entry.target.id === _section.section) {
                 const main_nav_links = document.querySelectorAll(".nav-item")
                 main_nav_links.forEach(link => {
