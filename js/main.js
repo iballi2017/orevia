@@ -454,65 +454,98 @@ function confirmPassword_click() {
 }
 
 
-
+// Inersection Observer on page scroll, for active navigation links
+var intersection_array = [
+    {
+        section: "hero",
+        link: "hero_link"
+    },
+    {
+        section: "about-us",
+        link: "about_us_link"
+    },
+    {
+        section: "reviews",
+        link: "reviews_link"
+    },
+    {
+        section: "faq",
+        link: "faq_link"
+    }
+]
 const homepageSections = document.querySelectorAll(".section")
 const option = {
     rootMargin: "0px 0px -150px 0px"
 }
-
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         }
 
-        // if(entry.target.id)
-        if (entry.target.id === "hero") {
-            const main_nav_links = document.querySelectorAll(".nav-item")
-            main_nav_links.forEach(link => {
-                if (link.id === "hero_link") {
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
-                    }
-                }
-            })
-        }
+        intersection_array.forEach(_section => {
+            console.log(_section)
 
-        if (entry.target.id === "about-us") {
-            const main_nav_links = document.querySelectorAll(".nav-item")
-            main_nav_links.forEach(link => {
-                if (link.id === "about_us_link") {
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
+            if (entry.target.id === _section.section) {
+                const main_nav_links = document.querySelectorAll(".nav-item")
+                main_nav_links.forEach(link => {
+                    if (link.id === _section.link) {
+                        for (let sibling of link.parentNode.children) {
+                            if (sibling != this) {
+                                sibling.classList.remove("active")
+                            }
+                            link.classList.add("active")
+                        }
                     }
-                }
-            })
-        }
-        if (entry.target.id === "reviews") {
-            const main_nav_links = document.querySelectorAll(".nav-item")
-            main_nav_links.forEach(link => {
-                if (link.id === "reviews_link") {
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
-                    }
-                }
-            })
-        }
-        if (entry.target.id === "faq") {
-            const main_nav_links = document.querySelectorAll(".nav-item")
-            main_nav_links.forEach(link => {
-                if (link.id === "faq_link") {
-                    for (let sibling of link.parentNode.children) {
-                        if (sibling !== this) sibling.classList.remove('active');
-                        link.classList.add("active")
-                    }
-                }
-            })
-        }
+                })
+            }
+        })
+
+        // if (entry.target.id === "hero") {
+        //     const main_nav_links = document.querySelectorAll(".nav-item")
+        //     main_nav_links.forEach(link => {
+        //         if (link.id === "hero_link") {
+        //             for (let sibling of link.parentNode.children) {
+        //                 link.classList.add("active")
+        //                 if (sibling !== this) sibling.classList.remove('active');
+        //             }
+        //         }
+        //     })
+        // }
+
+        // if (entry.target.id === "about-us") {
+        //     const main_nav_links = document.querySelectorAll(".nav-item")
+        //     main_nav_links.forEach(link => {
+        //         if (link.id === "about_us_link") {
+        //             for (let sibling of link.parentNode.children) {
+        //                 link.classList.add("active")
+        //                 if (sibling !== this) sibling.classList.remove('active');
+        //             }
+        //         }
+        //     })
+        // }
+        // if (entry.target.id === "reviews") {
+        //     const main_nav_links = document.querySelectorAll(".nav-item")
+        //     main_nav_links.forEach(link => {
+        //         if (link.id === "reviews_link") {
+        //             for (let sibling of link.parentNode.children) {
+        //                 link.classList.add("active")
+        //                 if (sibling !== this) sibling.classList.remove('active');
+        //             }
+        //         }
+        //     })
+        // }
+        // if (entry.target.id === "faq") {
+        //     const main_nav_links = document.querySelectorAll(".nav-item")
+        //     main_nav_links.forEach(link => {
+        //         if (link.id === "faq_link") {
+        //             for (let sibling of link.parentNode.children) {
+        //                 if (sibling !== this) sibling.classList.remove('active');
+        //                 link.classList.add("active")
+        //             }
+        //         }
+        //     })
+        // }
 
     })
 }, option)
