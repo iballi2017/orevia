@@ -25,7 +25,7 @@ include_once '../components/header.php'; ?>
                     <div class="card shadow border-0 my-2">
                         <div class="card-body product-card">
                             <figure class="text-center">
-                                <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="Trulli"
+                                <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="Trulli"
                                     style="width: 100%;" />
                                 <figcaption>
                                     <h4>Orevia Body butter</h4>
@@ -51,7 +51,7 @@ include_once '../components/header.php'; ?>
                     <div class="card shadow border-0 my-2">
                         <div class="card-body product-card">
                             <figure class="text-center">
-                                <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="Trulli"
+                                <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="Trulli"
                                     style="width: 100%;" />
                                 <figcaption>
                                     <h4>Orevia Body butter</h4>
@@ -77,7 +77,7 @@ include_once '../components/header.php'; ?>
                     <div class="card shadow border-0 my-2">
                         <div class="card-body product-card">
                             <figure class="text-center">
-                                <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="Trulli"
+                                <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="Trulli"
                                     style="width: 100%;" />
                                 <figcaption>
                                     <h4>Orevia Body butter</h4>

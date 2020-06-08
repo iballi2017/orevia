@@ -52,13 +52,17 @@
                                 <div class="form-group col-12">
                                     <label for="rating" style="display: block">Rate</label>
 
+                                    <!-- star rating -->
                                     <span class="star-rating">
-                                        <i class="fas fa-star text-warning fa-3x"></i>
-                                        <i class="fas fa-star text-warning fa-3x"></i>
-                                        <i class="fas fa-star text-warning fa-3x"></i>
+                                        <i class="far fa-star text-warning fa-3x"></i>
+                                        <i class="far fa-star text-warning fa-3x"></i>
+                                        <i class="far fa-star text-warning fa-3x"></i>
                                         <i class="far fa-star text-warning fa-3x"></i>
                                         <i class="far fa-star text-warning fa-3x"></i>
                                     </span>
+
+                                    <!-- star rating hidden input field-->
+                                    <input type="text" id="rating_value" style="visibility: hidden">
                                 </div>
                             </div>
                         </div>
@@ -74,7 +78,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <button class="modify-cart-btn px-5 primary_btn btn-lg">Submit</button>
+                                <button type="submit" class="modify-cart-btn px-5 primary_btn btn-lg">Submit</button>
                             </div>
                         </div>
                     </div>

@@ -11,18 +11,11 @@
     <div class="row">
         <div class="col-12 col-md-3">
             <!-- sidebar -->
-            <?php
-// include_once '../components/user-account-nav.php';
-?><div class="nav flex-column nav-pills bg-light">
+            <?php  ?><div class="nav flex-column nav-pills bg-light">
                 <a class="account-tab-link" href="../views/user-profile.php">My Profile</a>
                 <a class="account-tab-link active" href="../views/user-orders.php">Orders</a>
                 <a class="account-tab-link" href="../views/user-wishlist.php">Wish
                     Lists</a>
-                <!-- <a class="account-tab-link active rounded-0 mb-3" data-toggle="pill" href="../views/user-profile.php">My
-                Profile</a>
-            <a class="account-tab-link rounded-0 mb-3" data-toggle="pill" href="./">Orders</a>
-            <a class="account-tab-link rounded-0 mb-3" data-toggle="pill" href="#">Wish
-                Lists</a> -->
             </div>
         </div>
 
@@ -50,8 +43,7 @@
                                 <td>Akinola Oluwaobi</td>
                                 <td>#4,000.00</td>
                                 <td class="text-primary">Processing</td>
-                                <td><button class="btn-sm white_btn">View</button></td>
-                                <!-- <td><a class="btn-sm white_btn">View</a></td> -->
+                                <td><a class="btn-sm white_btn" href="./user-order-details.php">View</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -59,7 +51,7 @@
                                 <td>Olayemi Joshua</td>
                                 <td>#5300.99</td>
                                 <td class="text-success">Delivered</td>
-                                <td><button class="btn-sm white_btn">View</button></td>
+                                <td><a class="btn-sm white_btn" href="./user-order-details.php">View</a></td>
                             </tr>
                         </tbody>
                     </table>

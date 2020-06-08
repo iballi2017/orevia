@@ -47,7 +47,7 @@
             </div>
             <div class="brand-container d-none d-md-block">
                 <!-- <h2>Brand logo</h2> -->
-                <h2><img src="./assets/images/Orevia-Logo.png" alt="" /></h2>
+                <h2><img src="./assets/images/orevia-Logo.png" alt="" /></h2>
             </div>
             <div class="access-container">
                 <ul class="access-nav">
@@ -78,7 +78,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
             <a class="navbar-brand d-lg-none" href="./">
-                <img src="./assets/images/Orevia-logo-alt.png" alt="" />
+                <img src="./assets/images/orevia-logo-alt.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -219,7 +219,7 @@
                         <div class="card shadow border-0 my-2">
                             <div class="card-body product-card">
                                 <figure class="text-center">
-                                    <img src="./assets/images/Orevia-bottle.png" alt="Trulli" style="width: 100%;" />
+                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <h4>Orevia Body butter</h4>
                                         <span class="product-content-qty">(150ml)</span>
@@ -244,7 +244,7 @@
                         <div class="card shadow border-0 my-2">
                             <div class="card-body product-card">
                                 <figure class="text-center">
-                                    <img src="./assets/images/Orevia-cup.png" alt="Trulli" style="width: 100%;" />
+                                    <img src="./assets/images/orevia-cup.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <h4>Orevia Body butter</h4>
                                         <span class="product-content-qty">(150ml)</span>
@@ -269,7 +269,7 @@
                         <div class="card shadow border-0 my-2">
                             <div class="card-body product-card">
                                 <figure class="text-center">
-                                    <img src="./assets/images/Orevia-cup.png" alt="Trulli" style="width: 100%;" />
+                                    <img src="./assets/images/orevia-cup.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <h4>Orevia Body butter</h4>
                                         <span class="product-content-qty">(150ml)</span>
@@ -516,7 +516,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 border-right pr-5 my-3">
-                    <img src="./assets/images/Orevia-Logo.png" alt="" />
+                    <img src="./assets/images/orevia-Logo.png" alt="" />
                     <form action="#">
                         <p class="mt-5">
                             Subscribe to our newsletter to get update our latest offers and

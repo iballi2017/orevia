@@ -14,11 +14,11 @@
             <div class="col-12 col-md-4 offset-md-1">
                 <div class="owl-carousel owl-theme product-views-slider">
                     <div class="item">
-                        <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="" width="100%">
+                        <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="" width="100%">
 
                     </div>
                     <div class="item">
-                        <img src="../assets/images/Orevia-cup.png" class="img-fluid" alt="">
+                        <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="">
 
                     </div>
                 </div>

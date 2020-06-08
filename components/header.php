@@ -10,6 +10,9 @@
         OREVIA | Beauty Skin Care | Skincare | Beauty | Health | Lagos Nigeria |
         Abuja
     </title>
+    <!-- star rating -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- bootstrap 4.3.1 -->
@@ -40,7 +43,7 @@
             </div>
             <div class="brand-container d-none d-md-block">
                 <!-- <h2>Brand logo</h2> -->
-                <h2><img src="../assets/images/Orevia-Logo.png" alt="" /></h2>
+                <h2><img src="../assets/images/orevia-Logo.png" alt="" /></h2>
             </div>
             <div class="access-container">
                 <ul class="access-nav">
@@ -70,7 +73,7 @@
     <header id="main-header">
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
             <a class="navbar-brand d-lg-none" href="../index.php">
-                <img src="../assets/images/Orevia-logo-alt.png" alt="" />
+                <img src="../assets/images/orevia-logo-alt.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

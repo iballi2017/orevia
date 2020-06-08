@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-4 border-right pr-5 my-3">
-                <img src="../assets/images/Orevia-Logo.png" alt="" />
+                <img src="../assets/images/orevia-Logo.png" alt="" />
                 <form action="#">
                     <p class="mt-5">
                         Subscribe to our newsletter to get update our latest offers and
