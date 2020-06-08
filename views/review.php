@@ -43,7 +43,7 @@
 
                 <fieldset class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label for="inputName">Name</label>
@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-md-6">
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label for="inputName">Comment</label>
