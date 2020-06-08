@@ -10,9 +10,6 @@
         OREVIA | Beauty Skin Care | Skincare | Beauty | Health | Lagos Nigeria |
         Abuja
     </title>
-    <!-- star rating -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- bootstrap 4.3.1 -->

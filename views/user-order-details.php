@@ -21,7 +21,7 @@
 
 
 
-        <main class="col-12 col-md-9 mb-3 mt-3 mt-sm-0" id="user-order-details-page">
+        <main class="col-12 col-md-9 mb-3 mt-3 mt-md-0" id="user-order-details-page">
 
             <div class="form-wrapper p-3">
                 <h3> <span><a href="./user-orders.php"><i class="fas fa-arrow-left"></i></a></span> Order Details</h3>
