@@ -447,13 +447,19 @@ function showAccountDetails() {
 window.onscroll = function () { myFunction() };
 var navbar = document.getElementById("main-header");
 var sticky = navbar.offsetTop;
+var shopping_cart_icon_alt = document.querySelector(".shopping_cart_icon_alt")
 
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky-top")
+        shopping_cart_icon_alt.classList.remove("shopping_cart_alt_hidden")
+        shopping_cart_icon_alt.classList.add("shopping_cart_alt_visible")
     } else {
         navbar.classList.remove("sticky-top");
+        shopping_cart_icon_alt.classList.remove("shopping_cart_alt_visible")
+        shopping_cart_icon_alt.classList.add("shopping_cart_alt_hidden")
     }
+
 }
 
 // Adding a class to all "Select options" for styling. *Registration page; and *Checkout page

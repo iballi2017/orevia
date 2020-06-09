@@ -79,6 +79,13 @@
             <a class="navbar-brand d-lg-none" href="./">
                 <img src="./assets/images/orevia-logo-alt.png" alt="" />
             </a>
+            <!-- shopping cart icon notification alternative -->
+            <span class="shopping_cart_icon_alt shopping_cart_alt_hidden"> <a href="./views/checkout.php"
+                    class="customLink">
+                    <i class="fas fa-shopping-cart text-white"></i>
+                    <span class="badge badge-light">4</span>
+                </a></span>
+            <!-- ............. -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 

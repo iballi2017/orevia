@@ -157,6 +157,20 @@ a.bg-primary-clr {
     background-position: right;
 }
 
+.shopping_cart_icon_alt {
+    .badge {
+        background-color: $main-nav-active-link-color;
+    }
+}
+.shopping_cart_alt_visible {
+    // visibility: visible;
+    display: block;
+}
+.shopping_cart_alt_hidden {
+    // visibility: hidden;
+    display: none;
+}
+
 /* 
 ############################
  

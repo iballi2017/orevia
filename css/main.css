@@ -128,6 +128,15 @@ a.bg-primary-clr {
   background-size: cover;
   background-position: right; }
 
+.shopping_cart_icon_alt .badge {
+  background-color: #db4277; }
+
+.shopping_cart_alt_visible {
+  display: block; }
+
+.shopping_cart_alt_hidden {
+  display: none; }
+
 /* 
 ############################
  
