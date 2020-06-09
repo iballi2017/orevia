@@ -45,8 +45,11 @@
                 <span class="email">oreviaskincare@gmail.com</span>
                 <span class="phone ml-sm-4">07019920332</span>
             </div>
-            <div class="brand-container d-none d-md-block">
+            <!-- <div class="brand-container d-none d-md-block">
                 <h2><img src="./assets/images/orevia-Logo.png" alt="" /></h2>
+            </div> -->
+            <div class="brand-container">
+                <h2><a href="./"><img src="./assets/images/orevia-Logo.png" alt="" /></a></h2>
             </div>
             <div class="access-container">
                 <ul class="access-nav">
@@ -76,9 +79,9 @@
     <header id="main-header">
 
         <nav class="navbar navbar-expand-lg navbar-light main-nav">
-            <a class="navbar-brand d-lg-none" href="./">
+            <!-- <a class="navbar-brand d-lg-none" href="./">
                 <img src="./assets/images/orevia-logo-alt.png" alt="" />
-            </a>
+            </a> -->
             <!-- shopping cart icon notification alternative -->
             <span class="shopping_cart_icon_alt shopping_cart_alt_hidden"> <a href="./views/checkout.php"
                     class="customLink">
