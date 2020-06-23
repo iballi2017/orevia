@@ -1,5 +1,5 @@
 <!-- header -->
-<?php include_once '../components/header.php'; ?>
+<?php include_once '../components/header_update.php'; ?>
 
 <main id="checkout-page">
 
@@ -28,11 +28,11 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-6">
                             <label for="inputEmail">Email Address</label>
                             <input type="email" class="form-control" id="inputEmail">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-6">
                             <label for="lastPhone">Phone number</label>
                             <input type="text" class="form-control" id="lastPhone">
                         </div>
@@ -46,7 +46,7 @@
                         <div class="form-group col-md-6">
 
                             <div class="form-row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6">
                                     <label for="town_city">Town/City</label>
                                     <div class="select-wrapper">
                                         <select class="form-control rounded-0" name="town_city" id="town_city">
@@ -55,7 +55,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6">
                                     <label for="state">State</label>
                                     <div class="select-wrapper">
                                         <select class="form-control rounded-0" name="state" id="state">
@@ -166,9 +166,11 @@
                 </div>
             </div>
 
-            <div class="form-group text-center">
-                <button class="modify-cart-btn px-5 white_btn btn-lg">Modify Cart</button>
-                <button class="modify-cart-btn px-5 primary_btn btn-lg">Confirm Order</button>
+            <div class="form-group text-center" style="display: flex; justify-content: center; flex-wrap: wrap">
+                <!-- <button class="modify-cart-btn px-5 white_btn btn-lg">Modify Cart</button>
+                <button class="modify-cart-btn px-5 primary_btn btn-lg">Confirm Order</button> -->
+                <a href="#" class="modify-cart-btn px-5 white_btn btn-lg mr-2 my-1">Modify Cart</a>
+                <a href="#" class="modify-cart-btn px-5 primary_btn btn-lg my-1">Confirm Order</a>
             </div>
         </form>
     </div>

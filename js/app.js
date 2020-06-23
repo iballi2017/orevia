@@ -15,7 +15,8 @@ $(document).ready(function () {
 
 
     // Review slider (Owl carousel)
-    $(".hero-slider").owlCarousel({
+    // index.php
+    $(".product_list_slider").owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
@@ -37,6 +38,31 @@ $(document).ready(function () {
         }
     });
 
+    // Review slider (Owl carousel)
+    // index.php
+    $(".reviews-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        smartSpeed: 1000,
+        fluidSpeed: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
+    // product-details.php
     $(".product-views-slider").owlCarousel({
         // loop: true,
         margin: 10,
@@ -389,7 +415,7 @@ $(document).ready(function () {
     }
 
     // star ratings
-    const stars = document.querySelectorAll(".fa-star")
+    const stars = document.querySelectorAll(".review-star")
     var ratingValue = document.querySelector("#rating_value")
     var index;
     for (let i = 0; i < stars.length; i++) {
@@ -444,23 +470,23 @@ function showAccountDetails() {
 
 
 // main navigation bar sticky effect
-window.onscroll = function () { myFunction() };
-var navbar = document.getElementById("main-header");
-var sticky = navbar.offsetTop;
-var shopping_cart_icon_alt = document.querySelector(".shopping_cart_icon_alt")
+// window.onscroll = function () { myFunction() };
+// var navbar = document.getElementById("main-header");
+// var sticky = navbar.offsetTop;
+// var shopping_cart_icon_alt = document.querySelector(".shopping_cart_icon_alt")
 
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky-top")
-        shopping_cart_icon_alt.classList.remove("shopping_cart_alt_hidden")
-        shopping_cart_icon_alt.classList.add("shopping_cart_alt_visible")
-    } else {
-        navbar.classList.remove("sticky-top");
-        shopping_cart_icon_alt.classList.remove("shopping_cart_alt_visible")
-        shopping_cart_icon_alt.classList.add("shopping_cart_alt_hidden")
-    }
+// function myFunction() {
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky-top")
+//         shopping_cart_icon_alt.classList.remove("shopping_cart_alt_hidden")
+//         shopping_cart_icon_alt.classList.add("shopping_cart_alt_visible")
+//     } else {
+//         navbar.classList.remove("sticky-top");
+//         shopping_cart_icon_alt.classList.remove("shopping_cart_alt_visible")
+//         shopping_cart_icon_alt.classList.add("shopping_cart_alt_hidden")
+//     }
 
-}
+// }
 
 // Adding a class to all "Select options" for styling. *Registration page; and *Checkout page
 var selectOption = document.querySelectorAll("option")
@@ -521,7 +547,8 @@ var intersection_array = [
 ]
 const homepageSections = document.querySelectorAll(".section")
 const option = {
-    rootMargin: "0px 0px -150px 0px"
+    threshold: 1,
+    rootMargin: "0px 0px -200px 0px"
 }
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -545,51 +572,6 @@ const observer = new IntersectionObserver(entries => {
             }
         })
 
-        // if (entry.target.id === "hero") {
-        //     const main_nav_links = document.querySelectorAll(".nav-item")
-        //     main_nav_links.forEach(link => {
-        //         if (link.id === "hero_link") {
-        //             for (let sibling of link.parentNode.children) {
-        //                 link.classList.add("active")
-        //                 if (sibling !== this) sibling.classList.remove('active');
-        //             }
-        //         }
-        //     })
-        // }
-
-        // if (entry.target.id === "about-us") {
-        //     const main_nav_links = document.querySelectorAll(".nav-item")
-        //     main_nav_links.forEach(link => {
-        //         if (link.id === "about_us_link") {
-        //             for (let sibling of link.parentNode.children) {
-        //                 link.classList.add("active")
-        //                 if (sibling !== this) sibling.classList.remove('active');
-        //             }
-        //         }
-        //     })
-        // }
-        // if (entry.target.id === "reviews") {
-        //     const main_nav_links = document.querySelectorAll(".nav-item")
-        //     main_nav_links.forEach(link => {
-        //         if (link.id === "reviews_link") {
-        //             for (let sibling of link.parentNode.children) {
-        //                 link.classList.add("active")
-        //                 if (sibling !== this) sibling.classList.remove('active');
-        //             }
-        //         }
-        //     })
-        // }
-        // if (entry.target.id === "faq") {
-        //     const main_nav_links = document.querySelectorAll(".nav-item")
-        //     main_nav_links.forEach(link => {
-        //         if (link.id === "faq_link") {
-        //             for (let sibling of link.parentNode.children) {
-        //                 if (sibling !== this) sibling.classList.remove('active');
-        //                 link.classList.add("active")
-        //             }
-        //         }
-        //     })
-        // }
 
     })
 }, option)
@@ -597,3 +579,30 @@ const observer = new IntersectionObserver(entries => {
 homepageSections.forEach(section => {
     observer.observe(section)
 })
+
+
+// Handling mobile navigation dropdown and menu button icon transformation (new main navbar)
+const nav_dropdown_toggler = document.querySelector("#o_nav_toggler")
+const nav_dropdown = document.querySelector("#o_mobile_nav_dropdown")
+
+nav_dropdown_toggler.addEventListener("click", show_mobile_nav)
+const menu_icon = document.getElementById("toggler_icon")
+
+
+var x = 0
+
+function show_mobile_nav() {
+    if (x === 0) {
+        nav_dropdown.style.transform = "scaleY(1)";
+        menu_icon.classList.remove("fa-bars")
+        menu_icon.classList.add("fa-plus")
+        x = 1;
+
+    } else if (x === 1) {
+        nav_dropdown.style.transform = "scaleY(0)";
+        menu_icon.classList.remove("fa-plus")
+        menu_icon.classList.add("fa-bars")
+        x = 0;
+    }
+}
+// ****************************************

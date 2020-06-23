@@ -1,5 +1,5 @@
 <!-- header -->
-<?php include_once '../components/header.php'; ?>
+<?php include_once '../components/header_update.php'; ?>
 
 <main id="review-page">
 
@@ -54,11 +54,11 @@
 
                                     <!-- star rating -->
                                     <span class="star-rating">
-                                        <i class="far fa-star text-warning fa-3x"></i>
-                                        <i class="far fa-star text-warning fa-3x"></i>
-                                        <i class="far fa-star text-warning fa-3x"></i>
-                                        <i class="far fa-star text-warning fa-3x"></i>
-                                        <i class="far fa-star text-warning fa-3x"></i>
+                                        <i class="far fa-star text-warning fa-3x review-star"></i>
+                                        <i class="far fa-star text-warning fa-3x review-star"></i>
+                                        <i class="far fa-star text-warning fa-3x review-star"></i>
+                                        <i class="far fa-star text-warning fa-3x review-star"></i>
+                                        <i class="far fa-star text-warning fa-3x review-star"></i>
                                     </span>
 
                                     <!-- star rating hidden input field-->

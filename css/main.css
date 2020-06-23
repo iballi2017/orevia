@@ -7,22 +7,36 @@ Table of Content:
 3. Pages
 4. Media queries
 
-
-
-
-
-############################ 
- 
-............GLOBAL
- 
-############################
 */
+/* ############################
+
+    TYPOGRAPHY
+
+    ############################ 
+*/
+h1 {
+  font-size: 1.9rem; }
+
+h2 {
+  font-size: 1.7rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+/* 
+ 
+// ............GLOBAL
+ 
+    ############################
+
+ */
 html {
   scroll-behavior: smooth; }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #141414; }
+  color: #141414;
+  font-size: 13px; }
 
 a {
   color: #740774; }
@@ -150,8 +164,11 @@ a.bg-primary-clr {
 .mobile-menu-toggler {
   color: #fbf4fb; }
 
-.product-card span {
-  display: block; }
+.product-card {
+  width: 85%;
+  margin: 0 auto; }
+  .product-card span {
+    display: block; }
 
 .product-content-qty {
   font-weight: 600; }
@@ -397,15 +414,43 @@ main .carousel-indicators {
 
 main .carousel-caption {
   text-align: left;
-  top: 0; }
+  top: 0;
+  padding-bottom: 0; }
 
 main .carousel-caption-inner {
   height: 100%;
   width: 100%;
   display: flex !important;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center; }
+  align-items: center;
+  justify-content: center;
+  color: #141414; }
+  main .carousel-caption-inner h1,
+  main .carousel-caption-inner h5,
+  main .carousel-caption-inner h6 {
+    text-align: center;
+    margin-bottom: 0.2em; }
+  main .carousel-caption-inner h1 {
+    font-size: 1.3rem;
+    font-weight: 600; }
+  main .carousel-caption-inner h5 {
+    font-size: 1rem; }
+  main .carousel-caption-inner h6 {
+    font-size: 0.8rem; }
+  main .carousel-caption-inner .hero-action-btn {
+    padding: 0.3rem 0.6rem;
+    margin-top: 0.5em;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    background-color: none !important;
+    color: #61585b;
+    display: block;
+    border: 2px solid #740774; }
+    main .carousel-caption-inner .hero-action-btn:hover {
+      background-color: #740774;
+      color: #ffffff;
+      transition: background-color 300ms ease; }
 
 main section {
   padding-top: 3em; }
@@ -432,10 +477,10 @@ main #about-us .section-title::before {
   display: block;
   margin-top: 2em; }
 
-main #about-us article {
+main #about-us article.lead {
   text-align: center;
   margin-top: 1em;
-  font-size: 1.3rem; }
+  font-size: 1rem; }
 
 main #reviews {
   background: #fbf4fb;
@@ -653,6 +698,14 @@ footer {
 ############################
 */
 @media (min-width: 990px) {
+  /* ############################
+
+    TYPOGRAPHY
+
+    ############################ 
+*/
+  body {
+    font-size: 16px; }
   .top-bar-inner {
     display: grid;
     grid-template-areas: "contact contact logo access access";
@@ -672,7 +725,42 @@ footer {
   .register.form-wrapper {
     width: 70%; }
   .login.form-wrapper {
-    width: 40%; } }
+    width: 40%; }
+  main .carousel-caption-inner {
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #141414; }
+    main .carousel-caption-inner h1,
+    main .carousel-caption-inner h5,
+    main .carousel-caption-inner h6 {
+      text-align: unset; }
+    main .carousel-caption-inner h1 {
+      font-size: 3rem;
+      font-weight: 600; }
+    main .carousel-caption-inner h5 {
+      font-size: 2rem; }
+    main .carousel-caption-inner h6 {
+      font-size: 1.7rem; }
+    main .carousel-caption-inner .hero-action-btn {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: 0.3rem;
+      background-color: none !important;
+      color: #61585b;
+      display: block;
+      border: 2px solid #740774; }
+      main .carousel-caption-inner .hero-action-btn:hover {
+        background-color: #740774;
+        color: #ffffff;
+        transition: background-color 300ms ease; }
+  main #about-us article.lead {
+    margin-top: 1em;
+    font-size: 1.3rem; } }
 
 @media (max-width: 500px) {
   .product-information-section .nav-item {

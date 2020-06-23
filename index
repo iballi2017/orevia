@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="hero section" id="hero">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Delicately formulated skincare products suitable for all skin types full of natural ingredients to give you a glowing, supple, smooth skin and hair with exquisite sweet fresh fragrance suitable for all skin types">
+    <meta name="keywords" content="Skin care products in Lagos, Skin care products in Nigeria.">
+    <meta name="author" content="Orevia | Orevia">
+
+    <meta name="keywords"
+        content="Skin care products in Lagos, Skin care products in Nigeria, Skin care products in Abuja, International brand" />
+
+
+    <meta property="og:title" content="Orevia Skin Care Products | Orevia - Varieties" />
+    <meta property="og:description"
+        content="Delicately formulated skincare products suitable for all skin types full of natural ingredients to give you a glowing, supple, smooth skin and hair with exquisite sweet fresh fragrance suitable for all skin types" />
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16" />
     <title>
         OREVIA | Beauty Skin Care | Skincare | Beauty | Health | Lagos Nigeria |
-        Abuja</title>
+        Abuja
+    </title>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- bootstrap 4.3.1 -->
@@ -16,281 +31,82 @@
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet" />
-    <!-- jquery form validation -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
     <!-- owl carousel -->
     <link rel="stylesheet" href="./OwlCarousel2-2.3.4/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/owl.theme.default.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./css/main.css" />
-
-
-
-    <style>
-    /* css variables */
-    :root {
-        --primary-clr: #740774;
-        ;
-        --light-text-color: #808891;
-    }
-
-
-    /*  */
-    .wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .o_main_nav {
-        display: none;
-    }
-
-    .o_main_mobile_navbar {
-        position: relative;
-    }
-
-    .o_main_mobile_navbar .o_mobile_navtab {
-        padding: 0;
-        list-style: none;
-        line-height: 35px;
-    }
-
-    #o_nav_toggler>.fa-plus {
-        transform: rotate(45deg);
-        transition: transform .5s ease;
-    }
-
-    #o_nav_toggler>.fa-bars {
-        transform: rotate(0deg);
-        transition: transform .5s ease;
-    }
-
-    .o_main_mobile_navbar .o_nav_top {
-        border-bottom: 1px solid #808891;
-    }
-
-    .o_main_mobile_navbar .o_nav_top_inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: .7em;
-        padding-bottom: .7em;
-    }
-
-    .o_main_mobile_navbar .o_mobile_navtab li {
-        border-bottom: 1px solid #808891;
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
-
-
-    .o_nav_dropdown a {
-        color: #434343;
-    }
-
-    #o_mobile_nav_dropdown {
-        background-color: #fff;
-        position: absolute;
-        transform: scaleY(0);
-        transition: transform .5s ease;
-        -webkit-transition: transform .5s ease;
-        -moz-transition: transform .5s ease;
-        -o-transition: transform .5s ease;
-        transform-origin: top;
-        width: 100%;
-    }
-
-    .o_entry_btn {
-        display: flex;
-        justify-content: space-around;
-        margin: 1em;
-
-    }
-
-    .o_entry_btn a {
-        width: 47%;
-        background-color: #fff;
-        border: 1px solid purple;
-        color: purple;
-        border-radius: 0;
-    }
-
-    @media(min-width: 768px) {
-
-        /* 
-        .o_main_mobile_navbar {
-            display: none;
-        }
-
-        .o_main_nav {
-            display: block;
-        } */
-
-        /* .o_contact_via_container {
-            flex-basis: 30%;
-        } */
-
-        .o_brand_logo_container {
-            flex-basis: 20%;
-            text-align: center;
-        }
-
-        /* .o_navtab_container {
-            flex-basis: 30%;
-            display: grid;
-            place-content: end;
-        } */
-    }
-
-    @media(min-width: 900px) {
-
-
-        .o_main_nav_top_inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .o_main_mobile_navbar {
-            display: none;
-        }
-
-        .o_main_nav {
-            display: block;
-        }
-
-        .o_navtab {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            margin-top: unset;
-            margin-bottom: unset;
-            flex-wrap: wrap;
-        }
-
-        .o_navtab li {
-            margin-left: 2em;
-        }
-
-        .o_navtab a {
-            color: var(--light-text-color)
-        }
-
-        .o_navtab a::after {
-            content: "";
-            height: 3px;
-            display: block;
-            background-color: var(--light-text-color);
-            width: 40%;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 250ms ease-out;
-            -moz-transition: transform 250ms ease-out;
-            -o-ransition: transform 250ms ease-out;
-            -webkit-transition: transform 250ms ease-out;
-            -ms-transition: transform 250ms ease-in-out;
-        }
-
-        .o_navtab a:hover,
-        .o_navtab:focus {
-            text-decoration: none;
-            transition: color 250ms ease-in-out;
-            transition: font-weight 250ms ease-in-out;
-            -moz-transition: color 250ms ease-in-out;
-            -moz-transition: font-weight 250ms ease-in-out;
-            -o-transition: color 250ms ease-in-out;
-            -o-transition: font-weight 250ms ease-in-out;
-            -webkit-transition: color 250ms ease-in-out;
-            -webkit-transition: font-weight 250ms ease-in-out;
-            -ms-transition: color 250ms ease-in-out;
-            -ms-transition: font-weight 250ms ease-in-out;
-            outline: 0;
-        }
-
-        .o_navtab a:hover::after,
-        .o_navtab a:focus::after {
-            transform: scaleX(1);
-            transform-origin: left;
-            transition: transform 250ms ease-in;
-            -moz-transition: transform 250ms ease-in;
-            -o-transition: transform 250ms ease-in;
-            -webkit-transition: transform 250ms ease-in;
-            -ms-transition: transform 250ms ease-in-out;
-        }
-
-        .o_contact_via_container {
-            flex-basis: 25%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .o_brand_logo_container {
-            flex-basis: 50%;
-            text-align: center;
-        }
-
-        .o_navtab_container {
-            flex-basis: 25%;
-            display: grid;
-            place-content: end;
-        }
-
-    }
-    </style>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header class="sticky-top bg-white">
-
-        <nav class="o_main_nav">
-            <div class="o_main_nav_top">
-                <div class="o_main_nav_top_inner wrapper">
-                    <div class="o_contact_via_container">
-                        <div class="mr-3">
-                            <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span></div>
-                        <div>
-                            <i class="fas fa-phone mr-2"></i><span>07065199444</span></div>
-                    </div>
-
-                    <div class="o_brand_logo_container">
-                        <h2><a href="./index.php"><img src="./assets/images/orevia-Logo.png" alt="Brand logo" /></a>
-                        </h2>
-                    </div>
-
-                    <div class="o_navtab_container">
-
-                        <ul class="o_navtab">
-                            <li>
-                                <a href="#">Login</a>
-                            </li>
-                            <li>
-                                <a href="#">Sign up</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="badge badge-secondary">0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="contact-info">
+                <span class="email">oreviaskincare@gmail.com</span>
+                <span class="phone ml-sm-4">07019920332</span>
             </div>
-            <div class="o_main_nav_bottom main-nav">
-                <ul class="nav justify-content-center">
+            <!-- <div class="brand-container d-none d-md-block">
+                <h2><img src="./assets/images/orevia-Logo.png" alt="" /></h2>
+            </div> -->
+            <div class="brand-container">
+                <h2><a href="./"><img src="./assets/images/orevia-Logo.png" alt="" /></a></h2>
+            </div>
+            <div class="access-container">
+                <ul class="access-nav">
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
+                        <a href="./views/user-profile.php" class="customLink">Akinola</a>
+                    </li>
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
+                        <a href="#" class="customLink">Logout</a>
+                    </li>
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
+                        <a href="./views/login.php" class="customLink">Login</a>
+                    </li>
+                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
+                        <a href="./views/register.php" class="customLink">Sign up</a>
+                    </li>
+                    <li>
+                        <a href="./checkout.php" class="customLink">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge badge-light bg-primary-clr">4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            <!-- <a class="navbar-brand d-lg-none" href="./">
+                <img src="./assets/images/orevia-logo-alt.png" alt="" />
+            </a> -->
+            <!-- shopping cart icon notification alternative -->
+            <span class="shopping_cart_icon_alt shopping_cart_alt_hidden"> <a href="./views/checkout.php"
+                    class="customLink">
+                    <i class="fas fa-shopping-cart text-white"></i>
+                    <span class="badge badge-light">4</span>
+                </a></span>
+            <!-- ............. -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <i class="fas fa-ellipsis-v mobile-menu-toggler"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
                     <li class="nav-item active" id="hero_link">
-                        <a class="nav-link customLink" href="#hero">Home
-                            <span class="sr-only">(current)</span></a>
+                        <a class="nav-link customLink" href="#top">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item" id="about_us_link">
                         <a class="nav-link customLink" href="#about-us">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link customLink" href="./views/product-page.php">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link customLink" href="#">Key Features</a>
@@ -306,77 +122,11 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
-
-
-
-
-        <nav class="o_main_mobile_navbar">
-
-            <div class="o_nav_top">
-                <div class="wrapper o_nav_top_inner">
-
-                    <div id="o_nav_toggler">
-                        <i class="fas fa-bars fa-2x" id="toggler_icon"></i>
-                        <!-- <i class="fas fa-plus fa-2x"></i> -->
-                    </div>
-
-                    <div class="brand_logo">
-                        <h2><a href="./index.php"><img src="./assets/images/orevia-Logo.png" alt="Brand logo" /></a>
-                        </h2>
-                    </div>
-
-                    <div>
-                        <i class="fas fa-shopping-cart" id="toggler_icon"></i><span
-                            class="badge badge-secondary">0</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="o_nav_dropdown pb-2" id="o_mobile_nav_dropdown">
-
-                <div class="o_entry_btn wrapper">
-                    <a href="#" class="btn btn-lg">Login</a>
-                    <a href="#" class="btn btn-lg">Sign up</a>
-                </div>
-
-                <ul class="o_mobile_navtab wrapper">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Key Features</a>
-                    </li>
-                    <li>
-                        <a href="#">How To Use</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#">Reviews</a>
-                    </li>
-                </ul>
-
-                <div class="o_mobile_contact wrapper pt-2">
-                    <span>info@gmail.com</span>
-                    <span class="ml-5">07065199444</span>
-                </div>
-            </div>
-        </nav>
-
     </header>
 
-
     <main>
-        <div class="hero">
+        <div class="hero section" id="hero">
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -386,7 +136,7 @@
                     </ol>
 
                     <div class="carousel-inner" style="position: relative;">
-                        <div class="custom-slider-nav text-center py-2 d-none d-md-block">
+                        <div class="custom-slider-nav text-center py-2">
                             <button class="bg-primary-clr btn-sm hero-slide-nav" id="prev"></button>
                             <button class="bg-primary-clr btn-sm hero-slide-nav" id="next"></button>
                         </div>
@@ -395,14 +145,12 @@
                                 alt="slider-1" /> -->
                             <img src="./assets/images/the-honest-company-P9ayWrBn63c-unsplash.png" class="d-block w-100"
                                 alt="slider-1" />
-                            <div class="carousel-caption">
+                            <div class="carousel-caption d-none d-md-block">
                                 <div class="carousel-caption-inner">
-                                    <h5>Give your skin a boost with our products</h5>
-                                    <h1>GLOWING AND RADIANT SKIN</h1>
-                                    <h6>It is delicately formulated with an exquisite fragrance suitable for all skin
-                                        types
-                                    </h6>
-                                    <a href="#" class="hero-action-btn px-5">Shop Now</a>
+                                    <h1>First slide label</h1>
+                                    <p>
+                                        Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -411,14 +159,27 @@
                                 alt="slider-2" /> -->
                             <img src="./assets/images/deanna-alys-6LBBOwkPzyQ-unsplash.png" class="d-block w-100"
                                 alt="slider-1" />
-                            <div class="carousel-caption">
+                            <div class="carousel-caption d-none d-md-block">
                                 <div class="carousel-caption-inner">
-                                    <h5>Give your skin a boost with our products</h5>
-                                    <h1>GLOWING AND RADIANT SKIN</h1>
-                                    <h6>It is delicately formulated with an exquisite fragrance suitable for all skin
-                                        types
-                                    </h6>
-                                    <a href="#" class="hero-action-btn px-5">Shop Now</a>
+                                    <h1>Second slide label</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                                alt="slider-3" /> -->
+                            <img src="./assets/images/the-honest-company-P9ayWrBn63c-unsplash.png" class="d-block w-100"
+                                alt="slider-1" />
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="carousel-caption-inner">
+                                    <h1>Third slide label</h1>
+                                    <p>
+                                        Praesent commodo cursus magna, vel scelerisque nisl
+                                        consectetur.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -461,11 +222,11 @@
                 <div class="text-center">
                     <h2 class="section-title display-5 mb-4">Our Products</h2>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <!-- Owl carousel HTML -->
-                        <div class="owl-carousel product_list_slider">
-                            <div class="card-body border product-card">
+
+                <div class="row mt-5">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow border-0 my-2">
+                            <div class="card-body product-card">
                                 <figure class="text-center">
                                     <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
@@ -486,13 +247,17 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="card-body border product-card">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow border-0 my-2">
+                            <div class="card-body product-card">
                                 <figure class="text-center">
-                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
+                                    <img src="./assets/images/orevia-cup.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <h4>Orevia Body butter</h4>
                                         <span class="product-content-qty">(150ml)</span>
-                                        <h4 class="price">#2000</h4>
+                                        <h4 class="price">#5000</h4>
                                         <span class="star-rating">
                                             <i class="far fa-star text-warning"></i>
                                             <i class="far fa-star text-warning"></i>
@@ -507,9 +272,13 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div class="card-body border product-card">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card shadow border-0 my-2">
+                            <div class="card-body product-card">
                                 <figure class="text-center">
-                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
+                                    <img src="./assets/images/orevia-cup.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <h4>Orevia Body butter</h4>
                                         <span class="product-content-qty">(150ml)</span>
@@ -542,7 +311,7 @@
                 <div class="row">
                     <div class="col">
                         <!-- Set up your HTML -->
-                        <div class="owl-carousel reviews-slider owl-theme">
+                        <div class="owl-carousel hero-slider owl-theme">
                             <div>
                                 <div class="card-body">
                                     <div class="card-body bg-0">
@@ -863,7 +632,7 @@
     <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <!-- owl carousel -->
     <script src="./OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

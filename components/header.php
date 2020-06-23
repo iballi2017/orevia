@@ -42,7 +42,7 @@
                 <h2><img src="../assets/images/orevia-Logo.png" alt="" /></h2>
             </div> -->
             <div class="brand-container">
-                <h2><a href="../index.php"><img src="../assets/images/orevia-Logo.png" alt="" /></a></h2>
+                <h2><a href="../index.php"><img src="../assets/images/orevia-Logo.png" alt="Brand logo" /></a></h2>
             </div>
             <div class="access-container">
                 <ul class="access-nav">
@@ -84,7 +84,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                <i class="fas fa-ellipsis-v mobile-menu-toggler"></i>
+                <i class="fas fa-bars mobile-menu-toggler"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
