@@ -452,7 +452,7 @@ main .carousel-caption-inner {
       color: #ffffff;
       transition: background-color 300ms ease; }
 
-main section {
+main .section {
   padding-top: 3em; }
 
 main .section-title {
@@ -504,12 +504,11 @@ main #faq .faq-btn {
 ............PAGES 
 ############################
 */
-.product-information-section {
-  background-color: #fbf4fb; }
-  .product-information-section .tab-content {
-    line-height: 2; }
-  .product-information-section .nav-link.active {
-    background-color: #740774 !important; }
+.product-information-section .tab-content {
+  line-height: 2; }
+
+.product-information-section .nav-link.active {
+  background-color: #740774 !important; }
 
 #seller_bank_details {
   display: none; }
@@ -517,6 +516,22 @@ main #faq .faq-btn {
 .form-wrapper {
   margin: 0 auto;
   background-color: #fbf4fb; }
+
+.product_info_accordion .card-header {
+  background-color: unset !important; }
+
+.product_info_accordion .description_btn {
+  border-color: unset !important;
+  background-color: unset !important;
+  border-style: unset !important;
+  text-decoration: none !important;
+  color: #61585b; }
+
+.product_info_accordion .description_btn_label {
+  display: flex;
+  justify-content: space-between; }
+  .product_info_accordion .description_btn_label i.fa-sort-down {
+    color: #740774; }
 
 #forgot-password-page .inner-wrapper {
   height: 70vh;
@@ -671,7 +686,7 @@ footer {
     display: flex;
     list-style: none;
     padding: 0;
-    justify-content: flex-end; }
+    justify-content: flex-start; }
     footer .footer-social-icons li {
       margin-right: 1.4em; }
   footer .blog-container {
@@ -760,7 +775,9 @@ footer {
         transition: background-color 300ms ease; }
   main #about-us article.lead {
     margin-top: 1em;
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  footer .footer-social-icons {
+    justify-content: flex-end; } }
 
 @media (max-width: 500px) {
   .product-information-section .nav-item {

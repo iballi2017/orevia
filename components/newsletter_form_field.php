@@ -1,5 +1,5 @@
-<form action="#">
-    <p class="mt-5">
+<form action="#" class="text-center text-md-left">
+    <p class="mt-3 mt-md-5">
         Subscribe to our newsletter to get update our latest offers and
         product
     </p>

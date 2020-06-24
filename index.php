@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="hero section" id="hero">
+<html lang="en" class="hero section">
 
 <head>
     <meta charset="UTF-8">
@@ -286,7 +286,7 @@
             <div class="o_main_nav_bottom main-nav">
                 <ul class="nav justify-content-center">
                     <li class="nav-item active" id="hero_link">
-                        <a class="nav-link customLink" href="#hero">Home
+                        <a class="nav-link customLink" href="#top">Home
                             <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" id="about_us_link">

@@ -257,7 +257,7 @@
             <div class="o_main_nav_bottom main-nav">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link customLink active" href="#">Home
+                        <a class="nav-link customLink active" href="../index.php#top">Home
                             <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">

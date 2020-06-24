@@ -1,7 +1,7 @@
 <footer class="pt-3">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 border-right pr-5 my-3">
+            <div class="col-12 col-md-4 border-right pr-md-5 my-3">
                 <img src="../assets/images/orevia-Logo.png" alt="" />
                 <!-- newsletter form field -->
                 <?php include_once 'newsletter_form_field.php'; ?>
@@ -78,13 +78,13 @@
 
                 <ul class="footer-social-icons">
                     <li>
-                        <a href="#" class="customLink"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-twitter-square"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="customLink"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-facebook-square"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="customLink"><i class="fab fa-instagram-square fa-2x"></i></a>
+                        <a href="#" class="customLink"><i class="fab fa-instagram-square"></i></a>
                     </li>
                 </ul>
             </div>

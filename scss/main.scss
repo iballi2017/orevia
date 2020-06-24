@@ -551,7 +551,7 @@ main {
         }
     }
 
-    section {
+    .section {
         padding-top: 3em;
     }
 
@@ -620,7 +620,7 @@ main {
 
 //#####  product detail page
 .product-information-section {
-    background-color: $tinted-clr;
+    // background-color: $tinted-clr;
 
     .tab-content {
         line-height: 2;
@@ -638,6 +638,27 @@ main {
 .form-wrapper {
     margin: 0 auto;
     background-color: $tinted-clr;
+}
+
+.product_info_accordion {
+    .card-header {
+        background-color: unset !important;
+    }
+
+    .description_btn {
+        border-color: unset !important;
+        background-color: unset !important;
+        border-style: unset !important;
+        text-decoration: none !important;
+        color: $shade;
+    }
+    .description_btn_label {
+        display: flex;
+        justify-content: space-between;
+        i.fa-sort-down {
+            color: $primary-clr;
+        }
+    }
 }
 
 //#### forgot password page
@@ -843,7 +864,7 @@ footer {
         display: flex;
         list-style: none;
         padding: 0;
-        justify-content: flex-end;
+        justify-content: flex-start;
         li {
             margin-right: 1.4em;
         }
@@ -982,6 +1003,10 @@ footer {
             margin-top: 1em;
             font-size: 1.3rem;
         }
+    }
+
+    footer .footer-social-icons {
+        justify-content: flex-end;
     }
 }
 
