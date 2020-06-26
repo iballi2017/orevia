@@ -2,14 +2,21 @@
 <?php include_once '../components/header_update.php'; ?>
 
 <div class="container">
+
     <div class="row">
         <div class="col">
-            <h1 class="my-4 container">My Dashboard</h1>
+            <button class="bo_back_history border-0" onclick="goBack()">
+                <i class="fas fa-long-arrow-alt-left fa-2x"></i></button>
+        </div>
+    </div>
+    <div class="row d-none d-md-block">
+        <div class="col">
+            <h3 class="my-4 container">My Dashboard</h3>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3 d-none d-md-block">
             <!-- sidebar -->
             <div class="nav flex-column nav-pills bg-light">
                 <a class="account-tab-link active" href="../views/user-profile.php">My Profile</a>
@@ -23,13 +30,13 @@
 
         <main class="col-12 col-md-9 mb-3 mt-3 mt-md-0" id="user-profile-page">
 
-            <div class="form-wrapper p-5">
-                <h1 class="mb-5">Hello Akinola, <small>Welcome to your profile</small></h1>
+            <div class="form-wrapper p-3 p-md-5">
+                <h3 class="mb-5">Hello Akinola, <small>Welcome to your profile</small></h3>
 
                 <form action="#">
                     <fieldset>
                         <legend>
-                            <h4 class="mb-4 form-title">Personal Details</h4>
+                            <h5 class="mb-4 form-title">Personal Details</h5>
                         </legend>
 
                         <div class="form-group row">

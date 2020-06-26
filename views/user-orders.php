@@ -4,12 +4,18 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1 class="my-4 container">My Dashboard</h1>
+            <button class="bo_back_history border-0" onclick="goBack()">
+                <i class="fas fa-long-arrow-alt-left fa-2x"></i></button>
+        </div>
+    </div>
+    <div class="row d-none d-md-block">
+        <div class="col">
+            <h3 class="my-4 container">My Dashboard</h3>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-3 d-none d-md-block">
             <!-- sidebar -->
             <?php  ?><div class="nav flex-column nav-pills bg-light">
                 <a class="account-tab-link" href="../views/user-profile.php">My Profile</a>

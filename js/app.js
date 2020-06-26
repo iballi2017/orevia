@@ -606,3 +606,10 @@ function show_mobile_nav() {
     }
 }
 // ****************************************
+
+
+// go back history
+function goBack() {
+    window.history.back();
+}
+  // *********

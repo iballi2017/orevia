@@ -96,6 +96,12 @@ li {
   .breadcrumb .breadcrumb-item:hover {
     text-decoration: none; }
 
+.bo_back_history {
+  background-color: unset !important;
+  color: #740774; }
+  .bo_back_history:hover {
+    color: #4d063d; }
+
 .bg-secondary-clr {
   background-color: #4d063d;
   color: #ffffff; }
@@ -237,7 +243,7 @@ form .form-control {
   display: block;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 1.5;
   color: #4d063d;
@@ -282,12 +288,12 @@ form .select-wrapper {
     font-family: "Font Awesome 5 Free";
     content: "\f0dd";
     font-weight: 900;
-    font-size: 28px;
+    font-size: 20px;
     position: absolute;
-    right: 20px;
+    right: 1rem;
     color: #740774;
     pointer-events: none;
-    bottom: 5px; }
+    bottom: 0.34em; }
 
 form select {
   /* remove default style from browsers */
@@ -317,12 +323,16 @@ form .selectOptionStyle {
   padding: 0.8rem 1rem;
   text-decoration: none;
   color: #740774; }
-  .account-tab-link:hover {
-    color: #db4277;
-    text-decoration: none; }
-  .account-tab-link.active {
-    background-color: #740774;
-    color: #ffffff; }
+  .account-tab-link:hover, .account-tab-link.active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #740774; }
+
+.account-tab-link::after {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  float: right; }
 
 .custom-slider-nav {
   position: absolute;
@@ -563,6 +573,11 @@ main #faq .faq-btn {
 #checkout-page [type="radio"]:checked + label .custom-radio {
   background: #4d063d; }
 
+#user-orders-page {
+  font-size: 9px !important; }
+  #user-orders-page a {
+    font-size: 0.5rem; }
+
 #user-wishlist-page .cart-btn,
 #user-wishlist-page .delete-btn {
   background-color: unset; }
@@ -737,6 +752,8 @@ footer {
         height: 100%;
         align-items: center;
         justify-content: flex-end; }
+  form .form-control {
+    font-size: 1rem; }
   .register.form-wrapper {
     width: 70%; }
   .login.form-wrapper {
@@ -776,6 +793,13 @@ footer {
   main #about-us article.lead {
     margin-top: 1em;
     font-size: 1.3rem; }
+  #user-orders-page {
+    font-size: 12px !important; }
+    #user-orders-page a {
+      font-size: 0.5rem; }
+  #user-order-details-page .product_image_caption {
+    display: flex;
+    align-items: center; }
   footer .footer-social-icons {
     justify-content: flex-end; } }
 

@@ -10,6 +10,12 @@
                 <li class="breadcrumb-item active" aria-current="page">product-details</li>
             </ol>
         </nav>
+        <div class="row">
+            <div class="col">
+                <button class="bo_back_history border-0" onclick="goBack()">
+                    <i class="fas fa-long-arrow-alt-left fa-2x"></i></button>
+            </div>
+        </div>
         <div class="row border my-5 pb-3">
             <div class="col-12 col-md-4 offset-md-1">
                 <div class="owl-carousel owl-theme product-views-slider">
@@ -36,7 +42,7 @@
                     <thead>
                         <tr>
                             <th scope="col" colspan="2">
-                                <h4>Orevia Body butter 150g <small style="color: #740774"><i>Almond oil</i></small></h4>
+                                <h5>Orevia Body butter 150g <small style="color: #740774"><i>Almond oil</i></small></h5>
                             </th>
                         </tr>
                     </thead>

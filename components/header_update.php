@@ -130,7 +130,7 @@
         }
     }
 
-    @media(min-width: 900px) {
+    @media(min-width: 700px) {
 
 
         .o_main_nav_top_inner {
@@ -199,16 +199,17 @@
         }
 
         .o_contact_via_container {
-            flex-basis: 25%;
+            flex-basis: 40%;
         }
 
         .o_brand_logo_container {
-            flex-basis: 50%;
+            /* flex-basis: 50%; */
+            flex-basis: auto;
             text-align: center;
         }
 
         .o_navtab_container {
-            flex-basis: 25%;
+            flex-basis: 40%;
             display: grid;
             place-content: end;
         }
@@ -226,8 +227,10 @@
             <div class="o_main_nav_top">
                 <div class="o_main_nav_top_inner wrapper">
                     <div class="o_contact_via_container">
-                        <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span>
-                        <i class="fas fa-phone mr-2 ml-4"></i><span>07065199444</span>
+                        <small class="mr-3">
+                            <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span></small>
+                        <small>
+                            <i class="fas fa-phone mr-2"></i><span>07065199444</span></small>
                     </div>
 
                     <div class="o_brand_logo_container">

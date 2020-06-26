@@ -118,6 +118,14 @@ li {
         text-decoration: none;
     }
 }
+
+.bo_back_history {
+    background-color: unset !important;
+    color: $primary-clr;
+    &:hover {
+        color: $secondary-clr;
+    }
+}
 .bg-secondary-clr {
     background-color: $secondary-clr;
     color: $white;
@@ -285,7 +293,7 @@ form {
         display: block;
         height: calc(1.5em + 0.75rem + 2px);
         padding: 0.375rem 0.75rem;
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: 400;
         line-height: 1.5;
         color: $secondary-clr;
@@ -335,12 +343,12 @@ form {
             font-family: "Font Awesome 5 Free";
             content: "\f0dd";
             font-weight: 900;
-            font-size: 28px;
+            font-size: 20px;
             position: absolute;
-            right: 20px;
+            right: 1rem;
             color: $primary-clr;
             pointer-events: none;
-            bottom: 5px;
+            bottom: 0.34em;
         }
     }
     select {
@@ -377,14 +385,19 @@ form {
     padding: 0.8rem 1rem;
     text-decoration: none;
     color: $primary-clr;
-    &:hover {
-        color: $main-nav-active-link-color;
-        text-decoration: none;
-    }
+    &:hover,
     &.active {
-        background-color: $primary-clr;
         color: $white;
+        text-decoration: none;
+        background-color: $primary-clr;
     }
+}
+
+.account-tab-link::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
 }
 
 .custom-slider-nav {
@@ -705,6 +718,15 @@ main {
     }
 }
 
+// ### user orders page
+
+#user-orders-page {
+    font-size: 9px !important;
+    a {
+        font-size: 0.5rem;
+    }
+}
+
 // ### user wishlist page
 
 #user-wishlist-page {
@@ -936,6 +958,10 @@ footer {
         }
     }
 
+    form .form-control {
+        font-size: 1rem;
+    }
+
     .register.form-wrapper {
         width: 70%;
     }
@@ -1002,6 +1028,22 @@ footer {
         article.lead {
             margin-top: 1em;
             font-size: 1.3rem;
+        }
+    }
+    // ### user orders page
+
+    #user-orders-page {
+        font-size: 12px !important;
+        a {
+            font-size: 0.5rem;
+        }
+    }
+
+    // ### user order-details page
+    #user-order-details-page {
+        .product_image_caption {
+            display: flex;
+            align-items: center;
         }
     }
 
