@@ -378,7 +378,7 @@
     <main>
         <div class="hero">
             <div class="bd-example">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -756,16 +756,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 border-right pr-5 my-3">
-                    <img src="./assets/images/orevia-Logo.png" alt="" />
-
+                    <img src="./assets/images/orevia-Logo.png" alt="brand logo" />
                     <!-- newsletter form field -->
                     <?php include_once './components/newsletter_form_field.php'; ?>
                 </div>
 
                 <div class="col-12 col-md-4 my-3">
-                    <h4 class="footer-section-title">
+                    <h6 class="footer-section-title">
                         Contact us
-                    </h4>
+                    </h6>
                     <ul style="padding: 0; list-style: none; line-height: 2;">
                         <li>Address</li>
                         <li>Mobile number: 07019920332</li>
@@ -774,9 +773,9 @@
                 </div>
 
                 <div class="col-12 col-md-4 my-3">
-                    <h4 class="footer-section-title">
+                    <h6 class="footer-section-title">
                         Blog
-                    </h4>
+                    </h6>
 
                     <ul class="blog-container">
                         <li class="blog-item">
@@ -785,7 +784,7 @@
                                     <div><small>February 27, 2019</small></div>
                                     <div class="blog-link">
                                         <strong>
-                                            <a href="#" class="customLink">
+                                            <a href="#" class="customLink blog_snippet">
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing
                                                 elit...
                                             </a>
@@ -793,25 +792,8 @@
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <img src="./assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="blog-item">
-                            <div class="row">
-                                <div class="col-8">
-                                    <div><small>February 27, 2019</small></div>
-                                    <div class="blog-link">
-                                        <strong>
-                                            <a href="#" class="customLink">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit...
-                                            </a>
-                                        </strong>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <img src="./assets/images/blog-thumbnail.png" alt="" class="blog-thumbnail" />
+                                    <img src="./assets/images/blog-thumbnail.png" alt="blog thumbnail"
+                                        class="blog-thumbnail" />
                                 </div>
                             </div>
                         </li>
@@ -821,25 +803,26 @@
 
             <div class="row border-top mt-5 pt-4">
                 <div class="col-12 col-md-3">
-                    2020 &copy; Orevia. All Rights Reserved.
+                    <small>
+                        2020 &copy; Orevia. All Rights Reserved.</small>
                 </div>
                 <div class="col-12 col-md-3 text-md-center">
-                    <a href="#" class="customLink">Terms and conditions</a>
+                    <a href="#" class="customLink"><small>Terms and conditions</small></a>
                 </div>
                 <div class="col-12 col-md-3 text-md-center">
-                    <a href="#" class="customLink">Privacy Policy</a>
+                    <a href="#" class="customLink"><small>Privacy Policy</small></a>
                 </div>
                 <div class="col-12 col-md-3">
 
                     <ul class="footer-social-icons">
                         <li>
-                            <a href="#" class="customLink"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-twitter-square"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="customLink"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="customLink"><i class="fab fa-instagram-square fa-2x"></i></a>
+                            <a href="#" class="customLink"><i class="fab fa-instagram-square"></i></a>
                         </li>
                     </ul>
                 </div>

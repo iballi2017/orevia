@@ -806,6 +806,9 @@ main {
 }
 footer {
     background-color: #f6f6f6;
+    a {
+        color: $shade;
+    }
 
     .newsletter-form-grp {
         position: relative;
@@ -906,6 +909,11 @@ footer {
             -o-transition: color 250ms ease-in-out;
             -webkit-transition: color 250ms ease-in-out;
             -ms-transition: color 250ms ease-in-out;
+
+            .blog_snippet {
+                font-size: 0.8rem;
+                color: $primary-clr;
+            }
         }
         .blog-thumbnail {
             width: 100%;

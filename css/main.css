@@ -638,6 +638,8 @@ main #faq .faq-btn {
 
 footer {
   background-color: #f6f6f6; }
+  footer a {
+    color: #61585b; }
   footer .newsletter-form-grp {
     position: relative;
     border-top-right-radius: 50px;
@@ -717,6 +719,9 @@ footer {
       -o-transition: color 250ms ease-in-out;
       -webkit-transition: color 250ms ease-in-out;
       -ms-transition: color 250ms ease-in-out; }
+      footer .blog-container .blog-link .blog_snippet {
+        font-size: 0.8rem;
+        color: #740774; }
     footer .blog-container .blog-thumbnail {
       width: 100%; }
     footer .blog-container a:visited {
