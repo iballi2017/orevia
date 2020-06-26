@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="white_btn btn-md py-2 px-5 rounded">Update
+                        <button type="submit" class="white_btn btn-md py-2 px-5 rounded user_profile_update_btn">Update
                             Profile</button>
                     </fieldset>
                 </form>

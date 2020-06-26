@@ -9,7 +9,7 @@
 
                 <div class="section-head bg-secondary-clr my-5">
                     <div class="container py-2">
-                        <h2>CHECK OUT</h2>
+                        <h5 class="m-0">CHECK OUT</h5>
                     </div>
                 </div>
 
@@ -132,7 +132,7 @@
 
                 <div class="section-head bg-secondary-clr my-5">
                     <div class="container py-2">
-                        <h2>ORDER SUMMARY</h2>
+                        <h5 class="m-0">ORDER SUMMARY</h5>
                     </div>
                 </div>
                 <div class="container">
@@ -167,10 +167,8 @@
             </div>
 
             <div class="form-group text-center" style="display: flex; justify-content: center; flex-wrap: wrap">
-                <!-- <button class="modify-cart-btn px-5 white_btn btn-lg">Modify Cart</button>
-                <button class="modify-cart-btn px-5 primary_btn btn-lg">Confirm Order</button> -->
-                <a href="#" class="modify-cart-btn px-5 white_btn btn-lg mr-2 my-1">Modify Cart</a>
-                <a href="#" class="modify-cart-btn px-5 primary_btn btn-lg my-1">Confirm Order</a>
+                <a href="#" class="modify_cart_btn px-5 white_btn btn-lg mr-2 my-1">Modify Cart</a>
+                <a href="#" class="confirm_cart_btn px-5 primary_btn btn-lg my-1">Confirm Order</a>
             </div>
         </form>
     </div>

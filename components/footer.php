@@ -48,17 +48,17 @@
         </div>
 
         <div class="row border-top mt-5 pt-4">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 copyright_wrapper">
                 <small>
                     2020 &copy; Orevia. All Rights Reserved.</small>
             </div>
-            <div class="col-12 col-md-3 text-md-center">
+            <div class="col-12 col-md-3 text-md-center terms_condition_link_wrapper">
                 <a href="#" class="customLink"><small>Terms and conditions</small></a>
             </div>
-            <div class="col-12 col-md-3 text-md-center">
+            <div class="col-12 col-md-3 text-md-center policy_link_wrapper">
                 <a href="#" class="customLink"><small>Privacy Policy</small></a>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 social_icons_wrapper">
 
                 <ul class="footer-social-icons">
                     <li>
