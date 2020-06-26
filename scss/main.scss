@@ -734,6 +734,14 @@ main {
         width: 100%;
         font-size: 0.8rem;
     }
+
+    .payment_method_dropdown_trigger::after {
+        content: "\f0dd";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: $primary-clr;
+    }
 }
 
 // ### user profile page

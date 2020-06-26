@@ -74,9 +74,9 @@
                     <div class="py-4" id="headingOne" style="display: flex; align-items: center">
 
                         <legend>2. PAYMENT METHOD</legend>
-                        <div type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            <i class="fas fa-sort-down fa-2x p-0" style="color: #740774"></i>
+                        <div class="payment_method_dropdown_trigger" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <!-- <i class="fas fa-sort-down p-0" style="color: #740774"></i> -->
                         </div>
                     </div>
 

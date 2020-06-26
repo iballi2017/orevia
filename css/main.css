@@ -589,6 +589,13 @@ main #faq .faq-btn {
   width: 100%;
   font-size: 0.8rem; }
 
+#checkout-page .payment_method_dropdown_trigger::after {
+  content: "\f0dd";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #740774; }
+
 #user-profile-page .user_profile_update_btn {
   width: 100%; }
 
