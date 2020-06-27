@@ -145,7 +145,7 @@
         } */
     }
 
-    @media(min-width: 900px) {
+    @media(min-width: 700px) {
 
 
         .o_main_nav_top_inner {
@@ -223,19 +223,18 @@
             -ms-transition: transform 250ms ease-in-out;
         }
 
+
         .o_contact_via_container {
-            flex-basis: 25%;
-            display: flex;
-            flex-wrap: wrap;
+            flex-basis: 40%;
         }
 
         .o_brand_logo_container {
-            flex-basis: 50%;
+            flex-basis: auto;
             text-align: center;
         }
 
         .o_navtab_container {
-            flex-basis: 25%;
+            flex-basis: 40%;
             display: grid;
             place-content: end;
         }
@@ -253,10 +252,10 @@
             <div class="o_main_nav_top">
                 <div class="o_main_nav_top_inner wrapper">
                     <div class="o_contact_via_container">
-                        <div class="mr-3">
-                            <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span></div>
-                        <div>
-                            <i class="fas fa-phone mr-2"></i><span>07065199444</span></div>
+                        <small class="mr-3">
+                            <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span></small>
+                        <small>
+                            <i class="fas fa-phone mr-2"></i><span>07065199444</span></small>
                     </div>
 
                     <div class="o_brand_logo_container">
@@ -268,16 +267,16 @@
 
                         <ul class="o_navtab">
                             <li>
-                                <a href="#">Login</a>
+                                <a href="#"><small>Login</small></a>
                             </li>
                             <li>
-                                <a href="#">Sign up</a>
+                                <a href="#"><small>Sign up</small></a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="badge badge-secondary">0</span>
-                                </a>
+                                    <small><i class="fas fa-shopping-cart"></i>
+                                        <span class="badge badge-secondary">0</span>
+                                    </small></a>
                             </li>
                         </ul>
                     </div>
@@ -397,28 +396,13 @@
                                 alt="slider-1" />
                             <div class="carousel-caption">
                                 <div class="carousel-caption-inner">
-                                    <h5>Give your skin a boost with our products</h5>
-                                    <h1>GLOWING AND RADIANT SKIN</h1>
-                                    <h6>It is delicately formulated with an exquisite fragrance suitable for all skin
+                                    <h6 class="sec_caption">Give your skin a boost with our products</h6>
+                                    <h3 class="pri_caption">GLOWING AND RADIANT SKIN</h3>
+                                    <p class="tar_caption">It is delicately formulated with an exquisite fragrance
+                                        suitable for all skin
                                         types
-                                    </h6>
-                                    <a href="#" class="hero-action-btn px-5">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
-                                alt="slider-2" /> -->
-                            <img src="./assets/images/deanna-alys-6LBBOwkPzyQ-unsplash.png" class="d-block w-100"
-                                alt="slider-1" />
-                            <div class="carousel-caption">
-                                <div class="carousel-caption-inner">
-                                    <h5>Give your skin a boost with our products</h5>
-                                    <h1>GLOWING AND RADIANT SKIN</h1>
-                                    <h6>It is delicately formulated with an exquisite fragrance suitable for all skin
-                                        types
-                                    </h6>
-                                    <a href="#" class="hero-action-btn px-5">Shop Now</a>
+                                    </p>
+                                    <a href="#" class="hero-action-btn px-3 px-md-5 py-md-2">Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -438,19 +422,15 @@
         <section id="about-us" class="section">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title display-5 mb-4">About us</h2>
+                    <h2 class="section-title display-5 mb-2">About us</h2>
                 </div>
-                <article class="lead">
+                <article class="lead mb-4">
                     <p>
                         For those who have seen the Earth from space, and for the hundreds
                         and perhaps thousands more who will, the experience most certainly
                         changes your perspective. The things that we share in our world
                         are far more valuable than those which divide us. It suddenly
-                        struck me that that tiny pea, pretty and blue, was the Earth. I
-                        put up my thumb and shut one eye, and my thumb blotted out the
-                        planet Earth. I didn’t feel like a giant. I felt very, very small.
-                        Science has not yet mastered prophecy. We predict too much for the
-                        next year and yet far too little for the next 10.
+                        struck me that that tiny pea, pretty and blue, was the Earth.
                     </p>
                 </article>
             </div>
@@ -459,7 +439,7 @@
         <section id="our-products">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title display-5 mb-4">Our Products</h2>
+                    <h2 class="section-title display-5 mb-2">Our Products</h2>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -469,62 +449,20 @@
                                 <figure class="text-center">
                                     <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
-                                        <h4>Orevia Body butter</h4>
-                                        <span class="product-content-qty">(150ml)</span>
-                                        <h4 class="price">#2000</h4>
-                                        <span class="star-rating">
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                        </span>
+                                        <div>Orevia Body butter<br />
+                                            <sdivan class="product-content-qty">(150ml)</span><br />
+                                                <span class="price">#2000</span></p>
+                                                <span class="star-rating">
+                                                    <i class="far fa-star text-warning"></i>
+                                                    <i class="far fa-star text-warning"></i>
+                                                    <i class="far fa-star text-warning"></i>
+                                                    <i class="far fa-star text-warning"></i>
+                                                    <i class="far fa-star text-warning"></i>
+                                                </span>
 
-                                        <button class="btn-block py-2 mt-2 white_btn">
-                                            SHOP NOW
-                                        </button>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="card-body border product-card">
-                                <figure class="text-center">
-                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
-                                    <figcaption>
-                                        <h4>Orevia Body butter</h4>
-                                        <span class="product-content-qty">(150ml)</span>
-                                        <h4 class="price">#2000</h4>
-                                        <span class="star-rating">
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                        </span>
-
-                                        <button class="btn-block py-2 mt-2 white_btn">
-                                            SHOP NOW
-                                        </button>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="card-body border product-card">
-                                <figure class="text-center">
-                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
-                                    <figcaption>
-                                        <h4>Orevia Body butter</h4>
-                                        <span class="product-content-qty">(150ml)</span>
-                                        <h4 class="price">#2000</h4>
-                                        <span class="star-rating">
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                            <i class="far fa-star text-warning"></i>
-                                        </span>
-
-                                        <button class="btn-block py-2 mt-2 white_btn">
-                                            SHOP NOW
-                                        </button>
+                                                <button class="btn-block py-2 mt-2 white_btn">
+                                                    SHOP NOW
+                                                </button>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -537,7 +475,7 @@
         <section id="reviews" class="section">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-title display-5 mb-4">Reviews</h2>
+                    <h2 class="section-title display-5 mb-2">Reviews</h2>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -752,7 +690,7 @@
             </div>
         </section>
     </main>
-    <footer class="mt-5 pt-3">
+    <footer class="mt-3 pt-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 border-right pr-5 my-3">

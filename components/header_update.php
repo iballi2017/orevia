@@ -242,15 +242,15 @@
 
                         <ul class="o_navtab">
                             <li>
-                                <a href="#">Login</a>
+                                <a href="#"><small>Login</small></a>
                             </li>
                             <li>
-                                <a href="#">Sign up</a>
+                                <a href="#"><small>Sign up</small></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="badge badge-secondary">0</span>
+                                <a href="#"><small>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="badge badge-secondary">0</span></small>
                                 </a>
                             </li>
                         </ul>

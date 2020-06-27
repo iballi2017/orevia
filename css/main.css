@@ -8,21 +8,20 @@ Table of Content:
 4. Media queries
 
 */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #141414;
+  font-size: 14px; }
+
 /* ############################
 
     TYPOGRAPHY
 
     ############################ 
 */
-h1 {
-  font-size: 1.9rem; }
-
-h2 {
-  font-size: 1.7rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
 h1,
 h2,
 h3,
@@ -31,6 +30,24 @@ h5,
 h6 {
   margin: 0 0 0.5em 0; }
 
+h1 {
+  font-size: 1.4rem; }
+
+h2 {
+  font-size: 1.3rem; }
+
+h3 {
+  font-size: 1.2rem; }
+
+h4 {
+  font-size: 1.1rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.9rem; }
+
 /* 
  
 // ............GLOBAL
@@ -38,14 +55,6 @@ h6 {
     ############################
 
  */
-html {
-  scroll-behavior: smooth; }
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #141414;
-  font-size: 13px; }
-
 a {
   color: #740774; }
   a:hover {
@@ -181,8 +190,6 @@ a.bg-primary-clr {
 .product-card {
   width: 85%;
   margin: 0 auto; }
-  .product-card span {
-    display: block; }
 
 .product-content-qty {
   font-weight: 600; }
@@ -393,8 +400,8 @@ form .selectOptionStyle {
 
 .carousel-indicators li {
   background-color: #740774;
-  height: 7px;
-  width: 50px; }
+  height: 3px;
+  width: 20px; }
 
 .main-nav {
   background-color: #4d063d; }
@@ -431,47 +438,35 @@ main .carousel-indicators {
   bottom: unset; }
 
 main .carousel-caption {
-  text-align: left;
   top: 0;
   padding-bottom: 0; }
 
 main .carousel-caption-inner {
   height: 100%;
   width: 100%;
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #141414; }
-  main .carousel-caption-inner h1,
-  main .carousel-caption-inner h5,
-  main .carousel-caption-inner h6 {
-    text-align: center;
-    margin-bottom: 0.2em; }
-  main .carousel-caption-inner h1 {
-    font-size: 1.3rem;
-    font-weight: 600; }
-  main .carousel-caption-inner h5 {
-    font-size: 1rem; }
-  main .carousel-caption-inner h6 {
-    font-size: 0.8rem; }
+  color: #141414;
+  display: grid;
+  place-content: center; }
+  main .carousel-caption-inner * {
+    text-align: center; }
+  main .carousel-caption-inner p {
+    margin-bottom: 0.5em; }
   main .carousel-caption-inner .hero-action-btn {
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.4rem;
     margin-top: 0.5em;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     border-radius: 0.3rem;
-    background-color: none !important;
     color: #61585b;
-    display: block;
-    border: 2px solid #740774; }
+    border: 2px solid #740774;
+    display: block; }
     main .carousel-caption-inner .hero-action-btn:hover {
       background-color: #740774;
       color: #ffffff;
       transition: background-color 300ms ease; }
 
 main .section {
-  padding-top: 3em; }
+  padding-top: 2em; }
 
 main .section-title {
   display: inline-block;
@@ -488,12 +483,12 @@ main .section-title {
 
 main #about-us .section-title::before {
   content: "";
-  height: 50px;
+  height: 30px;
   background-image: url("../assets/images/favicon.png");
   background-repeat: no-repeat;
   background-position-x: center;
   display: block;
-  margin-top: 2em; }
+  margin-bottom: 0.2em; }
 
 main #about-us article.lead {
   text-align: center;
@@ -722,8 +717,8 @@ footer {
       content: "";
       display: block;
       background-color: #61585b;
-      height: 4px;
-      width: 10%;
+      height: 2px;
+      width: 4%;
       margin-bottom: 0.5em; }
   footer .footer-social-icons {
     display: flex;
@@ -766,7 +761,7 @@ footer {
 ............MEDIA QUERIES 
 ############################
 */
-@media (min-width: 990px) {
+@media (min-width: 800px) {
   /* ############################
 
     TYPOGRAPHY
@@ -805,30 +800,17 @@ footer {
     align-items: flex-start;
     justify-content: center;
     color: #141414; }
-    main .carousel-caption-inner h1,
-    main .carousel-caption-inner h5,
-    main .carousel-caption-inner h6 {
-      text-align: unset; }
-    main .carousel-caption-inner h1 {
-      font-size: 3rem;
-      font-weight: 600; }
-    main .carousel-caption-inner h5 {
-      font-size: 2rem; }
-    main .carousel-caption-inner h6 {
-      font-size: 1.7rem; }
+    main .carousel-caption-inner * {
+      text-align: left;
+      margin: 0; }
+    main .carousel-caption-inner .pri_caption {
+      font-size: 3rem; }
+    main .carousel-caption-inner .sec_caption {
+      font-size: 1.5rem; }
+    main .carousel-caption-inner .tar_caption {
+      font-size: 1.3rem; }
     main .carousel-caption-inner .hero-action-btn {
-      padding: 0.5rem 1rem;
-      font-size: 1.25rem;
-      line-height: 1.5;
-      border-radius: 0.3rem;
-      background-color: none !important;
-      color: #61585b;
-      display: block;
-      border: 2px solid #740774; }
-      main .carousel-caption-inner .hero-action-btn:hover {
-        background-color: #740774;
-        color: #ffffff;
-        transition: background-color 300ms ease; }
+      font-size: 1.2rem; }
   main #about-us article.lead {
     margin-top: 1em;
     font-size: 1.3rem; }
@@ -859,3 +841,13 @@ footer {
 @media (max-width: 500px) {
   .product-information-section .nav-item {
     flex-basis: 50% !important; } }
+
+@media (max-width: 385px) {
+  main .carousel-caption-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .sec_caption,
+  main .pri_caption,
+  main .tar_caption {
+    display: none; } }

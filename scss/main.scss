@@ -19,21 +19,29 @@ Table of Content:
 
 */
 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $font-family;
+    color: $black-option-clr;
+    font-size: 14px;
+}
 /* ############################
 
     TYPOGRAPHY
 
     ############################ 
 */
-h1 {
-    font-size: 1.9rem;
-}
-h2 {
-    font-size: 1.7rem;
-}
-h3 {
-    font-size: 1.5rem;
-}
+// h1 {
+//     font-size: 1.9rem;
+// }
+// h2 {
+//     font-size: 1.7rem;
+// }
+// h3 {
+//     font-size: 1.5rem;
+// }
 
 h1,
 h2,
@@ -43,6 +51,24 @@ h5,
 h6 {
     margin: 0 0 0.5em 0;
 }
+h1 {
+    font-size: 1.4rem;
+}
+h2 {
+    font-size: 1.3rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1.1rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.9rem;
+}
 
 /* 
  
@@ -51,15 +77,6 @@ h6 {
     ############################
 
  */
-html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: $font-family;
-    color: $black-option-clr;
-    font-size: 13px;
-}
-
 a {
     color: $primary-clr;
     &:hover {
@@ -222,9 +239,6 @@ a.bg-primary-clr {
 .product-card {
     width: 85%;
     margin: 0 auto;
-    span {
-        display: block;
-    }
 }
 
 .product-content-qty {
@@ -471,8 +485,8 @@ form {
 .carousel-indicators {
     li {
         background-color: $primary-clr;
-        height: 7px;
-        width: 50px;
+        height: 3px;
+        width: 20px;
     }
 }
 
@@ -524,45 +538,29 @@ main {
     }
 
     .carousel-caption {
-        text-align: left;
+        // text-align: left;
         top: 0;
         padding-bottom: 0;
     }
     .carousel-caption-inner {
         height: 100%;
         width: 100%;
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         color: $black-option-clr;
-
-        h1,
-        h5,
-        h6 {
+        // display: grid;
+        // place-content: center;
+        * {
             text-align: center;
-            margin-bottom: 0.2em;
         }
-
-        h1 {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        h5 {
-            font-size: 1rem;
-        }
-        h6 {
-            font-size: 0.8rem;
+        p {
+            margin-bottom: 0.5em;
         }
         .hero-action-btn {
-            padding: 0.3rem 0.6rem;
+            padding: 0.2rem 0.4rem;
             margin-top: 0.5em;
-            font-size: 1rem;
+            font-size: 0.8rem;
             line-height: 1.5;
             border-radius: 0.3rem;
-            background-color: none !important;
             color: $shade;
-            display: block;
             border: 2px solid $primary-clr;
 
             &:hover {
@@ -574,7 +572,7 @@ main {
     }
 
     .section {
-        padding-top: 3em;
+        padding-top: 2em;
     }
 
     .section-title {
@@ -595,12 +593,12 @@ main {
     #about-us {
         .section-title::before {
             content: "";
-            height: 50px;
+            height: 30px;
             background-image: url("../assets/images/favicon.png");
             background-repeat: no-repeat;
             background-position-x: center;
             display: block;
-            margin-top: 2em;
+            margin-bottom: 0.2em;
         }
 
         article.lead {
@@ -913,8 +911,8 @@ footer {
             content: "";
             display: block;
             background-color: $shade;
-            height: 4px;
-            width: 10%;
+            height: 2px;
+            width: 4%;
             margin-bottom: 0.5em;
         }
     }
@@ -980,7 +978,7 @@ footer {
 ............MEDIA QUERIES 
 ############################
 */
-@media (min-width: 990px) {
+@media (min-width: 800px) {
     /* ############################
 
     TYPOGRAPHY
@@ -1037,39 +1035,57 @@ footer {
         justify-content: center;
         color: $black-option-clr;
 
-        h1,
-        h5,
-        h6 {
-            text-align: unset;
+        * {
+            text-align: left;
+            margin: 0;
         }
 
-        h1 {
+        .pri_caption {
             font-size: 3rem;
-            font-weight: 600;
         }
-        h5 {
-            font-size: 2rem;
+        .sec_caption {
+            font-size: 1.5rem;
         }
-        h6 {
-            font-size: 1.7rem;
+        .tar_caption {
+            font-size: 1.3rem;
         }
-
         .hero-action-btn {
-            padding: 0.5rem 1rem;
-            font-size: 1.25rem;
-            line-height: 1.5;
-            border-radius: 0.3rem;
-            background-color: none !important;
-            color: $shade;
-            display: block;
-            border: 2px solid $primary-clr;
-
-            &:hover {
-                background-color: $primary-clr;
-                color: $white;
-                transition: background-color 300ms ease;
-            }
+            font-size: 1.2rem;
         }
+
+        // h1,
+        // h5,
+        // h6 {
+        //     text-align: unset;
+        // }
+
+        // h1 {
+        //     font-size: 3rem;
+        //     font-weight: 600;
+        // }
+        // h5 {
+        //     font-size: 2rem;
+        // }
+        // h6 {
+        //     font-size: 1.7rem;
+        // }
+
+        // .hero-action-btn {
+        //     padding: 0.5rem 1rem;
+        //     font-size: 1.25rem;
+        //     line-height: 1.5;
+        //     border-radius: 0.3rem;
+        //     background-color: none !important;
+        //     color: $shade;
+        //     display: block;
+        //     border: 2px solid $primary-clr;
+
+        //     &:hover {
+        //         background-color: $primary-clr;
+        //         color: $white;
+        //         transition: background-color 300ms ease;
+        //     }
+        // }
     }
 
     main #about-us {
@@ -1149,6 +1165,21 @@ footer {
     .product-information-section {
         .nav-item {
             flex-basis: 50% !important;
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    main {
+        .carousel-caption-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sec_caption,
+        .pri_caption,
+        .tar_caption {
+            display: none;
         }
     }
 }
