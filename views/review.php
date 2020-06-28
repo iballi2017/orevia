@@ -5,6 +5,12 @@
 
     <div class="container">
 
+        <!-- This shows up after a successful form submission -->
+        <div class="feedback_response" style="height: 80vh; width: 100%; display: grid; place-content: center">
+            <h1 class="text-center">THANK YOU FOR THE FEEDBACK !!</h1>
+        </div>
+        <!--  -->
+
         <form action="#">
             <div class="inner-wrapper">
 
@@ -54,11 +60,11 @@
 
                                     <!-- star rating -->
                                     <span class="star-rating">
-                                        <i class="far fa-star text-warning fa-3x review-star"></i>
-                                        <i class="far fa-star text-warning fa-3x review-star"></i>
-                                        <i class="far fa-star text-warning fa-3x review-star"></i>
-                                        <i class="far fa-star text-warning fa-3x review-star"></i>
-                                        <i class="far fa-star text-warning fa-3x review-star"></i>
+                                        <i class="far fa-star text-warning review-star"></i>
+                                        <i class="far fa-star text-warning review-star"></i>
+                                        <i class="far fa-star text-warning review-star"></i>
+                                        <i class="far fa-star text-warning review-star"></i>
+                                        <i class="far fa-star text-warning review-star"></i>
                                     </span>
 
                                     <!-- star rating hidden input field-->
@@ -78,7 +84,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <button type="submit" class="modify-cart-btn px-5 primary_btn btn-lg">Submit</button>
+                                <button type="submit" class="review-btn px-md-5 primary_btn btn-lg">Submit</button>
                             </div>
                         </div>
                     </div>

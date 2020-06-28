@@ -18,24 +18,32 @@
         </div>
         <div class="row border my-5 pb-3">
             <div class="col-12 col-md-4 offset-md-1">
-                <div class="owl-carousel owl-theme product-views-slider">
-                    <div class="item">
-                        <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="" width="100%">
+                <div class="product_inner_container">
+                    <div class="owl-carousel owl-theme product-views-slider">
+                        <div class="item">
+                            <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="" width="100%">
 
+                        </div>
+                        <div class="item">
+                            <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="">
+
+                        </div>
                     </div>
-                    <div class="item">
-                        <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="">
-
+                    <div class="text-center">
+                        <button id="prev-img" class="border-0">
+                            <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
+                                style="width: 40px">
+                        </button>
+                        <button id="next-img" class="border-0">
+                            <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
+                                style="width: 40px">
+                        </button>
+                    </div>
+                    <div class="extra_nav_control" style="">
+                        <div class="extra_nav_prev"></div>
+                        <div class="extra_nav_next"></div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button id="prev-img" class="border-0">
-                        <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
-                            style="width: 40px">
-                    </button>
-                    <button id="next-img" class="border-0">
-                        <img src="../assets/images/orevia-cup-thumbnail.png" class="img-fluid" alt=""
-                            style="width: 40px"></button></div>
             </div>
             <div class="col-12 col-md-6 offset-md-1">
                 <table class="table mt-5">
@@ -65,13 +73,15 @@
                         <tr>
                             <th scope="row" colspan="2">
                                 <div class="d-flex align-center">
-                                    <a href="#" class="py-2 px-5 my-2 mr-2 border-0 bg-primary-clr">
-                                        <i class="fas fa-shopping-cart mr-2 py-2"></i>
+                                    <a href="#"
+                                        class="py-2 px-3 px-md-5 my-2 mr-2 border-0 bg-primary-clr buy_now_link_btn">
+                                        <i class="fas fa-shopping-cart mr-1 mr-md-2 py-2"></i>
                                         Buy Now</a>
-                                    <button class="px-5 py-2 my-2 border-0 bg-shade-clr d-none d-md-block">
+                                    <button
+                                        class="py-2 px-2 px-md-5 my-2 border-0 bg-shade-clr d-none d-md-block save_for_later_btn">
                                         <i class="fas fa-heart mr-2"></i>Save For Later</button>
                                     <button class="d-block d-md-none" style="background: none; border: none"><i
-                                            class="fas fa-heart fa-2x ml-3" style="color: #61585b"></i></button></div>
+                                            class="fas fa-heart fa-2x ml-3" style="color: #C4C4C4"></i></button></div>
                             </th>
                         </tr>
                     </tbody>
@@ -174,7 +184,7 @@
                         </h2>
                     </div>
 
-                    <div id="collapseIngredient-info" class="collapse show" aria-labelledby="headingOne"
+                    <div id="collapseIngredient-info" class="collapse" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
                             <ol>

@@ -8,7 +8,7 @@
             <h3 class="form-title text-center form-title mb-5">Reset Password</h3>
 
             <!-- alert message if password combination did not match -->
-            <div class="alert alert-danger" role="alert" id="reset_password_error_msg">
+            <div class="alert text-danger text-center" role="alert" id="reset_password_error_msg">
                 Password combination do not match
             </div>
 
@@ -46,7 +46,8 @@
 
 
                 <div class="text-center">
-                    <button type="submit" class="white_btn btn-md py-2 px-5 btn-block rounded">Submit</button></div>
+                    <button type="submit"
+                        class="white_btn btn-md py-1 py-md-2 px-3 px-md-5 btn-block rounded">Submit</button></div>
             </form>
         </div>
 

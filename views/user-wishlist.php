@@ -29,8 +29,7 @@
         <main class="col-12 col-md-9 mb-3 mt-3 mt-md-0" id="user-wishlist-page">
 
             <div class="form-wrapper p-3">
-                <div class="bg-white p-2 border-bottom"
-                    style="display: flex; justify-content: space-between; align-items: flex-start">
+                <div class="bg-white wishlist_single_item p-2 border-bottom" style="">
 
                     <figure class="figure m-0" style="display: flex; align-items: flex-start">
                         <img src="../assets/images/orevia-fluid.png" class="figure-img img-fluid mr-3"
@@ -45,9 +44,12 @@
                         </figcaption>
                     </figure>
 
-                    <div>
-                        <button class="btn-sm border-0 cart-btn"><i class="fas fa-shopping-cart"></i></button>
-                        <button class="btn-sm border-0 delete-btn"><i class="fas fa-trash"></i></button>
+                    <div class="btn_wrapper">
+                        <!-- <button class="btn-sm border-0 cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                        <button class="btn-sm border-0 delete-btn"><i class="fas fa-trash"></i></button> -->
+
+                        <button class="btn-sm btn-md-block remove_btn">Remove</button>
+                        <button class="btn-sm btn-md-block add_to_cart_btn">Add to cart</button>
                     </div>
                 </div>
             </div>

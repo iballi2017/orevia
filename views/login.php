@@ -31,7 +31,8 @@
 
 
                 <div class="text-center">
-                    <button type="submit" class="white_btn btn-md py-2 px-5 btn-block rounded">Login</button></div>
+                    <button type="submit"
+                        class="white_btn btn-md py-1 py-md-2 px-3 px-md-5 btn-block rounded">Login</button></div>
             </form>
         </div>
 

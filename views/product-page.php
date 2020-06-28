@@ -17,6 +17,16 @@ include_once '../components/header_update.php'; ?>
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="bo_back_history border-0" onclick="goBack()">
+                    <i class="fas fa-long-arrow-alt-left fa-2x"></i></button>
+            </div>
+        </div>
+    </div>
+
+
 
     <section id="our-products">
         <div class="container">
@@ -92,58 +102,6 @@ include_once '../components/header_update.php'; ?>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-sm-6 col-md-4">
-                    <div class="card shadow border-0 my-2">
-                        <div class="card-body product-card">
-                            <figure class="text-center">
-                                <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="Trulli"
-                                    style="width: 100%;" />
-                                <figcaption>
-                                    <h4>Orevia Body butter</h4>
-                                    <span class="product-content-qty">(150ml)</span>
-                                    <h4 class="price">#2000</h4>
-                                    <span class="star-rating">
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </span>
-
-                                    <button class="btn-block py-2 mt-2 white_btn">
-                                        SHOP NOW
-                                    </button>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="card shadow border-0 my-2">
-                        <div class="card-body product-card">
-                            <figure class="text-center">
-                                <img src="../assets/images/orevia-cup.png" class="img-fluid" alt="Trulli"
-                                    style="width: 100%;" />
-                                <figcaption>
-                                    <h4>Orevia Body butter</h4>
-                                    <span class="product-content-qty">(150ml)</span>
-                                    <h4 class="price">#2000</h4>
-                                    <span class="star-rating">
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="far fa-star text-warning"></i>
-                                    </span>
-
-                                    <button class="btn-block py-2 mt-2 white_btn">
-                                        SHOP NOW
-                                    </button>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>

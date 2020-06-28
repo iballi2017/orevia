@@ -94,6 +94,15 @@ $(document).ready(function () {
         $(".product-views-slider").trigger('next.owl.carousel');
     })
 
+    $(".extra_nav_prev").click(function () {
+        // alert("hello")
+        $(".product-views-slider").trigger('prev.owl.carousel');
+    })
+    $(".extra_nav_next").click(function () {
+        // alert("hello")
+        $(".product-views-slider").trigger('next.owl.carousel');
+    })
+
 
     // ###### custom bootstrap carousel events
     $("#prev").on("click", function () {
