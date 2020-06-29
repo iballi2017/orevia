@@ -190,6 +190,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="carousel-item">
+                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
+                                alt="slider-1" /> -->
+                            <img src="./assets/images/deanna-alys-6LBBOwkPzyQ-unsplash.png" class="d-block w-100"
+                                alt="slider-1" />
+                            <div class="carousel-caption">
+                                <div class="carousel-caption-inner">
+                                    <h6 class="sec_caption">Give your skin a boost with our products</h6>
+                                    <h3 class="pri_caption">GLOWING AND RADIANT SKIN</h3>
+                                    <p class="tar_caption">It is delicately formulated with an exquisite fragrance
+                                        suitable for all skin
+                                        types
+                                    </p>
+                                    <a href="#" class="hero-action-btn px-3 px-md-5 py-md-2">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
