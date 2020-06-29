@@ -661,8 +661,7 @@ article.lead p {
     top: 40%;
     z-index: 2; }
     #product-details-page .product_inner_container .extra_nav_control .extra_nav_prev::after {
-      content: "\f137";
-      content: "\f138"; }
+      content: "\f137"; }
     #product-details-page .product_inner_container .extra_nav_control .extra_nav_next::after {
       content: "\f138"; }
     #product-details-page .product_inner_container .extra_nav_control .extra_nav_prev::after,
@@ -718,6 +717,12 @@ article.lead p {
   .product_info_accordion .description_btn_label i.fa-sort-down {
     color: #740774; }
 
+.login.form-wrapper {
+  max-width: 500px; }
+
+.register.form-wrapper {
+  max-width: 700px; }
+
 #forgot-password-page .inner-wrapper {
   height: 70vh;
   width: 100%;
@@ -725,6 +730,13 @@ article.lead p {
   place-content: center; }
   #forgot-password-page .inner-wrapper input[type="text"] {
     width: 70%; }
+
+.continue_shopping_link_btn,
+.proceed_to_checkout_link_btn,
+.modify_cart_btn,
+.confirm_cart_btn {
+  width: 100%;
+  font-size: 0.8rem; }
 
 #checkout-page legend {
   font-size: 1.2rem; }
@@ -747,10 +759,6 @@ article.lead p {
   transition: transform 300ms ease-in-out; }
 #checkout-page [type="radio"]:checked + label .custom-radio {
   background: #4d063d; }
-#checkout-page .modify_cart_btn,
-#checkout-page .confirm_cart_btn {
-  width: 100%;
-  font-size: 0.8rem; }
 #checkout-page .payment_method_dropdown_trigger::after {
   content: "\f0dd";
   font-family: "Font Awesome 5 Free";
@@ -925,9 +933,6 @@ article.lead p {
     display: flex;
     align-items: center;
     font-weight: 600; }
-  #cart_page .next_action_cart_btn_wrapper a {
-    width: 100%;
-    font-size: 1.1rem; }
   @media (min-width: 600px) {
     #cart_page body {
       font-size: 16px; }
@@ -1016,8 +1021,8 @@ article.lead p {
       align-items: center;
       font-weight: 600; }
     #cart_page .next_action_cart_btn_wrapper a {
-      width: 35%;
-      font-size: 1.25rem; } }
+      width: auto;
+      font-size: 1rem; } }
   @media (min-width: 900px) {
     #cart_page .cart_btn {
       font-size: 0.8rem; } }
@@ -1159,12 +1164,6 @@ footer {
 
   form .form-control {
     font-size: 1rem; }
-
-  .register.form-wrapper {
-    width: 70%; }
-
-  .login.form-wrapper {
-    width: 40%; }
 
   .carousel-caption-inner {
     height: 100%;

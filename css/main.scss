@@ -840,7 +840,6 @@ article.lead p {
             z-index: 2;
             .extra_nav_prev::after {
                 content: "\f137";
-                content: "\f138";
             }
             .extra_nav_next::after {
                 content: "\f138";
@@ -923,6 +922,13 @@ article.lead p {
     }
 }
 
+.login.form-wrapper {
+    max-width: 500px;
+}
+.register.form-wrapper {
+    max-width: 700px;
+}
+
 //#### forgot password page
 #forgot-password-page {
     .inner-wrapper {
@@ -938,7 +944,13 @@ article.lead p {
 }
 
 //##### Checkout page
-
+.continue_shopping_link_btn,
+.proceed_to_checkout_link_btn,
+.modify_cart_btn,
+.confirm_cart_btn {
+    width: 100%;
+    font-size: 0.8rem;
+}
 #checkout-page {
     legend {
         font-size: 1.2rem;
@@ -967,12 +979,6 @@ article.lead p {
 
     [type="radio"]:checked + label .custom-radio {
         background: $secondary-clr;
-    }
-
-    .modify_cart_btn,
-    .confirm_cart_btn {
-        width: 100%;
-        font-size: 0.8rem;
     }
 
     .payment_method_dropdown_trigger::after {
@@ -1241,10 +1247,10 @@ article.lead p {
         font-weight: 600;
     }
 
-    .next_action_cart_btn_wrapper a {
-        width: 100%;
-        font-size: 1.1rem;
-    }
+    // .next_action_cart_btn_wrapper a {
+    //     width: 100%;
+    //     font-size: 1.1rem;
+    // }
 
     @media (min-width: 600px) {
         body {
@@ -1376,8 +1382,8 @@ article.lead p {
         }
 
         .next_action_cart_btn_wrapper a {
-            width: 35%;
-            font-size: 1.25rem;
+            width: auto;
+            font-size: 1rem;
         }
     }
 
@@ -1581,14 +1587,6 @@ footer {
         .form-control {
             font-size: 1rem;
         }
-    }
-
-    .register.form-wrapper {
-        width: 70%;
-    }
-
-    .login.form-wrapper {
-        width: 40%;
     }
 
     .carousel-caption-inner {

@@ -74,11 +74,11 @@
                             <th scope="row" colspan="2">
                                 <div class="d-flex align-center">
                                     <a href="#"
-                                        class="py-2 px-3 px-md-5 my-2 mr-2 border-0 bg-primary-clr buy_now_link_btn">
+                                        class="py-2 px-3 px-lg-5 my-2 mr-2 border-0 bg-primary-clr buy_now_link_btn">
                                         <i class="fas fa-shopping-cart mr-1 mr-md-2 py-2"></i>
                                         Buy Now</a>
                                     <button
-                                        class="py-2 px-2 px-md-5 my-2 border-0 bg-shade-clr d-none d-md-block save_for_later_btn">
+                                        class="py-2 px-2 px-lg-5 my-2 border-0 bg-shade-clr d-none d-md-block save_for_later_btn">
                                         <i class="fas fa-heart mr-2"></i>Save For Later</button>
                                     <button class="d-block d-md-none" style="background: none; border: none"><i
                                             class="fas fa-heart fa-2x ml-3" style="color: #C4C4C4"></i></button></div>

@@ -126,8 +126,10 @@ include_once '../components/header_update.php'; ?>
                 <div class="col text-center py-3">
                     <div class="next_action_cart_btn_wrapper"
                         style="display: flex; justify-content: center; flex-wrap: wrap">
-                        <a href=" #" class="btn-lg border-0 white_btn shadow m-2">CONTINUE SHOPPING</a>
-                        <a href="#" class="btn-lg border-0 primary_btn shadow m-2">PROCEED TO CHECKOUT</a>
+                        <a href=" #" class="btn-lg border-0 white_btn shadow m-2 continue_shopping_link_btn">CONTINUE
+                            SHOPPING</a>
+                        <a href="#" class="btn-lg border-0 primary_btn shadow m-2 proceed_to_checkout_link_btn">PROCEED
+                            TO CHECKOUT</a>
                     </div>
                 </div>
             </div>

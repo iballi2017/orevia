@@ -45,8 +45,6 @@
                     </figure>
 
                     <div class="btn_wrapper">
-                        <!-- <button class="btn-sm border-0 cart-btn"><i class="fas fa-shopping-cart"></i></button>
-                        <button class="btn-sm border-0 delete-btn"><i class="fas fa-trash"></i></button> -->
 
                         <button class="btn-sm btn-md-block remove_btn">Remove</button>
                         <button class="btn-sm btn-md-block add_to_cart_btn">Add to cart</button>
