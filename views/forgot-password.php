@@ -1,5 +1,5 @@
 <!-- header -->
-<?php include_once '../components/header_update.php'; ?>
+<?php include_once '../components/header.php'; ?>
 
 <main id="forgot-password-page">
     <div class="container">

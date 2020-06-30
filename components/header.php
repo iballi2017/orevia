@@ -2,14 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="icon" href="../assets/images/favicon.png" type="image/gif" sizes="16x16" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         OREVIA | Beauty Skin Care | Skincare | Beauty | Health | Lagos Nigeria |
-        Abuja
-    </title>
+        Abuja</title>
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- bootstrap 4.3.1 -->
@@ -32,73 +29,52 @@
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="contact-info">
-                <span class="email">oreviaskincare@gmail.com</span>
-                <span class="phone ml-sm-4">07019920332</span>
-            </div>
-            <!-- <div class="brand-container d-none d-md-block">
-                <h2><img src="../assets/images/orevia-Logo.png" alt="" /></h2>
-            </div> -->
-            <div class="brand-container">
-                <h2><a href="../index.php"><img src="../assets/images/orevia-Logo.png" alt="Brand logo" /></a></h2>
-            </div>
-            <div class="access-container">
-                <ul class="access-nav">
-                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
-                        <a href="../views/user-profile.php" class="customLink">Akinola</a>
-                    </li>
-                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
-                        <a href="#" class="customLink">Logout</a>
-                    </li>
-                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
-                        <a href="../views/login.php" class="customLink">Login</a>
-                    </li>
-                    <li class="mr-lg-4 mr-3 mr-sm-3 mr-md-4">
-                        <a href="../views/register.php" class="customLink">Sign up</a>
-                    </li>
-                    <li>
-                        <a href="../views/checkout.php" class="customLink">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge badge-light bg-primary-clr">4</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
-    <header id="main-header">
-        <nav class="navbar navbar-expand-lg navbar-light main-nav">
-            <!-- <a class="navbar-brand d-lg-none" href="../index.php">
-                <img src="../assets/images/orevia-logo-alt.png" alt="" />
-            </a> -->
-            <!-- shopping cart icon notification alternative -->
-            <span class="shopping_cart_icon_alt shopping_cart_alt_hidden"> <a href="../views/checkout.php"
-                    class="customLink">
-                    <i class="fas fa-shopping-cart text-white"></i>
-                    <span class="badge badge-light">4</span>
-                </a></span>
-            <!-- ............. -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Header -->
+    <header class="sticky-top bg-white" id="main_header_option">
 
-                <i class="fas fa-bars mobile-menu-toggler"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link customLink" href="../index.php">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+        <nav class="o_main_nav">
+            <div class="o_main_nav_top">
+                <div class="o_main_nav_top_inner header_wrapper">
+                    <div class="o_contact_via_container">
+                        <small class="mr-3">
+                            <i class="fas fa-envelope mr-2"></i> <span>info@gmail.com</span></small>
+                        <small>
+                            <i class="fas fa-phone mr-2"></i><span>07065199444</span></small>
+                    </div>
+
+                    <div class="o_brand_logo_container">
+                        <h2><a href="../index.php"><img src="../assets/images/orevia-Logo.png" alt="Brand logo" /></a>
+                        </h2>
+                    </div>
+
+                    <div class="o_navtab_container">
+
+                        <ul class="o_navtab">
+                            <li>
+                                <a href="#"><small>Login</small></a>
+                            </li>
+                            <li>
+                                <a href="#"><small>Sign up</small></a>
+                            </li>
+                            <li>
+                                <a href="#"><small>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="badge cart_badge">0</span></small>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="o_main_nav_bottom main-nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link customLink active" href="../index.php#top">Home
+                            <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link customLink" href="../index.php#about-us">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link customLink" href="../views/product-page.php">Products</a>
+                        <a class="nav-link customLink" href="#">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link customLink" href="#">Key Features</a>
@@ -114,5 +90,68 @@
                     </li>
                 </ul>
             </div>
+
         </nav>
+
+
+
+
+        <nav class="o_main_mobile_navbar">
+
+            <div class="o_nav_top">
+                <div class="header_wrapper o_nav_top_inner">
+
+                    <div id="o_nav_toggler">
+                        <i class="fas fa-bars fa-2x" id="toggler_icon"></i>
+                    </div>
+
+                    <div class="brand_logo">
+                        <h2><a href="../index.php"><img src="../assets/images/orevia-Logo.png" alt="Brand logo" /></a>
+                        </h2>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-shopping-cart" id="toggler_icon"></i><span class="badge cart_badge">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="o_nav_dropdown pb-2" id="o_mobile_nav_dropdown">
+
+                <div class="o_entry_btn header_wrapper">
+                    <a href="#" class="btn btn-lg">Login</a>
+                    <a href="#" class="btn btn-lg">Sign up</a>
+                </div>
+
+                <ul class="o_mobile_navtab header_wrapper">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Key Features</a>
+                    </li>
+                    <li>
+                        <a href="#">How To Use</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Reviews</a>
+                    </li>
+                </ul>
+
+                <div class="o_mobile_contact header_wrapper pt-2">
+                    <span>info@gmail.com</span>
+                    <span class="ml-5">07065199444</span>
+                </div>
+            </div>
+        </nav>
+
     </header>

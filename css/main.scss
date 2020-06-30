@@ -1557,31 +1557,6 @@ footer {
 
     ############################ 
 */
-    .top-bar-inner {
-        display: grid;
-        grid-template-areas: "contact contact logo access access";
-        grid-gap: 20px;
-
-        .contact-info {
-            grid-area: contact;
-            display: flex;
-            align-items: center;
-        }
-
-        .brand-container {
-            grid-area: logo;
-        }
-
-        .access-container {
-            grid-area: access;
-
-            .access-nav {
-                height: 100%;
-                align-items: center;
-                justify-content: flex-end;
-            }
-        }
-    }
 
     form {
         .form-control {

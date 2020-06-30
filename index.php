@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="hero section">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +29,7 @@
 </head>
 
 <body>
+
 
     <!-- Header -->
     <header class="sticky-top bg-white" id="main_header_option">
@@ -75,6 +76,12 @@
                     </li>
                     <li class="nav-item" id="about_us_link">
                         <a class="nav-link customLink" href="#about-us">About us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link customLink" href="views/product-page.php">Products</a>
+                    </li> -->
+                    <li class="nav-item" id="products_link">
+                        <a class="nav-link customLink" href="#our-products">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link customLink" href="#">Key Features</a>
@@ -159,7 +166,7 @@
 
 
     <main>
-        <div class="hero">
+        <div id="hero" class="section">
             <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -237,7 +244,7 @@
             </div>
         </section>
 
-        <section class="pt-4" id="our-products">
+        <section id="our-products" class="pt-4 section">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-title display-5 mb-2">Our Products</h2>
@@ -251,19 +258,20 @@
                                     <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
                                     <figcaption>
                                         <div>Orevia Body butter<br />
-                                            <sdivan class="product-content-qty">(150ml)</span><br />
-                                                <span class="price">#2000</span></p>
-                                                <span class="star-rating">
-                                                    <i class="far fa-star text-warning"></i>
-                                                    <i class="far fa-star text-warning"></i>
-                                                    <i class="far fa-star text-warning"></i>
-                                                    <i class="far fa-star text-warning"></i>
-                                                    <i class="far fa-star text-warning"></i>
-                                                </span>
+                                            <span class="product-content-qty">(150ml)</span><br />
+                                            <span class="price">#2000</span></p>
+                                            <span class="star-rating">
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                            </span>
 
-                                                <button class="btn-block py-2 mt-2 white_btn">
-                                                    SHOP NOW
-                                                </button>
+                                            <button class="btn-block py-2 mt-2 white_btn">
+                                                SHOP NOW
+                                            </button>
+                                        </div>
                                     </figcaption>
                                 </figure>
                             </div>

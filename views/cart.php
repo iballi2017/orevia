@@ -1,5 +1,5 @@
 <?php
-include_once '../components/header_update.php'; ?>
+include_once '../components/header.php'; ?>
 
 <main id="cart_page">
 

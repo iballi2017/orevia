@@ -1,5 +1,5 @@
 <!-- header -->
-<?php include_once '../components/header_update.php'; ?>
+<?php include_once '../components/header.php'; ?>
 
 <div class="container my-5">
     <div class="row">

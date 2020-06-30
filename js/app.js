@@ -478,24 +478,6 @@ function showAccountDetails() {
 }
 
 
-// main navigation bar sticky effect
-// window.onscroll = function () { myFunction() };
-// var navbar = document.getElementById("main-header");
-// var sticky = navbar.offsetTop;
-// var shopping_cart_icon_alt = document.querySelector(".shopping_cart_icon_alt")
-
-// function myFunction() {
-//     if (window.pageYOffset >= sticky) {
-//         navbar.classList.add("sticky-top")
-//         shopping_cart_icon_alt.classList.remove("shopping_cart_alt_hidden")
-//         shopping_cart_icon_alt.classList.add("shopping_cart_alt_visible")
-//     } else {
-//         navbar.classList.remove("sticky-top");
-//         shopping_cart_icon_alt.classList.remove("shopping_cart_alt_visible")
-//         shopping_cart_icon_alt.classList.add("shopping_cart_alt_hidden")
-//     }
-
-// }
 
 // Adding a class to all "Select options" for styling. *Registration page; and *Checkout page
 var selectOption = document.querySelectorAll("option")
@@ -546,6 +528,10 @@ var intersection_array = [
         link: "about_us_link"
     },
     {
+        section: "our-products",
+        link: "products_link"
+    },
+    {
         section: "reviews",
         link: "reviews_link"
     },
@@ -556,11 +542,13 @@ var intersection_array = [
 ]
 const homepageSections = document.querySelectorAll(".section")
 const option = {
-    threshold: 1,
-    rootMargin: "0px 0px -200px 0px"
+    // threshold: 1,
+    // rootMargin: "0px 0px -200px 0px"
+    rootMargin: "-200px 0px -150px 0px"
 }
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        console.log(entry.target)
         if (!entry.isIntersecting) {
             return;
         }
