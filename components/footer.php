@@ -92,7 +92,7 @@
 <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <!-- owl carousel -->
 <script src="../OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-<script src="../js/app.js"></script>
+<script src="../js/main.js"></script>
 </body>
 
 </html>
