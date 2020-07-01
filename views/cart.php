@@ -56,57 +56,96 @@ include_once '../components/header.php'; ?>
             <div class="row">
                 <div class="col p-0">
 
+                    <!-- cart item list header -->
+                    <div class="cart_layout_container">
+                        <div class="cart_header_layout_grid table-header">
+                            <div class="g_item1">
+                                <h6>ITEM</h6>
+                            </div>
+                            <div class="g_item2">
+                                <h6>Quantity</h6>
+                            </div>
+                            <div class="g_item3">
+                                <h6>PRICE</h6>
+                            </div>
+                            <div class="g_item4">
+                                <h6>SUB-TOTAL</h6>
+                            </div>
+                        </div>
+                        <!-- ## -->
 
-                    <!-- cart grid item -->
-                    <style>
-                    </style>
-                    <div class="cart_item_grid_container">
-                        <div class="item_1">
-                            <h6>ITEM</h6>
-                        </div>
-                        <div class="item_2">
-                            <h6>Quantity</h6>
-                        </div>
-                        <div class="item_3">
-                            <h6>PRICE</h6>
-                        </div>
-                        <div class="item_4">
-                            <h6>SUB-TOTAL</h6>
-                        </div>
-                        <div class="item_5">
-                            <img src="../assets/images/orevia-fluid.png" class="img-fluid" alt="product item image">
-                        </div>
-                        <div class="item_6 p-2">
-                            <h4>Orevia Body butter 150g</h4>
-                            <h6 style="color: #740774"><i>Almond oil</i></h6>
-                        </div>
-                        <div class="item_7">
-                            <button class="cart_btn wishlist mr-md-5">
-                                <i class="fas fa-heart mr-1"></i>Move to Wishlist</button>
-                            <button class="cart_btn remove">
-                                <i class="fas fa-trash mr-1"></i>
-                                Remove</button>
-                        </div>
-                        <div class="qty_btns">
-                            <div>
-                                <button class="dec_btn">
-                                    <i class=" fas fa-minus"></i></button>
+                        <!-- A single cart item -->
+                        <div class="cart_item_grid">
+                            <div class="comp_1 p-2">
+                                <img src="../assets/images/orevia-fluid.png" class="img-fluid" alt="product item image">
+
                             </div>
-                            <div class="qty_value">2</div>
-                            <div>
-                                <button class="inc_btn">
-                                    <i class="fas fa-plus"></i></button>
+                            <div class="comp_2">
+                                <h4>Orevia Body butter 150g</h4>
+                                <h6 style="color: #740774"><i>Almond oil</i></h6>
                             </div>
+                            <div class="comp_3">
+                                <button class="cart_btn wishlist mr-md-5">
+                                    <i class="fas fa-heart mr-1"></i>Move to Wishlist</button>
+                                <button class="cart_btn remove">
+                                    <i class="fas fa-trash mr-1"></i>
+                                    Remove</button></div>
+                            <div class="comp_4">
+                                <div>
+                                    <button class="dec_btn">
+                                        <i class=" fas fa-minus"></i></button>
+                                </div>
+                                <div class="qty_value">2</div>
+                                <div>
+                                    <button class="inc_btn">
+                                        <i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="comp_5">2000</div>
+                            <div class="comp_6 p-2">
+                                <span>2000</span>
+                                <small class="d-block d-sm-none"><span>2000</span><span>X 1
+                                        Item</span></small></div>
                         </div>
-                        <div class="price">2000
+                        <!--  -->
+
+
+                        <!-- A single cart item -->
+                        <div class="cart_item_grid">
+                            <div class="comp_1 p-2">
+                                <img src="../assets/images/orevia-fluid.png" class="img-fluid" alt="product item image">
+
+                            </div>
+                            <div class="comp_2">
+                                <h4>Orevia Body butter 150g</h4>
+                                <h6 style="color: #740774"><i>Almond oil</i></h6>
+                            </div>
+                            <div class="comp_3">
+                                <button class="cart_btn wishlist mr-md-5">
+                                    <i class="fas fa-heart mr-1"></i>Move to Wishlist</button>
+                                <button class="cart_btn remove">
+                                    <i class="fas fa-trash mr-1"></i>
+                                    Remove</button></div>
+                            <div class="comp_4">
+                                <div>
+                                    <button class="dec_btn">
+                                        <i class=" fas fa-minus"></i></button>
+                                </div>
+                                <div class="qty_value">2</div>
+                                <div>
+                                    <button class="inc_btn">
+                                        <i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="comp_5">2000</div>
+                            <div class="comp_6 p-2">
+                                <span>2000</span>
+                                <small class="d-block d-sm-none"><span>2000</span><span>X 1
+                                        Item</span></small></div>
                         </div>
-                        <div class="sub_total p-2">
-                            <span>2000</span>
-                            <small class="price-alt d-block d-sm-none"><span>2000</span><span>X 1
-                                    Item</span></small>
-                        </div>
+                        <!--  -->
                     </div>
-                    <!-- ### -->
+
 
                 </div>
             </div>

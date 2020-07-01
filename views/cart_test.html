@@ -173,9 +173,6 @@
         class="qty_btns"
         style="display: flex; justify-content: space-between;"
       >
-        <!-- <button style="height: 100%;">-</button>
-        <span clss="qty">2</span>
-        <button>+</button> -->
         <div style="background-color: darkcyan; height: 100%; width: 30%;">
           <button style="height: 100%; width: 100%;">--</button>
         </div>
@@ -186,6 +183,95 @@
       </div>
       <div class="price">2000</div>
       <div class="sub_total">200</div>
+    </div>
+    <!--  -->
+
+    <style>
+      .cart_layout_grid {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .g_item1 {
+        grid-column: 1/8;
+        background-color: wheat;
+      }
+      .g_item2 {
+        grid-column: 8/10;
+        background-color: thistle;
+      }
+      .g_item3 {
+        grid-column: 10/11;
+        background-color: red;
+      }
+      .g_item4 {
+        grid-column: 11/-1;
+        background-color: darkgray;
+      }
+
+      .cart_item_grid {
+        border-bottom: 1px solid grey;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      .comp_1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-color: wheat;
+      }
+      .comp_2 {
+        grid-column: 3/8;
+        grid-row: 1/2;
+        background-color: thistle;
+      }
+      .comp_3 {
+        grid-column: 3/-1;
+        grid-row: 2/3;
+        background-color: yellowgreen;
+      }
+      .comp_4 {
+        grid-column: 8/10;
+        grid-row: 1/2;
+        background-color: red;
+      }
+      .comp_5 {
+        grid-column: 10/11;
+        grid-row: 1/2;
+        background-color: thistle;
+      }
+      .comp_6 {
+        grid-column: 11/-1;
+        grid-row: 1/2;
+        background-color: darkgray;
+      }
+    </style>
+
+    <div class="cart_layout_container">
+      <div class="cart_layout_grid table-header">
+        <div class="g_item1">1</div>
+        <div class="g_item2">2</div>
+        <div class="g_item3">3</div>
+        <div class="g_item4">4</div>
+      </div>
+
+      <div class="cart_item_grid">
+        <div class="comp_1">1</div>
+        <div class="comp_2">2</div>
+        <div class="comp_3">3</div>
+        <div class="comp_4">4</div>
+        <div class="comp_5">5</div>
+        <div class="comp_6">6</div>
+      </div>
+      <!--  -->
+      <div class="cart_item_grid">
+        <div class="comp_1">1</div>
+        <div class="comp_2">2</div>
+        <div class="comp_3">3</div>
+        <div class="comp_4">4</div>
+        <div class="comp_5">5</div>
+        <div class="comp_6">6</div>
+      </div>
     </div>
   </body>
 </html>

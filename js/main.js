@@ -82,7 +82,7 @@ $(document).ready(function () {
         // alert("hello")
         $(".product-views-slider").trigger('next.owl.carousel');
     })
-
+    // ====
     $(".extra_nav_prev").click(function () {
         // alert("hello")
         $(".product-views-slider").trigger('prev.owl.carousel');
@@ -90,6 +90,15 @@ $(document).ready(function () {
     $(".extra_nav_next").click(function () {
         // alert("hello")
         $(".product-views-slider").trigger('next.owl.carousel');
+    })
+    // ====
+    $(".product_prev_nav").click(function () {
+        // alert("hello")
+        $(".product_list_slider").trigger('prev.owl.carousel');
+    })
+    $(".product_next_nav").click(function () {
+        // alert("hello")
+        $(".product_list_slider").trigger('next.owl.carousel');
     })
 
 

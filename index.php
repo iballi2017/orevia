@@ -275,7 +275,55 @@
                                     </figcaption>
                                 </figure>
                             </div>
+                            <div class="card-body border product-card">
+                                <figure class="text-center">
+                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
+                                    <figcaption>
+                                        <div>Orevia Body butter<br />
+                                            <span class="product-content-qty">(150ml)</span><br />
+                                            <span class="price">#2000</span></p>
+                                            <span class="star-rating">
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                            </span>
+
+                                            <button class="btn-block py-2 mt-2 white_btn">
+                                                SHOP NOW
+                                            </button>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-body border product-card">
+                                <figure class="text-center">
+                                    <img src="./assets/images/orevia-bottle.png" alt="Trulli" style="width: 100%;" />
+                                    <figcaption>
+                                        <div>Orevia Body butter<br />
+                                            <span class="product-content-qty">(150ml)</span><br />
+                                            <span class="price">#2000</span></p>
+                                            <span class="star-rating">
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                                <i class="far fa-star text-warning"></i>
+                                            </span>
+
+                                            <button class="btn-block py-2 mt-2 white_btn">
+                                                SHOP NOW
+                                            </button>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
+
+                        <div class="custom_control_nav">
+                            <button class="product_prev_nav"></button>
+                            <button class="product_next_nav"></button></div>
                     </div>
                 </div>
             </div>

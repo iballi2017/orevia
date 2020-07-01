@@ -101,6 +101,11 @@ include_once '../components/header.php'; ?>
                             </figure>
                         </div>
                     </div>
+
+
+                    <div class="custom_control_nav">
+                        <button class="product_prev_nav"></button>
+                        <button class="product_next_nav"></button></div>
                 </div>
             </div>
         </div>
