@@ -521,7 +521,6 @@ const option = {
 }
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry.target)
         if (!entry.isIntersecting) {
             return;
         }
