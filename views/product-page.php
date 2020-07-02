@@ -3,7 +3,7 @@ include_once '../components/header.php'; ?>
 
 <main id="product-page">
 
-    <div class="page-title py-5">
+    <div class="page-title py-2">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">

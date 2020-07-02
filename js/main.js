@@ -572,12 +572,18 @@ var x = 0
 function show_mobile_nav() {
     if (x === 0) {
         nav_dropdown.style.transform = "scaleY(1)";
+        nav_dropdown.style.position = "relative";
+        nav_dropdown.style.height = "500px";
+        nav_dropdown.style.overflowY = "hidden";
         menu_icon.classList.remove("fa-bars")
         menu_icon.classList.add("fa-plus")
         x = 1;
 
     } else if (x === 1) {
         nav_dropdown.style.transform = "scaleY(0)";
+        nav_dropdown.style.position = "absolute";
+        nav_dropdown.style.height = "unset";
+        nav_dropdown.style.overflowY = "unset";
         menu_icon.classList.remove("fa-plus")
         menu_icon.classList.add("fa-bars")
         x = 0;
