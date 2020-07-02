@@ -236,6 +236,17 @@ a.bg-primary-clr {
     color: $tinted-clr;
 }
 
+.user_account_logout_wrapper {
+    button {
+        background: unset;
+    }
+    .user_acct_link,
+    button {
+        color: $primary-clr !important;
+        font-weight: bold;
+    }
+}
+
 .product-card {
     width: 85%;
     margin: 0 auto;

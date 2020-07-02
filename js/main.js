@@ -573,7 +573,7 @@ function show_mobile_nav() {
     if (x === 0) {
         nav_dropdown.style.transform = "scaleY(1)";
         nav_dropdown.style.position = "relative";
-        nav_dropdown.style.height = "500px";
+        nav_dropdown.style.height = "600px";
         nav_dropdown.style.overflowY = "hidden";
         menu_icon.classList.remove("fa-bars")
         menu_icon.classList.add("fa-plus")

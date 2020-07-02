@@ -118,6 +118,11 @@
 
             <div class="o_nav_dropdown pb-2" id="o_mobile_nav_dropdown">
 
+                <ul class="p-0 header_wrapper user_account_logout_wrapper my-2">
+                    <li class="mb-2"><a href="#" class="user_acct_link">My Account</a></li>
+                    <li class="mb-2"><button class="p-0 logout_btn border-0">Logout</a></button>
+                </ul>
+
                 <div class="o_entry_btn header_wrapper">
                     <a href="#" class="btn btn-lg">Login</a>
                     <a href="#" class="btn btn-lg">Sign up</a>

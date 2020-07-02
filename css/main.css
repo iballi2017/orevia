@@ -196,6 +196,13 @@ a.bg-primary-clr {
 .mobile-menu-toggler {
   color: #fbf4fb; }
 
+.user_account_logout_wrapper button {
+  background: unset; }
+.user_account_logout_wrapper .user_acct_link,
+.user_account_logout_wrapper button {
+  color: #740774 !important;
+  font-weight: bold; }
+
 .product-card {
   width: 85%;
   margin: 0 auto; }
