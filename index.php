@@ -7,6 +7,8 @@
     <title>
         OREVIA | Beauty Skin Care | Skincare | Beauty | Health | Lagos Nigeria |
         Abuja</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <!-- bootstrap 4.3.1 -->
