@@ -241,11 +241,13 @@
                 </div>
                 <article class="lead mb-4">
                     <p>
-                        For those who have seen the Earth from space, and for the hundreds
-                        and perhaps thousands more who will, the experience most certainly
-                        changes your perspective. The things that we share in our world
-                        are far more valuable than those which divide us. It suddenly
-                        struck me that that tiny pea, pretty and blue, was the Earth.
+                        <strong>OREVIA SKINCARE PRODUCTS</strong> are delicately formulated with exquisite fragrance
+                        suitable for all
+                        skin types. Our products nourish and rejuvenate the skin and are made with natural, skin
+                        enriching ingredients. Why not pamper yourself or your loved ones with our rich lush....
+                        <div class="more-info-btn-container">
+                            <a href="#" class="more-info-btn capitalize px-4 py-1 px-md-5 py-md-2">Read more</a>
+                        </div>
                     </p>
                 </article>
             </div>
@@ -488,12 +490,11 @@
                         <div class="accordion" id="accordionExample">
                             <div class="card rounded-0">
                                 <div class="card-header" id="headingOne">
-                                    <div class="float-left">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Hic nisi ob sit?
+                                    <div class="faq_question">
+                                        What ingredients are used in Orevia Body Butter?
                                     </div>
                                     <h6 class="mb-0">
-                                        <button class="float-right faq-btn" type="button" data-toggle="collapse"
+                                        <button class="faq-btn" type="button" data-toggle="collapse"
                                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <strong><i class="fas fa-minus fa-2x"></i></strong>
                                         </button>
@@ -502,29 +503,18 @@
 
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute, non cupidatat skateboard dolor brunch. Food truck
-                                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor, sunt aliqua put a bird on it squid single-origin
-                                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                        helvetica, craft beer labore wes anderson cred nesciunt
-                                        sapiente ea proident. Ad vegan excepteur butcher vice
-                                        lomo. Leggings occaecat craft beer farm-to-table, raw
-                                        denim aesthetic synth nesciunt you probably haven't heard
-                                        of them accusamus labore sustainable VHS.
+                                    <div class="card-body">The main ingredient is African Shea Butter and Virgin Coconut
+                                        Oil.
                                     </div>
                                 </div>
                             </div>
                             <div class="card rounded-0">
                                 <div class="card-header" id="headingTwo">
-                                    <div class="float-left">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Hic nisi obcaecati ea eum maiores?
+                                    <div class="faq_question">
+                                        How safe are the products on the skin?
                                     </div>
                                     <h6 class="mb-0">
-                                        <button class="float-right faq-btn" type="button" data-toggle="collapse"
+                                        <button class="faq-btn" type="button" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                             <strong><i class="fas fa-minus fa-2x"></i></strong>
                                         </button>
@@ -534,20 +524,60 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                        aute, non cupidatat skateboard dolor brunch. Food truck
-                                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                        tempor, sunt aliqua put a bird on it squid single-origin
-                                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                        helvetica, craft beer labore wes anderson cred nesciunt
-                                        sapiente ea proident. Ad vegan excepteur butcher vice
-                                        lomo. Leggings occaecat craft beer farm-to-table, raw
-                                        denim aesthetic synth nesciunt you probably haven't heard
-                                        of them accusamus labore sustainable VHS.
+                                        Our products are general safe all skin types but in event for any rash or
+                                        irritation on skin please discontinue use
+                                        immediately.
                                     </div>
                                 </div>
                             </div>
+                            <div class="card rounded-0">
+                                <div class="card-header" id="headingThree">
+                                    <div class="faq_question">Where does Orevia source its ingredients from?
+                                    </div>
+                                    <h6 class="mb-0">
+                                        <button class="faq-btn" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
+                                            <strong><i class="fas fa-minus fa-2x"></i></strong>
+                                        </button>
+                                    </h6>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        All our ingredients are sourced locally including our shea butter which is
+                                        produced and bought directly from Ilorin in Kwara
+                                        State from enterprising rural women.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0">
+                                <div class="card-header" id="headingFour">
+                                    <div class="faq_question">Can I place and order and pick up by myself?
+                                    </div>
+                                    <h6 class="mb-0">
+                                        <button class="faq-btn" type="button" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            <strong><i class="fas fa-minus fa-2x"></i></strong>
+                                        </button>
+                                    </h6>
+                                </div>
+
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Unfortunately, No, we operate strictly online services and our products are also
+                                        delivered as such.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more-info-btn-container mt-3">
+                            <a href="#" class="more-info-btn capitalize px-4 py-1 px-md-5 py-md-2">View all</a>
                         </div>
                     </div>
                 </div>

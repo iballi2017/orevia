@@ -18,7 +18,6 @@ include_once '../components/header.php'; ?>
             </h3>
         </div>
 
-
     </div>
 
     <div class="container">
