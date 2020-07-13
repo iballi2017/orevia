@@ -175,53 +175,49 @@
     <main>
         <div id="hero" class="section">
             <div class="bd-example">
+                <!-- HERO CAROUSEL SECTION -->
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- Hero Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
+                    </ol><!--  -->
 
+                    <!-- #our-products -->
                     <div class="carousel-inner" style="position: relative;">
+                        <!-- custom hero navs -->
                         <div class="custom-slider-nav text-center py-2 d-none d-md-block">
                             <button class="bg-primary-clr btn-sm hero-slide-nav" id="prev"></button>
                             <button class="bg-primary-clr btn-sm hero-slide-nav" id="next"></button>
                         </div>
+                        <!-- first hero slide -->
                         <div class="carousel-item active">
-                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
-                                alt="slider-1" /> -->
-                            <img src="./assets/images/the-honest-company-P9ayWrBn63c-unsplash.png" class="d-block w-100"
-                                alt="slider-1" />
-                            <div class="carousel-caption">
-                                <div class="carousel-caption-inner">
-                                    <h6 class="sec_caption">Give your skin a boost with our products</h6>
-                                    <h3 class="pri_caption">GLOWING AND RADIANT SKIN</h3>
-                                    <p class="tar_caption">It is delicately formulated with an exquisite fragrance
-                                        suitable for all skin
-                                        types
-                                    </p>
-                                    <a href="#" class="hero-action-btn px-3 px-md-5 py-md-2">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
+                            <a href="#our-products">
+                                <img src="./assets/images/hero_carousel_banner_first.jpg" class="d-block w-100"
+                                    alt="slider-1" />
+                            </a>
+                        </div><!--  -->
+
+
+                        <!-- second hero slide -->
                         <div class="carousel-item">
-                            <!-- <img src="https://source.unsplash.com/user/erondu/1600x659" class="d-block w-100"
-                                alt="slider-1" /> -->
-                            <img src="./assets/images/deanna-alys-6LBBOwkPzyQ-unsplash.png" class="d-block w-100"
-                                alt="slider-1" />
-                            <div class="carousel-caption">
-                                <div class="carousel-caption-inner">
-                                    <h6 class="sec_caption">Give your skin a boost with our products</h6>
-                                    <h3 class="pri_caption">GLOWING AND RADIANT SKIN</h3>
-                                    <p class="tar_caption">It is delicately formulated with an exquisite fragrance
-                                        suitable for all skin
-                                        types
-                                    </p>
-                                    <a href="#" class="hero-action-btn px-3 px-md-5 py-md-2">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
+                            <a href="#our-products">
+                                <img src="./assets/images/hero_carousel_banner_second.jpg" class="d-block w-100"
+                                    alt="slider-1" />
+                            </a>
+                        </div><!--  -->
+
+                        <!-- third hero slide -->
+                        <div class="carousel-item">
+                            <a href="#our-products">
+                                <img src="./assets/images/hero_carousel_banner_third.jpg" class="d-block w-100"
+                                    alt="slider-1" />
+                            </a>
+                        </div><!--  -->
+
                     </div>
+                    <!-- main hero nav -->
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -234,6 +230,8 @@
             </div>
         </div>
 
+
+        <!-- ABOUT-US SECTION -->
         <section id="about-us" class="section">
             <div class="container">
                 <div class="text-center">
@@ -253,6 +251,7 @@
             </div>
         </section>
 
+        <!-- OUR PRODUCTS SECTION -->
         <section id="our-products" class="pt-4 section">
             <div class="container">
                 <div class="text-center">
@@ -260,7 +259,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <!-- Owl carousel HTML -->
+                        <!-- Owl carousel HTML for product slides -->
                         <div class="owl-carousel product_list_slider">
                             <div class="card-body border product-card">
                                 <figure class="text-center">
@@ -338,6 +337,7 @@
             </div>
         </section>
 
+        <!-- REVIEW SECTION -->
         <section id="reviews" class="section">
             <div class="container">
                 <div class="text-center">
@@ -345,7 +345,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <!-- Set up your HTML -->
+                        <!-- Set up your HTML for review slides -->
                         <div class="owl-carousel reviews-slider owl-theme">
                             <div>
                                 <div class="card-body">
@@ -479,6 +479,7 @@
             </div>
         </section>
 
+        <!-- FAQ SECTION -->
         <section id="faq" class="section">
             <div class="container">
                 <div class="text-center">
@@ -584,12 +585,15 @@
             </div>
         </section>
     </main>
+
+
+    <!-- FOOTER AREA -->
     <footer class="mt-3 pt-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 border-right pr-5 my-3">
                     <img src="./assets/images/orevia-Logo.png" alt="brand logo" />
-                    <!-- newsletter form field -->
+                    <!-- Newsletter form field -->
                     <?php include_once './components/newsletter_form_field.php'; ?>
                 </div>
 

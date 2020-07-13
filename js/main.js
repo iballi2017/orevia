@@ -26,6 +26,8 @@ $(document).ready(function () {
             }
         }
     });
+    
+    $(".product_list_slider").trigger('stop.owl.autoplay');// ######## stop auto scroll
 
     // Review slider (Owl carousel)
     // index.php
