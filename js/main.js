@@ -26,6 +26,8 @@ $(document).ready(function () {
             }
         }
     });
+    
+    $(".product_list_slider").trigger('stop.owl.autoplay');// ######## stop auto scroll
 
     $(".product_list_slider").trigger('stop.owl.autoplay');// ######## stop auto scroll
 
