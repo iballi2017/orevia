@@ -171,7 +171,7 @@
     </section>
 
 
-    <section class="shipping_and_handling">
+    <section class="shipping_and_handling mb-5">
         <div class="container">
             <h4 class="text-center capitalize mt-5 mb-3">Shipping and handling</h4>
 

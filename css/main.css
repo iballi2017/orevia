@@ -201,6 +201,8 @@ a.bg-primary-clr {
 .mobile-menu-toggler {
   color: #fbf4fb; }
 
+.user_account_logout_wrapper li {
+  list-style: none; }
 .user_account_logout_wrapper button {
   background: unset; }
 .user_account_logout_wrapper .user_acct_link,
@@ -452,6 +454,9 @@ form .selectOptionStyle {
   #main_header_option #o_nav_toggler > .fa-bars {
     transform: rotate(0deg);
     transition: transform 0.5s ease; }
+  #main_header_option #o_nav_toggler .fa-plus,
+  #main_header_option #o_nav_toggler .fa-bars {
+    font-size: 1.2rem; }
   #main_header_option .o_main_mobile_navbar .o_nav_top {
     border-bottom: 1px solid #808891; }
   #main_header_option .o_main_mobile_navbar .o_nav_top_inner {
@@ -602,23 +607,36 @@ form .selectOptionStyle {
 .carousel-caption-inner {
   height: 100%;
   width: 100%;
+  color: #141414;
+  text-align: left;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   color: #141414; }
   .carousel-caption-inner * {
-    text-align: center; }
+    text-align: left;
+    margin: 0 0 0.4em 0; }
   .carousel-caption-inner p {
     margin-bottom: 0.5em; }
   .carousel-caption-inner .hero-action-btn {
     padding: 0.2rem 0.4rem;
     margin-top: 0.5em;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.5;
     border-radius: 0.3rem;
     color: #61585b;
-    border: 2px solid #740774; }
+    border: 0.8px solid #740774; }
     .carousel-caption-inner .hero-action-btn:hover {
       background-color: #740774;
       color: #ffffff;
       transition: background-color 300ms ease; }
+  .carousel-caption-inner .pri_caption {
+    font-size: 0.7rem; }
+  .carousel-caption-inner .sec_caption {
+    font-size: 0.4rem; }
+  .carousel-caption-inner .tar_caption {
+    font-size: 0.33rem; }
 
 .section-title {
   display: inline-block;
@@ -719,8 +737,6 @@ article.lead p {
     border: 0;
     background: unset;
     color: #740774; }
-.accordion .card:last-of-type {
-  margin-bottom: 5em; }
 
 #product-details-page .product_inner_container {
   position: relative; }
@@ -1205,25 +1221,18 @@ footer {
   form .form-control {
     font-size: 1rem; }
 
-  .carousel-caption-inner {
-    height: 100%;
-    width: 100%;
-    display: flex !important;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: #141414; }
-    .carousel-caption-inner * {
-      text-align: left;
-      margin: 0; }
-    .carousel-caption-inner .pri_caption {
-      font-size: 3rem; }
-    .carousel-caption-inner .sec_caption {
-      font-size: 1.5rem; }
-    .carousel-caption-inner .tar_caption {
-      font-size: 1.3rem; }
-    .carousel-caption-inner .hero-action-btn {
-      font-size: 1.2rem; }
+  .carousel-caption-inner * {
+    text-align: left;
+    margin: 0; }
+  .carousel-caption-inner .pri_caption {
+    font-size: 1.9rem; }
+  .carousel-caption-inner .sec_caption {
+    font-size: 1.4rem; }
+  .carousel-caption-inner .tar_caption {
+    font-size: 0.9rem; }
+  .carousel-caption-inner .hero-action-btn {
+    font-size: 1.2rem;
+    border: 1.7px solid #740774; }
 
   article.lead p {
     margin-top: 1em;
@@ -1314,11 +1323,6 @@ footer {
     right: 0.4rem;
     bottom: 0.74em; } }
 @media (max-width: 385px) {
-  .carousel-caption-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
   .sec_caption,
   .pri_caption,
   .tar_caption {
