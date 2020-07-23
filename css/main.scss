@@ -1116,6 +1116,14 @@ article.lead p {
 #checkout-page {
     legend {
         font-size: 1.2rem;
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #b9b9b9;
+            opacity: 0.4;
+            margin-top: 0.3em;
+        }
     }
     [type="radio"] {
         opacity: 0;
