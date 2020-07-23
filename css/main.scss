@@ -1123,6 +1123,7 @@ article.lead p {
 
         ~ label {
             display: flex;
+            flex-wrap: wrap;
         }
     }
     .custom-radio {
@@ -1149,6 +1150,14 @@ article.lead p {
         font-weight: 900;
         font-size: 1.3rem;
         color: $primary-clr;
+    }
+
+    .shipping_option {
+        display: flex;
+        align-items: center;
+    }
+    label {
+        cursor: pointer;
     }
 }
 

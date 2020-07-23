@@ -128,6 +128,94 @@
                 </fieldset>
 
             </div>
+            <!-- 3. Shipping -->
+            <div class="inner-wrapper form-wrapper mt-5">
+                <fieldset class="container">
+                    <div class="py-4">
+                        <legend>3. SHIPPING</legend>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="standard">
+                            <label for="standard">
+                                <span class="custom-radio"></span>
+                                Lagos – Standard Delivery (1-7 working days, not including weekends or Public Holidays):
+                                ₦1,000</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="next_working_day_island">
+                            <label for="next_working_day_island">
+                                <span class="custom-radio"></span>
+                                Lagos - Next Working Day Delivery – Island (Order before 5pm, not including weekends or
+                                Public
+                                Holidays): ₦2,000
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="next_working_day_mainland">
+                            <label for="next_working_day_mainland">
+                                <span class="custom-radio"></span>
+                                Lagos – Next Working Day Delivery – Mainland (Order before 5pm, not including weekends
+                                or Public
+                                Holidays): ₦2,500
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="saturday_delivery_island">
+                            <label for="saturday_delivery_island">
+                                <span class="custom-radio"></span>
+                                Lagos – Saturday Delivery – Island (Order before 2pm on Friday): ₦2,500
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="same_day_delivery_island">
+                            <label for="same_day_delivery_island">
+                                <span class="custom-radio"></span>
+                                Lagos – Same Day Delivery – Island (Order before 2pm, not including weekends or Public
+                                Holidays): ₦2,500
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="same_day_delivery_mainland">
+                            <label for="same_day_delivery_mainland">
+                                <span class="custom-radio"></span>
+                                Lagos – Same Day Delivery – Mainland (Order before 12pm, not including weekends or
+                                Public Holidays): ₦3,000
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="shipping_option">
+                            <input type="radio" name="shipping_option_radio" id="saturday_delivery_mainland">
+                            <label for="saturday_delivery_mainland">
+                                <span class="custom-radio"></span>
+                                Lagos – Saturday Delivery – Mainland (Order before 2pm on Friday):: ₦3,000
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <!--  -->
+
+
             <div class="inner-wrapper form-wrapper mt-5">
 
                 <div class="section-head bg-secondary-clr my-5">

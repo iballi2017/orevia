@@ -860,7 +860,8 @@ article.lead p {
   opacity: 0;
   position: absolute; }
   #checkout-page [type="radio"] ~ label {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
 #checkout-page .custom-radio {
   --size: 1.7em;
   display: inline-block;
@@ -881,6 +882,11 @@ article.lead p {
   font-weight: 900;
   font-size: 1.3rem;
   color: #740774; }
+#checkout-page .shipping_option {
+  display: flex;
+  align-items: center; }
+#checkout-page label {
+  cursor: pointer; }
 
 #user-profile-page .user_profile_update_btn {
   width: 100%; }
