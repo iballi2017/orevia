@@ -708,6 +708,35 @@ form .selectOptionStyle {
       -o-transition: opacity 300ms ease-in-out;
       -moz-transition: opacity 300ms ease-in-out; }
 
+#our_products_new .img_wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center; }
+  #our_products_new .img_wrapper img {
+    width: 100%; }
+#our_products_new .section-title::after {
+  margin-left: 0; }
+#our_products_new .control_area {
+  background-color: #fbf4fb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #our_products_new .control_area .control_area_inner {
+    display: flex;
+    align-items: center; }
+#our_products_new .qty_ctrl_wrapper {
+  display: flex;
+  align-items: center; }
+  #our_products_new .qty_ctrl_wrapper .prod_qty {
+    color: #740774; }
+#our_products_new .incr,
+#our_products_new .decr {
+  cursor: pointer; }
+  #our_products_new .incr:hover,
+  #our_products_new .decr:hover {
+    color: #740774; }
+
 article.lead p {
   text-align: center;
   margin-top: 1em;

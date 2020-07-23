@@ -368,6 +368,111 @@
             </div>
         </section>
 
+
+        <!-- OUR PRODUCTS SECTION (NEW CONCEPT) -->
+        <section id="our_products_new" class="pt-4 section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="img_wrapper">
+                            <img src="assets/images/orevia_body_butter_cup_grp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="container">
+                            <div class="text-left">
+                                <h2 class="section-title display-5 mb-2">Our Product</h2>
+                            </div>
+                            <div class="card border-0">
+                                <div class="card-body p-0">
+                                    <h4 class="prod_name">Orevia body Butter</h4>
+                                    <div class="price">#2000</div>
+                                    <p>It deeply moisturizes, hydrates your skin and keep it soft, smooth and glowing at
+                                        all
+                                        times. </p>
+                                    <!-- accordion -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card rounded-0">
+                                            <div class="card-header" id="accord_prod_ingredient">
+                                                <div class="faq_question">
+                                                    Ingrdient
+                                                </div>
+                                                <h6 class="mb-0">
+                                                    <button class="faq-btn" type="button" data-toggle="collapse"
+                                                        data-target="#ingrdient" aria-expanded="true"
+                                                        aria-controls="ingrdient">
+                                                        <strong><i class="fas fa-minus fa-2x"></i></strong>
+                                                    </button>
+                                                </h6>
+                                            </div>
+
+                                            <div id="ingrdient" class="collapse"
+                                                aria-labelledby="accord_prod_ingredient"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">The main ingredient is African Shea Butter and
+                                                    Virgin
+                                                    Coconut
+                                                    Oil.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card rounded-0">
+                                            <div class="card-header" id="accord_user_instruction_heading">
+                                                <div class="faq_question">
+                                                    User Instructions
+                                                </div>
+                                                <h6 class="mb-0">
+                                                    <button class="faq-btn" type="button" data-toggle="collapse"
+                                                        data-target="#user_insruction" aria-expanded="true"
+                                                        aria-controls="user_insruction">
+                                                        <strong><i class="fas fa-minus fa-2x"></i></strong>
+                                                    </button>
+                                                </h6>
+                                            </div>
+
+                                            <div id="user_insruction" class="collapse"
+                                                aria-labelledby="accord_user_instruction_heading"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Our products are general safe all skin types but in event for any
+                                                    rash
+                                                    or
+                                                    irritation on skin please discontinue use
+                                                    immediately.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /accordion -->
+                                </div>
+                            </div>
+
+                            <div class="control_area p-2">
+                                <div class="control_area_inner">
+                                    <span>Quantity</span>
+                                    <span class="qty_ctrl_wrapper" class="border px-2">
+                                        <span class="ml-3 prod_qty">
+                                            1
+                                        </span>
+                                        <span class="m-2">
+                                            <div class="incr">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                            <div class="decr">
+                                                <i class="fas fa-minus"></i>
+                                            </div>
+                                        </span>
+                                    </span>
+                                </div>
+                                <button class="py-1 mt-2 white_btn">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- REVIEW SECTION -->
         <section id="reviews" class="section">
             <div class="container">
