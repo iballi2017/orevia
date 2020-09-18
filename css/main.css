@@ -223,7 +223,7 @@ a.bg-primary-clr {
 button:focus {
   outline: 0;
   box-shadow: inset 0 0 0 3px white;
-  border: 2px solid #740774;
+  border: 1px solid #740774;
   transition: box-shadow 500ms ease;
   transition: border 500ms ease;
   -moz-transition: box-shadow 500ms ease;
@@ -238,8 +238,8 @@ button:focus {
 .white_btn,
 .primary_btn {
   text-transform: uppercase;
-  border: 2px solid #740774;
-  font-weight: 600;
+  border: 1px solid #740774;
+  font-weight: 400;
   transition: background-color 500ms ease-in-out;
   transition: color 500ms ease-in-out;
   -moz-transition: background-color 500ms ease-in-out;
@@ -718,13 +718,12 @@ form .selectOptionStyle {
 #our_products_new .section-title::after {
   margin-left: 0; }
 #our_products_new .control_area {
-  background-color: #fbf4fb;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  background-color: #fbf4fb; }
   #our_products_new .control_area .control_area_inner {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; }
 #our_products_new .qty_ctrl_wrapper {
   display: flex;
   align-items: center; }

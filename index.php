@@ -386,7 +386,7 @@
                             <div class="card border-0">
                                 <div class="card-body p-0">
                                     <h4 class="prod_name">Orevia body Butter</h4>
-                                    <div class="price">#2000</div>
+                                    <div class="price"><span>#2000</span>&nbsp;&nbsp;<s><sub>#2500</sub></s></div>
                                     <p>It deeply moisturizes, hydrates your skin and keep it soft, smooth and glowing at
                                         all
                                         times. </p>
@@ -447,26 +447,18 @@
                             </div>
 
                             <div class="control_area p-2">
-                                <div class="control_area_inner">
-                                    <span>Quantity</span>
-                                    <span class="qty_ctrl_wrapper" class="border px-2">
-                                        <span class="ml-3 prod_qty">
-                                            1
-                                        </span>
-                                        <span class="m-2">
-                                            <div class="incr">
-                                                <i class="fas fa-plus"></i>
-                                            </div>
-                                            <div class="decr">
-                                                <i class="fas fa-minus"></i>
-                                            </div>
-                                        </span>
-                                    </span>
+                                <div class="control_area_inner" style="">
+                                    <span>Quantity</span>                                    
+                                    <div class="qty_ctrl_wrapper border bg-white">
+                                            <div class="decr p-2"><i class="fas fa-minus"></i></div>
+                                            <div class="prod_qty border-right border-left p-2 px-3">0</div>
+                                            <div class="incr p-2"><i class="fas fa-plus"></i></div>
+                                    </div>
                                 </div>
-                                <button class="py-1 mt-2 white_btn">
+                            </div>
+                                <button class="py-1 px-4 mt-2 white_btn">
                                     Add to cart
                                 </button>
-                            </div>
                         </div>
                     </div>
                 </div>
