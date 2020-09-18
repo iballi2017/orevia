@@ -188,6 +188,11 @@ a.bg-primary-clr {
 .shopping_cart_alt_hidden {
   display: none; }
 
+.justify_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 /* 
 ############################
  

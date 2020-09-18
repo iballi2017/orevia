@@ -386,7 +386,9 @@
                             <div class="card border-0">
                                 <div class="card-body p-0">
                                     <h4 class="prod_name">Orevia body Butter</h4>
+                                    <div class="mb-2 offer_info justify_space_between">
                                     <div class="price"><span>#2000</span>&nbsp;&nbsp;<s><sub>#2500</sub></s></div>
+                                    <div class="text-danger">Offers lasts till 30th september</div></div>
                                     <p>It deeply moisturizes, hydrates your skin and keep it soft, smooth and glowing at
                                         all
                                         times. </p>
@@ -447,7 +449,7 @@
                             </div>
 
                             <div class="control_area p-2">
-                                <div class="control_area_inner" style="">
+                                <div class="control_area_inner">
                                     <span>Quantity</span>                                    
                                     <div class="qty_ctrl_wrapper border bg-white">
                                             <div class="decr p-2"><i class="fas fa-minus"></i></div>
